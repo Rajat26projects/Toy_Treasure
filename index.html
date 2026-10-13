@@ -1,0 +1,4642 @@
+<!-- color palette:https://colorany.com/color-palettes/toy-brand-color-palettes/ -->
+<!-- #FF5733  #FFBD33 #33FF57 #33B5FF #A733FF -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toy Treasure</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/custom.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <img src="./assets/images/logo_img.jpg" alt="Toy Treasure Logo" />
+
+        <!-- Brand -->
+        <a id="head" class="navbar-brand" href="#">Toy Treasure</a>
+
+        <!-- Toggler (mobile menu button) -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <!-- Home -->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <!-- About -->
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutsec">About</a>
+            </li>
+            <!-- Age-group Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Age-group
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#babies">0–5 years</a></li>
+                <li><a class="dropdown-item" href="#">5–12 years</a></li>
+                <li><a class="dropdown-item" href="#">13–18 years</a></li>
+                <li><a class="dropdown-item" href="#">18+ years</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- Search -->
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search for item"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Marquee for arrival -->
+    <marquee behavior="scroll" direction="left" class="new-arrival-marquee">
+      🎉 New Arrivals for Ages 5–12 — Grab Yours Today!
+    </marquee>
+
+    <!-- Carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+
+      <!-- Carousel Items -->
+      <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div
+          id="carouselExampleAutoplaying"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <!-- ================= SLIDE 1 ================= -->
+            <div
+              class="carousel-item active slide-one"
+              class="carousel slide carousel-fade"
+            >
+              <img
+                src="./assets/images/slider1.img.jpg"
+                class="d-block w-100"
+                alt="Babies and toddlers playing with toys"
+              />
+
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="age-title">Babies & Toddlers (0–3 Years)</h5>
+
+                <h2 class="main-title">Tiny Hands, Big Discoveries</h2>
+
+                <p>
+                  Safe, colorful and easy-to-grip toys designed to help little
+                  ones explore their senses, improve coordination and discover
+                  the world around them.
+                </p>
+
+                <button type="button" class="btn slider-btn">
+                  Explore Toys
+                </button>
+              </div>
+            </div>
+
+            <!-- ================= SLIDE 2 ================= -->
+            <div class="carousel-item slide-two">
+              <img
+                src="./assets/images/slider2.img.jpg"
+                class="d-block w-100"
+                alt="Kids enjoying colorful toys"
+              />
+
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="age-title">Kids (4–7 Years)</h5>
+
+                <h2 class="main-title">Play, Learn & Imagine</h2>
+
+                <p>
+                  Fun and creative toys that encourage imagination,
+                  problem-solving and learning through exciting games, building
+                  sets and pretend play.
+                </p>
+
+                <button type="button" class="btn slider-btn">
+                  Explore Toys
+                </button>
+              </div>
+            </div>
+
+            <!-- ================= SLIDE 3 ================= -->
+            <div class="carousel-item slide-three">
+              <img
+                src="./assets/images/slider3.img.jpg"
+                class="d-block w-100"
+                alt="Young explorer playing with toys"
+              />
+
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="age-title">Young Explorers (8–12 Years)</h5>
+
+                <h2 class="main-title">Big Ideas Start With Play</h2>
+
+                <p>
+                  Discover exciting toys that inspire creativity, curiosity and
+                  critical thinking—from STEM kits to puzzles and strategy
+                  games.
+                </p>
+
+                <button type="button" class="btn slider-btn">
+                  Discover More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Previous Button -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"> </span>
+
+        <span class="visually-hidden"> Previous </span>
+      </button>
+
+      <!-- Next Button -->
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"> </span>
+
+        <span class="visually-hidden"> Next </span>
+      </button>
+    </div>
+
+    <!-- About section -->
+
+    <div id="aboutsec" class="container-fluid about-content">
+      <!-- About Us Heading -->
+      <div class="about-heading">
+        <h2>About Us 🧸</h2>
+        <p>Discover the story behind Toy Treasure ✨</p>
+      </div>
+
+      <div class="row align-items-center g-4">
+        <!-- ================= VIDEO - 60% ================= -->
+        <div class="col-md-7">
+          <video
+            src="./assets/images/about_gif.mp4"
+            class="about-video"
+            autoplay
+            muted
+            loop
+            playsinline
+          ></video>
+        </div>
+
+        <!-- ================= ACCORDION - 40% ================= -->
+        <div class="col-md-5">
+          <div class="accordion" id="accordionExample">
+            <!-- 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                >
+                  🧸 Who We Are
+                </button>
+              </h2>
+
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p>
+                    Welcome to Toy Treasure! 🧸✨ We are a fun and friendly
+                    online toy store where children can discover toys made for
+                    learning, creativity and endless fun.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                >
+                  🎨 What We Believe
+                </button>
+              </h2>
+
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p>
+                    We believe that every child learns through play! 🌟 Our toys
+                    encourage imagination, creativity, problem-solving and
+                    curiosity.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                >
+                  🌟 Why Choose Toy Treasure?
+                </button>
+              </h2>
+
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p>
+                    From colorful toys 🧸 to exciting games and STEM activities
+                    🚀, Toy Treasure offers something for every child and every
+                    stage of development.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                >
+                  👶 Toys for Every Age
+                </button>
+              </h2>
+
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p>
+                    Whether your little one is taking their first steps 👶 or
+                    exploring bigger ideas 🚀, we have toys designed for
+                    different age groups and interests.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                >
+                  🧠 Learning Through Play
+                </button>
+              </h2>
+
+              <div
+                id="collapseFive"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p>
+                    Play is more than just fun! 🧩 Our toys help children
+                    develop creativity, problem-solving skills, imagination and
+                    curiosity while they play.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix"
+                >
+                  ❤️ Our Promise
+                </button>
+              </h2>
+
+              <div
+                id="collapseSix"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p>
+                    We want every Toy Treasure experience to be simple,
+                    enjoyable and exciting for both children and parents. 🎁
+                    Your happiness is our priority!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- Card section -->
+    <div id="cardsec">
+      <h2>🎈 Explore Toys by Age</h2>
+
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3" id="babies">
+          <div class="card">
+            <img
+              src="./assets/images/5-12.jpg"
+              class="card-img-top baby-img"
+              alt="Babies and Toddlers"
+            />
+
+            <div class="card-body">
+              <h5 class="card-title">👶 Babies & Toddlers</h5>
+              <p class="card-text">
+                Discover colorful and safe toys designed to encourage curiosity,
+                creativity and early learning for little explorers aged 0–3
+                years.
+              </p>
+
+              <a href="#" class="btn btn-primary"> 👶 Shop for Little Ones </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="card">
+            <img
+              src="./assets/images/2nd.jpg"
+              class="card-img-top kids-img"
+              alt="Kids"
+            />
+
+            <div class="card-body">
+              <h5 class="card-title">🧒 Kids</h5>
+              <p class="card-text">
+                Explore fun and creative toys that help children learn, imagine
+                and develop new skills while enjoying every moment of play.
+                Perfect for ages 4–7 years.
+              </p>
+
+              <a href="#" class="btn btn-primary"> 🧒 Discover Kids' Toys </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="card">
+            <img
+              src="./assets/images/3rd.jpg"
+              class="card-img-top explorer-img"
+              alt="Young Explorers"
+            />
+
+            <div class="card-body">
+              <h5 class="card-title">🚀 Young Explorers</h5>
+              <p class="card-text">
+                Challenge young minds with exciting games, puzzles and STEM toys
+                that encourage problem-solving, creativity and discovery for
+                ages 8–12 years.
+              </p>
+
+              <a href="#" class="btn btn-primary"> 🚀 Explore & Learn </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="card">
+            <img
+              src="./assets/images/4th.jpg"
+              class="card-img-top family-img"
+              alt="Family Fun"
+            />
+
+            <div class="card-body">
+              <h5 class="card-title">👨‍👩‍👧‍👦 Family Fun</h5>
+              <p class="card-text">
+                Bring everyone together with entertaining games and activities
+                designed for shared play, laughter and memorable family moments.
+              </p>
+              <a href="#" class="btn btn-primary"> 👨‍👩‍👧‍👦 Find Family </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= EXPLORE TOYS BY CATEGORY ================= -->
+
+    <section class="category-section">
+      <!-- Heading -->
+      <div class="category-heading">
+        <h2>🧩 Explore Toys by Category</h2>
+        <p>Find something exciting for every little explorer! ✨</p>
+      </div>
+
+      <!-- Slider -->
+      <div class="category-slider">
+        <!-- Previous Button -->
+        <button type="button" class="category-arrow" id="categoryPrev">
+          ❮
+        </button>
+
+        <!-- Visible Area -->
+        <div class="category-window">
+          <div class="category-track" id="categoryTrack">
+            <!-- ================= SLIDE 1 ================= -->
+
+            <div class="category-page">
+              <!-- Dolls -->
+              <div class="category-card">
+                <div class="category-image">
+                  <img
+                    src="./assets/images/ages/img1.webp"
+                    alt="Dolls and Accessories"
+                  />
+                </div>
+
+                <div class="category-info">
+                  <h3>🎀 Dolls & Accessories</h3>
+
+                  <p>
+                    Discover beautiful dolls and accessories for creative
+                    pretend play and imagination.
+                  </p>
+
+                  <a href="#" class="category-btn"> Explore Dolls </a>
+                </div>
+              </div>
+
+              <!-- Cars -->
+              <div class="category-card">
+                <div class="category-image">
+                  <img
+                    src="./assets/images/ages/img2.2.webp"
+                    alt="Cars and Vehicle Playsets"
+                  />
+                </div>
+
+                <div class="category-info">
+                  <h3>🚗 Cars & Vehicle Playsets</h3>
+
+                  <p>
+                    Exciting cars, tracks and vehicle playsets for endless
+                    racing adventures.
+                  </p>
+
+                  <a href="#" class="category-btn"> Start Racing </a>
+                </div>
+              </div>
+
+              <!-- Board Games -->
+              <div class="category-card">
+                <div class="category-image">
+                  <img
+                    src="./assets/images/ages/img3.webp"
+                    alt="Board and Card Games"
+                  />
+                </div>
+
+                <div class="category-info">
+                  <h3>🎲 Board & Card Games</h3>
+
+                  <p>
+                    Bring everyone together with exciting games filled with fun,
+                    strategy and laughter.
+                  </p>
+
+                  <a href="#" class="category-btn"> Play Together </a>
+                </div>
+              </div>
+
+              <!-- Action Figures -->
+              <div class="category-card">
+                <div class="category-image">
+                  <img
+                    src="./assets/images/ages/img4.webp"
+                    alt="Action Figures"
+                  />
+                </div>
+
+                <div class="category-info">
+                  <h3>🦸 Action Figures</h3>
+
+                  <p>
+                    Let little heroes create exciting stories and adventures
+                    with their favorite figures.
+                  </p>
+
+                  <a href="#" class="category-btn"> Meet the Heroes </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- ================= SLIDE 2 ================= -->
+
+            <div class="category-page">
+              <!-- Building -->
+              <div class="category-card">
+                <div class="category-image">
+                  <img
+                    src="./assets/images/ages/img5.webp"
+                    alt="Building and Construction"
+                  />
+                </div>
+
+                <div class="category-info">
+                  <h3>🧱 Building & Construction</h3>
+
+                  <p>
+                    Build amazing creations and develop creativity, imagination
+                    and problem-solving skills.
+                  </p>
+
+                  <a href="#" class="category-btn"> Start Building </a>
+                </div>
+              </div>
+
+              <!-- Learning -->
+              <div class="category-card">
+                <div class="category-image">
+                  <img
+                    src="./assets/images/ages/img6.webp"
+                    alt="Learning and Educational Toys"
+                  />
+                </div>
+
+                <div class="category-info">
+                  <h3>🧠 Learning & Educational</h3>
+
+                  <p>
+                    Make learning fun with educational toys that encourage
+                    curiosity and discovery.
+                  </p>
+
+                  <a href="#" class="category-btn"> Learn & Play </a>
+                </div>
+              </div>
+
+              <!-- Soft Toys -->
+              <div class="category-card">
+                <div class="category-image">
+                  <img src="./assets/images/ages/img7.webp" alt="Soft Toys" />
+                </div>
+
+                <div class="category-info">
+                  <h3>🧸 Soft Toys</h3>
+
+                  <p>
+                    Cuddle up with adorable soft toys that bring comfort,
+                    friendship and lots of smiles.
+                  </p>
+
+                  <a href="#" class="category-btn"> Find Cuddly Toys </a>
+                </div>
+              </div>
+
+              <!-- Art & Craft -->
+              <div class="category-card">
+                <div class="category-image">
+                  <img
+                    src="./assets/images/ages/img8.webp"
+                    alt="Art and Craft Kits"
+                  />
+                </div>
+
+                <div class="category-info">
+                  <h3>🎨 Art & Craft Kits</h3>
+
+                  <p>
+                    Let creativity shine with colorful art supplies, craft kits
+                    and exciting creative activities.
+                  </p>
+
+                  <a href="#" class="category-btn"> Get Creative </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Next Button -->
+        <button type="button" class="category-arrow" id="categoryNext">
+          ❯
+        </button>
+      </div>
+
+      <!-- Dots -->
+      <div class="category-dots">
+        <button type="button" class="category-dot active" id="dot1"></button>
+
+        <button type="button" class="category-dot" id="dot2"></button>
+      </div>
+    </section>
+
+
+
+
+
+<!-- ================= REMOTE CONTROL TOYS ================= -->
+
+<section class="remote-section">
+
+    <div class="remote-header">
+        <div>
+            <h2>New Remote Control Toys</h2>
+            <span class="remote-line"></span>
+            <p>Exciting remote control toys for kids of all ages</p>
+        </div>
+
+        <button class="remote-view-btn">
+            View All <span>→</span>
+        </button>
+    </div>
+
+
+    <div class="remote-slider">
+
+        <!-- LEFT ARROW -->
+        <button class="remote-arrow remote-prev" id="remotePrev">
+            &#10094;
+        </button>
+
+
+        <!-- SLIDER WINDOW -->
+        <div class="remote-window">
+
+            <div class="remote-track" id="remoteTrack">
+
+
+                <!-- ================= PAGE 1 ================= -->
+
+                <div class="remote-page">
+
+
+                    <!-- CARD 1 -->
+                    <div class="remote-card">
+
+                        <div class="remote-image-box">
+
+                            <span class="remote-discount">-50% OFF</span>
+
+                            <button class="remote-heart">♡</button>
+
+                            <img src="./assets/images/remote_control/img1.webp"
+                                 alt="Wireless Game Controller">
+
+                        </div>
+
+                        <div class="remote-card-content">
+
+                            <div class="remote-rating">
+                                ★★★★★ <span>New</span>
+                            </div>
+
+                            <h3>Wireless Game Controller</h3>
+
+                            <p>
+                                Enjoy exciting gaming adventures with this
+                                easy-to-use wireless controller.
+                            </p>
+
+                            <div class="remote-price">
+                                <strong>₹3,499</strong>
+                                <del>₹6,999</del>
+                            </div>
+
+                            <button class="remote-add-btn">
+                                🛒 Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CARD 2 -->
+                    <div class="remote-card">
+
+                        <div class="remote-image-box">
+
+                            <span class="remote-discount">-44% OFF</span>
+
+                            <button class="remote-heart">♡</button>
+
+                            <img src="./assets/images/remote_control/img2.webp"
+                                 alt="Remote Control Octopus Toy">
+
+                        </div>
+
+                        <div class="remote-card-content">
+
+                            <div class="remote-rating">
+                                ★★★★★ <span>New</span>
+                            </div>
+
+                            <h3>Remote Control Octopus</h3>
+
+                            <p>
+                                A fun interactive octopus with lights,
+                                music and exciting remote control movements.
+                            </p>
+
+                            <div class="remote-price">
+                                <strong>₹3,369</strong>
+                                <del>₹5,999</del>
+                            </div>
+
+                            <button class="remote-add-btn">
+                                🛒 Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CARD 3 -->
+                    <div class="remote-card">
+
+                        <div class="remote-image-box">
+
+                            <span class="remote-discount">-42% OFF</span>
+
+                            <button class="remote-heart">♡</button>
+
+                            <img src="./assets/images/remote_control/img3.webp"
+                                 alt="Remote Control Stunt Car">
+
+                        </div>
+
+                        <div class="remote-card-content">
+
+                            <div class="remote-rating">
+                                ★★★★★ <span>New</span>
+                            </div>
+
+                            <h3>Spider Stunt Remote Car</h3>
+
+                            <p>
+                                Perform thrilling stunts and speedy turns
+                                with this exciting remote control car.
+                            </p>
+
+                            <div class="remote-price">
+                                <strong>₹3,499</strong>
+                                <del>₹5,999</del>
+                            </div>
+
+                            <button class="remote-add-btn">
+                                🛒 Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CARD 4 -->
+                    <div class="remote-card">
+
+                        <div class="remote-image-box">
+
+                            <span class="remote-discount">-42% OFF</span>
+
+                            <button class="remote-heart">♡</button>
+
+                            <img src="./assets/images/remote_control/img4.webp"
+                                 alt="Batman RC Drift Car">
+
+                        </div>
+
+                        <div class="remote-card-content">
+
+                            <div class="remote-rating">
+                                ★★★★★ <span>New</span>
+                            </div>
+
+                            <h3>Batman F1 RC Drift Car</h3>
+
+                            <p>
+                                Experience high-speed drifting adventures
+                                with this powerful RC racing car.
+                            </p>
+
+                            <div class="remote-price">
+                                <strong>₹3,499</strong>
+                                <del>₹5,999</del>
+                            </div>
+
+                            <button class="remote-add-btn">
+                                🛒 Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================= PAGE 2 ================= -->
+
+                <div class="remote-page">
+
+
+                    <!-- CARD 5 -->
+                    <div class="remote-card">
+
+                        <div class="remote-image-box">
+
+                            <span class="remote-discount">-63% OFF</span>
+
+                            <button class="remote-heart">♡</button>
+
+                            <img src="./assets/images/remote_control/img5.webp"
+                                 alt="Remote Control Learning Toy">
+
+                        </div>
+
+                        <div class="remote-card-content">
+
+                            <div class="remote-rating">
+                                ★★★★★ <span>New</span>
+                            </div>
+
+                            <h3>Smart Remote Learning Toy</h3>
+
+                            <p>
+                                Make learning more enjoyable with this
+                                colorful interactive remote-control toy.
+                            </p>
+
+                            <div class="remote-price">
+                                <strong>₹1,299</strong>
+                                <del>₹3,499</del>
+                            </div>
+
+                            <button class="remote-add-btn">
+                                🛒 Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CARD 6 -->
+                    <div class="remote-card">
+
+                        <div class="remote-image-box">
+
+                            <span class="remote-discount">-37% OFF</span>
+
+                            <button class="remote-heart">♡</button>
+
+                            <img src="./assets/images/remote_control/img6.webp"
+                                 alt="Remote Control Racing Car">
+
+                        </div>
+
+                        <div class="remote-card-content">
+
+                            <div class="remote-rating">
+                                ★★★★★ <span>New</span>
+                            </div>
+
+                            <h3>Flame Speed Racing Car</h3>
+
+                            <p>
+                                Race at high speed with this stylish
+                                remote-controlled racing car.
+                            </p>
+
+                            <div class="remote-price">
+                                <strong>₹2,499</strong>
+                                <del>₹3,999</del>
+                            </div>
+
+                            <button class="remote-add-btn">
+                                🛒 Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CARD 7 -->
+                    <div class="remote-card">
+
+                        <div class="remote-image-box">
+
+                            <span class="remote-discount">-60% OFF</span>
+
+                            <button class="remote-heart">♡</button>
+
+                            <img src="./assets/images/remote_control/img7.webp"
+                                 alt="Off Road Remote Control Car">
+
+                        </div>
+
+                        <div class="remote-card-content">
+
+                            <div class="remote-rating">
+                                ★★★★★ <span>New</span>
+                            </div>
+
+                            <h3>Off-Road RC Monster Car</h3>
+
+                            <p>
+                                Conquer rough surfaces and exciting tracks
+                                with this powerful off-road RC car.
+                            </p>
+
+                            <div class="remote-price">
+                                <strong>₹2,799</strong>
+                                <del>₹6,999</del>
+                            </div>
+
+                            <button class="remote-add-btn">
+                                🛒 Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CARD 8 -->
+                    <div class="remote-card">
+
+                        <div class="remote-image-box">
+
+                            <span class="remote-discount">-36% OFF</span>
+
+                            <button class="remote-heart">♡</button>
+
+                            <img src="./assets/images/remote_control/img8.webp"
+                                 alt="Remote Control Water Spray Car">
+
+                        </div>
+
+                        <div class="remote-card-content">
+
+                            <div class="remote-rating">
+                                ★★★★★ <span>New</span>
+                            </div>
+
+                            <h3>Water Spray RC Car</h3>
+
+                            <p>
+                                Add extra fun to playtime with this
+                                unique remote-control water spray car.
+                            </p>
+
+                            <div class="remote-price">
+                                <strong>₹2,999</strong>
+                                <del>₹4,699</del>
+                            </div>
+
+                            <button class="remote-add-btn">
+                                🛒 Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT ARROW -->
+        <button class="remote-arrow remote-next" id="remoteNext">
+            &#10095;
+        </button>
+
+    </div>
+
+
+    <!-- DOTS -->
+    <div class="remote-dots">
+
+        <button class="remote-dot active" id="remoteDot1"></button>
+
+        <button class="remote-dot" id="remoteDot2"></button>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+<!-- =========================================================
+     GUN TOYS SECTION
+========================================================= -->
+
+<section class="gun-section">
+
+    <!-- ================= HEADER ================= -->
+
+    <div class="gun-header">
+
+        <h2>🔫 Gun Toys</h2>
+
+        <p>
+            Shop the best kids gun toys online! Find foam dart blasters,
+            gel blasters, bubble guns and more for endless outdoor fun.
+        </p>
+
+        <button type="button" class="gun-view-btn">
+            View All →
+        </button>
+
+    </div>
+
+
+    <!-- ================= SLIDER ================= -->
+
+    <div class="gun-slider">
+
+        <!-- PREVIOUS BUTTON -->
+
+        <button
+            type="button"
+            class="gun-arrow"
+            id="gunPrev">
+
+            ❮
+
+        </button>
+
+
+        <!-- SLIDER WINDOW -->
+
+        <div class="gun-window">
+
+            <div class="gun-track" id="gunTrack">
+
+
+                <!-- =================================================
+                     SLIDE 1
+                ================================================== -->
+
+                <div class="gun-page">
+
+
+                    <!-- ================= CARD 1 ================= -->
+
+                    <div class="gun-card">
+
+                        <div class="gun-image-box">
+
+                            <span class="gun-discount">
+                                -55% OFF
+                            </span>
+
+                            <button
+                                type="button"
+                                class="gun-heart">
+
+                                ♡
+
+                            </button>
+
+                            <img
+                                src="./assets/images/gun/img1.webp"
+                                alt="3 in 1 Soft Bullet Blaster Toy Gun">
+
+                        </div>
+
+
+                        <div class="gun-card-content">
+
+                            <div class="gun-rating">
+                                ★★★★★
+                                <span>New</span>
+                            </div>
+
+                            <h3>
+                                3 in 1 Soft Bullet Blaster Toy Gun
+                            </h3>
+
+                            <p>
+                                Fun soft bullet blaster with bubble maker
+                                and light effects for exciting outdoor play.
+                            </p>
+
+                            <div class="gun-price">
+
+                                <strong>₹898</strong>
+
+                                <del>₹1,999</del>
+
+                            </div>
+
+                            <button
+                                type="button"
+                                class="gun-add-btn">
+
+                                🛒 Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ================= CARD 2 ================= -->
+
+                    <div class="gun-card">
+
+                        <div class="gun-image-box">
+
+                            <span class="gun-discount">
+                                -43% OFF
+                            </span>
+
+                            <button
+                                type="button"
+                                class="gun-heart">
+
+                                ♡
+
+                            </button>
+
+                            <img
+                                src="./assets/images/gun/img2.webp"
+                                alt="Electric AK47 Gel Ball Gun">
+
+                        </div>
+
+
+                        <div class="gun-card-content">
+
+                            <div class="gun-rating">
+                                ★★★★★
+                                <span>New</span>
+                            </div>
+
+                            <h3>
+                                Plastic Toy Gun Electric AK47 Gel Ball Gun
+                            </h3>
+
+                            <p>
+                                Full automatic gel ball blaster designed
+                                for exciting outdoor target games.
+                            </p>
+
+                            <div class="gun-price">
+
+                                <strong>₹2,048</strong>
+
+                                <del>₹3,599</del>
+
+                            </div>
+
+                            <button
+                                type="button"
+                                class="gun-add-btn">
+
+                                🛒 Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ================= CARD 3 ================= -->
+
+                    <div class="gun-card">
+
+                        <div class="gun-image-box">
+
+                            <span class="gun-discount">
+                                -85% OFF
+                            </span>
+
+                            <button
+                                type="button"
+                                class="gun-heart">
+
+                                ♡
+
+                            </button>
+
+                            <img
+                                src="./assets/images/gun/img3.webp"
+                                alt="Foam Dart Blaster">
+
+                        </div>
+
+
+                        <div class="gun-card-content">
+
+                            <div class="gun-rating">
+                                ★★★★★
+                                <span>New</span>
+                            </div>
+
+                            <h3>
+                                Attacker Foam Dart Blaster
+                            </h3>
+
+                            <p>
+                                Automatic 6-dart rotating barrel toy gun
+                                with colorful foam darts for rapid-fire fun.
+                            </p>
+
+                            <div class="gun-price">
+
+                                <strong>₹299</strong>
+
+                                <del>₹1,999</del>
+
+                            </div>
+
+                            <button
+                                type="button"
+                                class="gun-add-btn">
+
+                                🛒 Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ================= CARD 4 ================= -->
+
+                    <div class="gun-card">
+
+                        <div class="gun-image-box">
+
+                            <span class="gun-discount">
+                                -65% OFF
+                            </span>
+
+                            <button
+                                type="button"
+                                class="gun-heart">
+
+                                ♡
+
+                            </button>
+
+                            <img
+                                src="./assets/images/gun/img4.webp"
+                                alt="Kidozy Easy Shoot Soft Bullet Gun">
+
+                        </div>
+
+
+                        <div class="gun-card-content">
+
+                            <div class="gun-rating">
+                                ★★★★★
+                                <span>New</span>
+                            </div>
+
+                            <h3>
+                                Kidozy Easy-Shoot Soft Bullet Gun
+                            </h3>
+
+                            <p>
+                                Easy-shoot soft bullet blaster designed
+                                for fun and safe indoor or outdoor play.
+                            </p>
+
+                            <div class="gun-price">
+
+                                <strong>₹349</strong>
+
+                                <del>₹999</del>
+
+                            </div>
+
+                            <button
+                                type="button"
+                                class="gun-add-btn">
+
+                                🛒 Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     SLIDE 2
+                ================================================== -->
+
+                <div class="gun-page">
+
+
+                    <!-- ================= CARD 5 ================= -->
+
+                    <div class="gun-card">
+
+                        <div class="gun-image-box">
+
+                            <span class="gun-discount">
+                                -68% OFF
+                            </span>
+
+                            <button
+                                type="button"
+                                class="gun-heart">
+
+                                ♡
+
+                            </button>
+
+                            <img
+                                src="./assets/images/gun/img5.webp"
+                                alt="Fireworks Bubble Maker Machine">
+
+                        </div>
+
+
+                        <div class="gun-card-content">
+
+                            <div class="gun-rating">
+                                ★★★★★
+                                <span>New</span>
+                            </div>
+
+                            <h3>
+                                Fireworks Bubble Maker Machine
+                            </h3>
+
+                            <p>
+                                Colorful bubble maker with lights and
+                                music for exciting playtime adventures.
+                            </p>
+
+                            <div class="gun-price">
+
+                                <strong>₹648</strong>
+
+                                <del>₹1,999</del>
+
+                            </div>
+
+                            <button
+                                type="button"
+                                class="gun-add-btn">
+
+                                🛒 Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ================= CARD 6 ================= -->
+
+                    <div class="gun-card">
+
+                        <div class="gun-image-box">
+
+                            <span class="gun-discount">
+                                -60% OFF
+                            </span>
+
+                            <button
+                                type="button"
+                                class="gun-heart">
+
+                                ♡
+
+                            </button>
+
+                            <img
+                                src="./assets/images/gun/img6.webp"
+                                alt="Bubble Liquid Solution Refill">
+
+                        </div>
+
+
+                        <div class="gun-card-content">
+
+                            <div class="gun-rating">
+                                ★★★★★
+                                <span>New</span>
+                            </div>
+
+                            <h3>
+                                Bubble Liquid Solution Refill
+                            </h3>
+
+                            <p>
+                                Colorful bubble solution refill for
+                                bubble guns and bubble machines.
+                            </p>
+
+                            <div class="gun-price">
+
+                                <strong>₹398</strong>
+
+                                <del>₹999</del>
+
+                            </div>
+
+                            <button
+                                type="button"
+                                class="gun-add-btn">
+
+                                🛒 Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ================= CARD 7 ================= -->
+
+                    <div class="gun-card">
+
+                        <div class="gun-image-box">
+
+                            <span class="gun-discount">
+                                -65% OFF
+                            </span>
+
+                            <button
+                                type="button"
+                                class="gun-heart">
+
+                                ♡
+
+                            </button>
+
+                            <img
+                                src="./assets/images/gun/img7.webp"
+                                alt="Musical Smoke Lightning Toy Gun">
+
+                        </div>
+
+
+                        <div class="gun-card-content">
+
+                            <div class="gun-rating">
+                                ★★★★★
+                                <span>New</span>
+                            </div>
+
+                            <h3>
+                                Musical Smoke Lightning Toy Gun
+                            </h3>
+
+                            <p>
+                                Fun musical toy blaster with sound,
+                                moving barrel and exciting light effects.
+                            </p>
+
+                            <div class="gun-price">
+
+                                <strong>₹349</strong>
+
+                                <del>₹999</del>
+
+                            </div>
+
+                            <button
+                                type="button"
+                                class="gun-add-btn">
+
+                                🛒 Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ================= CARD 8 ================= -->
+
+                    <div class="gun-card">
+
+                        <div class="gun-image-box">
+
+                            <span class="gun-discount">
+                                -73% OFF
+                            </span>
+
+                            <button
+                                type="button"
+                                class="gun-heart">
+
+                                ♡
+
+                            </button>
+
+                            <img
+                                src="./assets/images/gun/img8.webp"
+                                alt="Foam Disc Launcher Toy Gun">
+
+                        </div>
+
+
+                        <div class="gun-card-content">
+
+                            <div class="gun-rating">
+                                ★★★★★
+                                <span>New</span>
+                            </div>
+
+                            <h3>
+                                Foam Disc Launcher Toy Gun
+                            </h3>
+
+                            <p>
+                                Colorful foam disc launcher with
+                                stackable discs for exciting target games.
+                            </p>
+
+                            <div class="gun-price">
+
+                                <strong>₹219</strong>
+
+                                <del>₹799</del>
+
+                            </div>
+
+                            <button
+                                type="button"
+                                class="gun-add-btn">
+
+                                🛒 Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- NEXT BUTTON -->
+
+        <button
+            type="button"
+            class="gun-arrow"
+            id="gunNext">
+
+            ❯
+
+        </button>
+
+    </div>
+
+
+    <!-- ================= DOTS ================= -->
+
+    <div class="gun-dots">
+
+        <button
+            type="button"
+            class="gun-dot active"
+            id="gunDot1">
+        </button>
+
+        <button
+            type="button"
+            class="gun-dot"
+            id="gunDot2">
+        </button>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =========================================================
+     BEST DEALS OF THE WEEK
+========================================================= -->
+
+<section class="deals-section">
+
+    <!-- Heading -->
+    <div class="deals-heading">
+        <h2>Best Deals of the Week</h2>
+        <p>Discover premium picks at pocket-friendly prices. Only the best for your little one.</p>
+    </div>
+
+    <!-- View All -->
+    <a href="https://kidoyz.com/products" target="_blank" class="deals-view-all">
+        View All <span>→</span>
+    </a>
+
+
+    <!-- ================= SLIDER ================= -->
+
+    <div class="deals-slider">
+
+        <!-- Previous Button -->
+        <button class="deals-arrow deals-prev" id="dealsPrev">
+            &#10094;
+        </button>
+
+
+        <!-- Slider Window -->
+        <div class="deals-window">
+
+            <div class="deals-track" id="dealsTrack">
+
+
+                <!-- =================================================
+                     SLIDE 1
+                ================================================= -->
+
+                <div class="deals-page">
+
+
+                    <!-- PRODUCT 1 -->
+                    <div class="deals-card">
+
+                        <div class="deals-image-box">
+
+                            <span class="deals-discount">-64% OFF</span>
+
+                            <button class="deals-heart">♡</button>
+
+                            <img
+                                src="https://kstore.blr1.digitaloceanspaces.com/6960/conversions/61S9yfMmLaL._SL1200_-cover.jpg"
+                                alt="Rabbit Cute Musical Piano Toy"
+                            >
+
+                        </div>
+
+                        <div class="deals-card-content">
+
+                            <div class="deals-rating">
+                                ★★★★★ <span>New</span>
+                            </div>
+
+                            <h3>Rabbit Cute Musical Piano Toy</h3>
+
+                            <p>
+                                Colorful musical rabbit piano toy for boys
+                                and girls, perfect for fun and learning.
+                            </p>
+
+                            <div class="deals-price">
+                                ₹729
+                                <del>₹1,999</del>
+                            </div>
+
+                            <button class="deals-add-btn">
+                                🛒 Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT 2 -->
+                    <div class="deals-card">
+
+                        <div class="deals-image-box">
+
+                            <span class="deals-discount">-60% OFF</span>
+
+                            <button class="deals-heart">♡</button>
+
+                            <img
+                                src="https://kstore.blr1.digitaloceanspaces.com/7635/conversions/20915789a-cover.webp"
+                                alt="Peppa Pig Family Character Set"
+                            >
+
+                        </div>
+
+                        <div class="deals-card-content">
+
+                            <div class="deals-rating">
+                                ★★★★★ <span>New</span>
+                            </div>
+
+                            <h3>Peppa Pig Family Character Set</h3>
+
+                            <p>
+                                14 colorful mini action figures with movable
+                                arms and legs for creative role play.
+                            </p>
+
+                            <div class="deals-price">
+                                ₹799
+                                <del>₹1,999</del>
+                            </div>
+
+                            <button class="deals-add-btn">
+                                🛒 Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT 3 -->
+                    <div class="deals-card">
+
+                        <div class="deals-image-box">
+
+                            <span class="deals-discount">-33% OFF</span>
+
+                            <button class="deals-heart">♡</button>
+
+                            <img
+                                src="https://kstore.blr1.digitaloceanspaces.com/7890/conversions/-Nf1JggpMju1sGWfg2m_-cover.jpg"
+                                alt="Mahindra Thar Die Cast Toy Car"
+                            >
+
+                        </div>
+
+                        <div class="deals-card-content">
+
+                            <div class="deals-rating">
+                                ★★★★★ <span>New</span>
+                            </div>
+
+                            <h3>Mahindra Thar Die-Cast Toy Car</h3>
+
+                            <p>
+                                1:32 scale pull-back 4x4 toy car with
+                                openable doors for little explorers.
+                            </p>
+
+                            <div class="deals-price">
+                                ₹999
+                                <del>₹1,499</del>
+                            </div>
+
+                            <button class="deals-add-btn">
+                                🛒 Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT 4 -->
+                    <div class="deals-card">
+
+                        <div class="deals-image-box">
+
+                            <span class="deals-discount">-45% OFF</span>
+
+                            <button class="deals-heart">♡</button>
+
+                            <img
+                                src="https://kstore.blr1.digitaloceanspaces.com/5436/conversions/31LhFO4UtUL-cover.jpg"
+                                alt="Electric Musical Skating Doll"
+                            >
+
+                        </div>
+
+                        <div class="deals-card-content">
+
+                            <div class="deals-rating">
+                                ★★★★★ <span>New</span>
+                            </div>
+
+                            <h3>Electric Musical Skating Doll</h3>
+
+                            <p>
+                                Fun skating doll with lights and music
+                                designed for playful entertainment.
+                            </p>
+
+                            <div class="deals-price">
+                                ₹1,098
+                                <del>₹1,999</del>
+                            </div>
+
+                            <button class="deals-add-btn">
+                                🛒 Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     SLIDE 2
+                ================================================= -->
+
+                <div class="deals-page">
+
+
+                    <!-- PRODUCT 5 -->
+                    <div class="deals-card">
+
+                        <div class="deals-image-box">
+
+                            <span class="deals-discount">-51% OFF</span>
+
+                            <button class="deals-heart">♡</button>
+
+                            <img
+                                src="https://kstore.blr1.digitaloceanspaces.com/3292/conversions/71iQXmxhYPL._SL1500_-cover.jpg"
+                                alt="Interactive Intelligence Educational Book"
+                            >
+
+                        </div>
+
+                        <div class="deals-card-content">
+
+                            <div class="deals-rating">
+                                ★★★★★ <span>New</span>
+                            </div>
+
+                            <h3>Interactive Intelligence Book</h3>
+
+                            <p>
+                                Musical English educational book for learning
+                                ABC, numbers and phonetic sounds.
+                            </p>
+
+                            <div class="deals-price">
+                                ₹493
+                                <del>₹999</del>
+                            </div>
+
+                            <button class="deals-add-btn">
+                                🛒 Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT 6 -->
+                    <div class="deals-card">
+
+                        <div class="deals-image-box">
+
+                            <span class="deals-discount">-25% OFF</span>
+
+                            <button class="deals-heart">♡</button>
+
+                            <img
+                                src="https://kstore.blr1.digitaloceanspaces.com/7949/conversions/download-1200w-cover.jpg"
+                                alt="Maserati MC20 Remote Control Car"
+                            >
+
+                        </div>
+
+                        <div class="deals-card-content">
+
+                            <div class="deals-rating">
+                                ★★★★★ <span>New</span>
+                            </div>
+
+                            <h3>Maserati MC20 Remote Control Car</h3>
+
+                            <p>
+                                High-speed 1:12 scale remote control car
+                                designed for exciting racing adventures.
+                            </p>
+
+                            <div class="deals-price">
+                                ₹3,750
+                                <del>₹5,000</del>
+                            </div>
+
+                            <button class="deals-add-btn">
+                                🛒 Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT 7 -->
+                    <div class="deals-card">
+
+                        <div class="deals-image-box">
+
+                            <span class="deals-discount">-45% OFF</span>
+
+                            <button class="deals-heart">♡</button>
+
+                            <img
+                                src="https://kstore.blr1.digitaloceanspaces.com/7327/conversions/-OycqvTlCZTg1Jmm2UqG-cover.jpg"
+                                alt="12 PCS Blister Helicopter"
+                            >
+
+                        </div>
+
+                        <div class="deals-card-content">
+
+                            <div class="deals-rating">
+                                ★★★★★ <span>New</span>
+                            </div>
+
+                            <h3>12 PCS Blister Helicopter</h3>
+
+                            <p>
+                                Colorful helicopter toys that bring
+                                imagination and adventure to playtime.
+                            </p>
+
+                            <div class="deals-price">
+                                ₹1,099
+                                <del>₹1,999</del>
+                            </div>
+
+                            <button class="deals-add-btn">
+                                🛒 Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT 8 -->
+                    <div class="deals-card">
+
+                        <div class="deals-image-box">
+
+                            <span class="deals-discount">-65% OFF</span>
+
+                            <button class="deals-heart">♡</button>
+
+                            <img
+                                src="https://kstore.blr1.digitaloceanspaces.com/7751/conversions/81jVgXuj%2BCL._SL1500_-cover.jpg"
+                                alt="Educational Dot Magpad Drawing Board"
+                            >
+
+                        </div>
+
+                        <div class="deals-card-content">
+
+                            <div class="deals-rating">
+                                ★★★★★ <span>New</span>
+                            </div>
+
+                            <h3>Educational Dot Magpad Drawing Board</h3>
+
+                            <p>
+                                Montessori magnetic drawing board with
+                                double-sided activity cards and stylus.
+                            </p>
+
+                            <div class="deals-price">
+                                ₹349
+                                <del>₹999</del>
+                            </div>
+
+                            <button class="deals-add-btn">
+                                🛒 Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Next Button -->
+        <button class="deals-arrow deals-next" id="dealsNext">
+            &#10095;
+        </button>
+
+    </div>
+
+
+    <!-- Dots -->
+    <div class="deals-dots">
+
+        <span class="deals-dot active" id="dealsDot1"></span>
+
+        <span class="deals-dot" id="dealsDot2"></span>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= NEW ARRIVALS ================= -->
+
+<section class="toy-category-section new-arrivals-section">
+
+    <!-- Heading -->
+    <div class="toy-section-header">
+
+        <div class="toy-heading-box">
+            <h2>New Arrivals Have Landed</h2>
+        </div>
+
+        <p>
+            The newest, trendiest, and most playful products are here.
+            Don’t miss out!
+        </p>
+
+        <a href="https://kidoyz.com/products" class="toy-view-all">
+            View All →
+        </a>
+
+    </div>
+
+
+    <!-- Slider -->
+    <div class="toy-slider-wrapper">
+
+        <!-- Previous -->
+        <button class="toy-slider-arrow toy-prev" id="newPrev">
+            &#10094;
+        </button>
+
+
+        <!-- Window -->
+        <div class="toy-slider-window">
+
+            <div class="toy-slider-track" id="newArrivalsTrack">
+
+
+                <!-- ================= PAGE 1 ================= -->
+
+                <div class="toy-slider-page">
+
+
+                    <!-- CARD 1 -->
+                    <div class="toy-product-card">
+
+                        <div class="toy-image-box">
+
+                            <span class="toy-discount">-42% OFF</span>
+
+                            <button class="toy-heart">♡</button>
+
+                            <img
+                                src="https://kstore.blr1.digitaloceanspaces.com/8800/conversions/ai-image-1-(19)-cover.jpg"
+                                alt="Princess Magic Bubble Wand">
+
+                        </div>
+
+                        <div class="toy-product-info">
+
+                            <div class="toy-rating">
+                                ★★★★★ <span>New</span>
+                            </div>
+
+                            <h3>
+                                Princess Magic Bubble Wand Automatic Fairy Bubble Machine with Light and Music
+                            </h3>
+
+                            <p>
+                                Create magical bubbles with lights and music
+                                for exciting outdoor play.
+                            </p>
+
+                            <div class="toy-price">
+                                ₹699
+                                <del>₹1,199</del>
+                            </div>
+
+                            <button class="toy-add-btn">
+                                🛒 Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CARD 2 -->
+                    <div class="toy-product-card">
+
+                        <div class="toy-image-box">
+
+                            <span class="toy-discount">-33% OFF</span>
+
+                            <button class="toy-heart">♡</button>
+
+                            <img
+                                src="https://kstore.blr1.digitaloceanspaces.com/8799/conversions/-P1tGXeCMoaYFcUPeD8v-cover.jpg"
+                                alt="Colorful Shaking Head Sunflower Bubble Wand">
+
+                        </div>
+
+                        <div class="toy-product-info">
+
+                            <div class="toy-rating">
+                                ★★★★★ <span>New</span>
+                            </div>
+
+                            <h3>
+                                Model 9940 Colorful Shaking Head Sunflower Automatic Bubble Wand
+                            </h3>
+
+                            <p>
+                                A colorful sunflower bubble toy that
+                                brings fun and excitement to playtime.
+                            </p>
+
+                            <div class="toy-price">
+                                ₹799
+                                <del>₹1,199</del>
+                            </div>
+
+                            <button class="toy-add-btn">
+                                🛒 Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CARD 3 -->
+                    <div class="toy-product-card">
+
+                        <div class="toy-image-box">
+
+                            <span class="toy-discount">-38% OFF</span>
+
+                            <button class="toy-heart">♡</button>
+
+                            <img
+                                src="https://kstore.blr1.digitaloceanspaces.com/8798/conversions/ai-image-1-(18)-cover.jpg"
+                                alt="XJPP SUV Toy">
+
+                        </div>
+
+                        <div class="toy-product-info">
+
+                            <div class="toy-rating">
+                                ★★★★★ <span>New</span>
+                            </div>
+
+                            <h3>
+                                XJPP-1A Friction Powered Model Vehicle SUV Set with Smoke, Light and Music
+                            </h3>
+
+                            <p>
+                                Enjoy realistic vehicle play with smoke,
+                                lights and exciting music effects.
+                            </p>
+
+                            <div class="toy-price">
+                                ₹799
+                                <del>₹1,299</del>
+                            </div>
+
+                            <button class="toy-add-btn">
+                                🛒 Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CARD 4 -->
+                    <div class="toy-product-card">
+
+                        <div class="toy-image-box">
+
+                            <span class="toy-discount">-38% OFF</span>
+
+                            <button class="toy-heart">♡</button>
+
+                            <img
+                                src="https://kstore.blr1.digitaloceanspaces.com/8797/conversions/-NGPD4_aBuIuhhS8jmV8-cover.jpg"
+                                alt="Justice Hero Action Figure">
+
+                        </div>
+
+                        <div class="toy-product-info">
+
+                            <div class="toy-rating">
+                                ★★★★★ <span>New</span>
+                            </div>
+
+                            <h3>
+                                Justice Hero Unique Series Super Fighter Action Figure Toy Set
+                            </h3>
+
+                            <p>
+                                Exciting superhero action figures for
+                                imaginative role-play adventures.
+                            </p>
+
+                            <div class="toy-price">
+                                ₹499
+                                <del>₹799</del>
+                            </div>
+
+                            <button class="toy-add-btn">
+                                🛒 Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================= PAGE 2 ================= -->
+
+                <div class="toy-slider-page">
+
+
+                    <!-- CARD 5 -->
+                    <div class="toy-product-card">
+
+                        <div class="toy-image-box">
+
+                            <span class="toy-discount">-25% OFF</span>
+
+                            <button class="toy-heart">♡</button>
+
+                            <img
+                                src="https://kstore.blr1.digitaloceanspaces.com/8796/conversions/-NGR6CmbHvll22WShFAT-cover.jpg"
+                                alt="Avengers Super Power Hero">
+
+                        </div>
+
+                        <div class="toy-product-info">
+
+                            <div class="toy-rating">
+                                ★★★★★ <span>New</span>
+                            </div>
+
+                            <h3>
+                                Avengers 4 Age of Ultron Super Power Hero Action Figure Toy Set
+                            </h3>
+
+                            <p>
+                                Bring superhero adventures to life with
+                                this exciting action figure set.
+                            </p>
+
+                            <div class="toy-price">
+                                ₹599
+                                <del>₹799</del>
+                            </div>
+
+                            <button class="toy-add-btn">
+                                🛒 Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CARD 6 -->
+                    <div class="toy-product-card">
+
+                        <div class="toy-image-box">
+
+                            <span class="toy-discount">-25% OFF</span>
+
+                            <button class="toy-heart">♡</button>
+
+                            <img
+                                src="https://kstore.blr1.digitaloceanspaces.com/8795/conversions/-NGWltE_ItaypnR_yhkX-cover.jpg"
+                                alt="Avengers Endgame Action Figures">
+
+                        </div>
+
+                        <div class="toy-product-info">
+
+                            <div class="toy-rating">
+                                ★★★★★ <span>New</span>
+                            </div>
+
+                            <h3>
+                                Avengers 4 Endgame Super Hero Model Action Figure Toy Set
+                            </h3>
+
+                            <p>
+                                A fun superhero collection designed for
+                                creative and imaginative play.
+                            </p>
+
+                            <div class="toy-price">
+                                ₹599
+                                <del>₹799</del>
+                            </div>
+
+                            <button class="toy-add-btn">
+                                🛒 Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CARD 7 -->
+                    <div class="toy-product-card">
+
+                        <div class="toy-image-box">
+
+                            <span class="toy-discount">-50% OFF</span>
+
+                            <button class="toy-heart">♡</button>
+
+                            <img
+                                src="https://kstore.blr1.digitaloceanspaces.com/8794/conversions/ai-image-1-(17)-cover.jpg"
+                                alt="GameBit M22 Wireless Controller">
+
+                        </div>
+
+                        <div class="toy-product-info">
+
+                            <div class="toy-rating">
+                                ★★★★★ <span>New</span>
+                            </div>
+
+                            <h3>
+                                GameBit M22 Special Edition 2.4G Wireless Game Controller
+                            </h3>
+
+                            <p>
+                                Enjoy exciting gaming adventures with
+                                this easy-to-use wireless controller.
+                            </p>
+
+                            <div class="toy-price">
+                                ₹3,499
+                                <del>₹6,999</del>
+                            </div>
+
+                            <button class="toy-add-btn">
+                                🛒 Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CARD 8 -->
+                    <div class="toy-product-card">
+
+                        <div class="toy-image-box">
+
+                            <span class="toy-discount">-66% OFF</span>
+
+                            <button class="toy-heart">♡</button>
+
+                            <img
+                                src="https://kstore.blr1.digitaloceanspaces.com/8790/conversions/71e-mE1WMKL._SL1100_-cover.jpg"
+                                alt="Waterproof Playing Cards">
+
+                        </div>
+
+                        <div class="toy-product-info">
+
+                            <div class="toy-rating">
+                                ★★★★★ <span>New</span>
+                            </div>
+
+                            <h3>
+                                Silver Deck of Waterproof Cards Flexible PVC Playing Cards
+                            </h3>
+
+                            <p>
+                                A fun and durable card game set perfect
+                                for parties and family game time.
+                            </p>
+
+                            <div class="toy-price">
+                                ₹169
+                                <del>₹499</del>
+                            </div>
+
+                            <button class="toy-add-btn">
+                                🛒 Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Next -->
+        <button class="toy-slider-arrow toy-next" id="newNext">
+            &#10095;
+        </button>
+
+    </div>
+
+
+    <!-- Dots -->
+    <div class="toy-slider-dots">
+
+        <button class="new-dot active" id="newDot1"></button>
+
+        <button class="new-dot" id="newDot2"></button>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- ================= RETURN GIFTS SECTION ================= -->
+
+<section class="return-gifts-section">
+
+    <!-- Heading -->
+    <div class="return-gifts-heading">
+
+        <div class="return-gifts-title-box">
+            <h2>Return Gifts for Every Occasion</h2>
+        </div>
+
+        <p>
+            From birthdays to playdates, find the perfect thank-you
+            surprise for your guests.
+        </p>
+
+        <a href="http://kidoyz.com/return-gifts"
+           target="_blank"
+           class="return-gifts-view-btn">
+            View All →
+        </a>
+
+    </div>
+
+
+    <!-- Slider -->
+    <div class="return-gifts-slider">
+
+        <!-- Previous -->
+        <button class="return-gifts-arrow return-gifts-prev">
+            ❮
+        </button>
+
+
+        <!-- Window -->
+        <div class="return-gifts-window">
+
+            <div class="return-gifts-track">
+
+
+                <!-- ================= PAGE 1 ================= -->
+
+                <div class="return-gifts-page">
+
+
+                    <!-- CARD 1 -->
+                    <div class="return-gifts-card">
+
+                        <div class="return-gifts-image-box">
+
+                            <span class="return-gifts-discount">
+                                -78% OFF
+                            </span>
+
+                            <button class="return-gifts-heart">
+                                ♡
+                            </button>
+
+                            <img
+                                src="https://kstore.blr1.digitaloceanspaces.com/7767/conversions/51CR0uEOaJL-cover.jpg"
+                                alt="Minecraft Character Toothbrush"
+                            >
+
+                        </div>
+
+
+                        <div class="return-gifts-info">
+
+                            <div class="return-gifts-rating">
+                                ★★★★★ <span>New</span>
+                            </div>
+
+                            <h3>
+                                Minecraft Character Toothbrush
+                            </h3>
+
+                            <p>
+                                Expandable pixel style travel toothbrush
+                                designed specially for kids.
+                            </p>
+
+                            <div class="return-gifts-price">
+                                ₹219
+                                <del>₹999</del>
+                            </div>
+
+                            <button class="return-gifts-add">
+                                🛒 Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- CARD 2 -->
+                    <div class="return-gifts-card">
+
+                        <div class="return-gifts-image-box">
+
+                            <span class="return-gifts-discount">
+                                -72% OFF
+                            </span>
+
+                            <button class="return-gifts-heart">
+                                ♡
+                            </button>
+
+                            <img
+                                src="https://kstore.blr1.digitaloceanspaces.com/8481/conversions/61XtAKqsFVL._SL1000_-cover.jpg"
+                                alt="Mini Hammer Shaker Toy Keychain"
+                            >
+
+                        </div>
+
+
+                        <div class="return-gifts-info">
+
+                            <div class="return-gifts-rating">
+                                ★★★★★ <span>New</span>
+                            </div>
+
+                            <h3>
+                                Mini Hammer Shaker Toy Keychain
+                            </h3>
+
+                            <p>
+                                Fun mini keychain toy perfect for kids,
+                                bags, bikes and return gifts.
+                            </p>
+
+                            <div class="return-gifts-price">
+                                ₹279
+                                <del>₹999</del>
+                            </div>
+
+                            <button class="return-gifts-add">
+                                🛒 Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- CARD 3 -->
+                    <div class="return-gifts-card">
+
+                        <div class="return-gifts-image-box">
+
+                            <span class="return-gifts-discount">
+                                -45% OFF
+                            </span>
+
+                            <button class="return-gifts-heart">
+                                ♡
+                            </button>
+
+                            <img
+                                src="https://kstore.blr1.digitaloceanspaces.com/1037/conversions/62fb02-cover.webp"
+                                alt="Kids Stainless Steel Lunch Box"
+                            >
+
+                        </div>
+
+
+                        <div class="return-gifts-info">
+
+                            <div class="return-gifts-rating">
+                                ★★★★★ <span>New</span>
+                            </div>
+
+                            <h3>
+                                Kids Stainless Steel Lunch Box
+                            </h3>
+
+                            <p>
+                                Stylish and durable lunch box with spoon
+                                and scissor for kids.
+                            </p>
+
+                            <div class="return-gifts-price">
+                                ₹548
+                                <del>₹999</del>
+                            </div>
+
+                            <button class="return-gifts-add">
+                                🛒 Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- CARD 4 -->
+                    <div class="return-gifts-card">
+
+                        <div class="return-gifts-image-box">
+
+                            <span class="return-gifts-discount">
+                                -65% OFF
+                            </span>
+
+                            <button class="return-gifts-heart">
+                                ♡
+                            </button>
+
+                            <img
+                                src="https://kstore.blr1.digitaloceanspaces.com/7763/conversions/718dANkRGBL._SL1500_-cover.jpg"
+                                alt="Magnetic Drawing Board"
+                            >
+
+                        </div>
+
+
+                        <div class="return-gifts-info">
+
+                            <div class="return-gifts-rating">
+                                ★★★★★ <span>New</span>
+                            </div>
+
+                            <h3>
+                                Magnetic Slate Drawing Board
+                            </h3>
+
+                            <p>
+                                Creative magnetic drawing board for
+                                learning, doodling and fun.
+                            </p>
+
+                            <div class="return-gifts-price">
+                                ₹699
+                                <del>₹1,999</del>
+                            </div>
+
+                            <button class="return-gifts-add">
+                                🛒 Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================= PAGE 2 ================= -->
+
+                <div class="return-gifts-page">
+
+
+                    <!-- CARD 5 -->
+                    <div class="return-gifts-card">
+
+                        <div class="return-gifts-image-box">
+
+                            <span class="return-gifts-discount">
+                                -56% OFF
+                            </span>
+
+                            <button class="return-gifts-heart">
+                                ♡
+                            </button>
+
+                            <img
+                                src="https://kstore.blr1.digitaloceanspaces.com/5286/conversions/71YLmah3rUL._SL1500_-cover.jpg"
+                                alt="Push Pop Interactive Game"
+                            >
+
+                        </div>
+
+
+                        <div class="return-gifts-info">
+
+                            <div class="return-gifts-rating">
+                                ★★★★★ <span>New</span>
+                            </div>
+
+                            <h3>
+                                Mini Fast Push Pop Game
+                            </h3>
+
+                            <p>
+                                Interactive light-up bubble pop game
+                                with fun sounds and music.
+                            </p>
+
+                            <div class="return-gifts-price">
+                                ₹348
+                                <del>₹799</del>
+                            </div>
+
+                            <button class="return-gifts-add">
+                                🛒 Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- CARD 6 -->
+                    <div class="return-gifts-card">
+
+                        <div class="return-gifts-image-box">
+
+                            <span class="return-gifts-discount">
+                                -53% OFF
+                            </span>
+
+                            <button class="return-gifts-heart">
+                                ♡
+                            </button>
+
+                            <img
+                                src="https://kstore.blr1.digitaloceanspaces.com/7934/conversions/Doll-600x481-1200w-cover.jpg"
+                                alt="Fashion Boutique Doll Set"
+                            >
+
+                        </div>
+
+
+                        <div class="return-gifts-info">
+
+                            <div class="return-gifts-rating">
+                                ★★★★★ <span>New</span>
+                            </div>
+
+                            <h3>
+                                Fashion Boutique Doll Set
+                            </h3>
+
+                            <p>
+                                Cute pack of three fashionable dolls
+                                perfect for little girls.
+                            </p>
+
+                            <div class="return-gifts-price">
+                                ₹378
+                                <del>₹799</del>
+                            </div>
+
+                            <button class="return-gifts-add">
+                                🛒 Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- CARD 7 -->
+                    <div class="return-gifts-card">
+
+                        <div class="return-gifts-image-box">
+
+                            <span class="return-gifts-discount">
+                                -69% OFF
+                            </span>
+
+                            <button class="return-gifts-heart">
+                                ♡
+                            </button>
+
+                            <img
+                                src="https://kstore.blr1.digitaloceanspaces.com/7759/conversions/51uiU1sGfkL._SL1080_-cover.jpg"
+                                alt="Magnetic Drawing Pad"
+                            >
+
+                        </div>
+
+
+                        <div class="return-gifts-info">
+
+                            <div class="return-gifts-rating">
+                                ★★★★★ <span>New</span>
+                            </div>
+
+                            <h3>
+                                Magnetic Drawing Pad
+                            </h3>
+
+                            <p>
+                                Reusable magnetic doodle board with
+                                stylus pen for creative learning.
+                            </p>
+
+                            <div class="return-gifts-price">
+                                ₹219
+                                <del>₹699</del>
+                            </div>
+
+                            <button class="return-gifts-add">
+                                🛒 Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- CARD 8 -->
+                    <div class="return-gifts-card">
+
+                        <div class="return-gifts-image-box">
+
+                            <span class="return-gifts-discount">
+                                -13% OFF
+                            </span>
+
+                            <button class="return-gifts-heart">
+                                ♡
+                            </button>
+
+                            <img
+                                src="https://kstore.blr1.digitaloceanspaces.com/1019/conversions/Snapinsta.app_417257506_1775394972909473_7446715084339536640_n_1080-cover.jpg"
+                                alt="Space Dino Unicorn Lunch Boxes"
+                            >
+
+                        </div>
+
+
+                        <div class="return-gifts-info">
+
+                            <div class="return-gifts-rating">
+                                ★★★★★ <span>New</span>
+                            </div>
+
+                            <h3>
+                                Space Dino Unicorn Lunch Boxes
+                            </h3>
+
+                            <p>
+                                Colorful and playful lunch boxes
+                                designed for kids.
+                            </p>
+
+                            <div class="return-gifts-price">
+                                ₹348
+                                <del>₹399</del>
+                            </div>
+
+                            <button class="return-gifts-add">
+                                🛒 Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Next -->
+        <button class="return-gifts-arrow return-gifts-next">
+            ❯
+        </button>
+
+    </div>
+
+
+    <!-- Dots -->
+    <div class="return-gifts-dots">
+        <span class="return-dot active"></span>
+        <span class="return-dot"></span>
+    </div>
+
+</section>
+
+
+
+
+<!-- ================= WHY CHOOSE US SECTION ================= -->
+
+<section class="why-kidoyz-section">
+
+    <!-- Heading -->
+    <div class="why-kidoyz-heading">
+
+        <div class="why-kidoyz-title-box">
+            <h2>Why 50,000+ Parents Choose Toy Treasure</h2>
+        </div>
+
+        <p>
+            We're not just a toy store — we're your child's growth partner
+        </p>
+
+    </div>
+
+
+    <!-- Feature Cards -->
+    <div class="why-kidoyz-grid">
+
+
+        <!-- CARD 1 -->
+        <div class="why-kidoyz-card">
+
+            <div class="why-kidoyz-icon">
+                ✓
+            </div>
+
+            <div class="why-kidoyz-content">
+
+                <h3>100% Quality Checked</h3>
+
+                <p>
+                    Every toy is checked by our team before it reaches
+                    your child. No compromises on safety.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 2 -->
+        <div class="why-kidoyz-card">
+
+            <div class="why-kidoyz-icon">
+                🚚
+            </div>
+
+            <div class="why-kidoyz-content">
+
+                <h3>Fast Pan-India Delivery</h3>
+
+                <p>
+                    Free shipping on all orders. Delivered to
+                    19,000+ pincodes across India within
+                    3–5 business days.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 3 -->
+        <div class="why-kidoyz-card">
+
+            <div class="why-kidoyz-icon">
+                ₹
+            </div>
+
+            <div class="why-kidoyz-content">
+
+                <h3>Premium but Affordable</h3>
+
+                <p>
+                    Toys starting at just ₹99. Quality you'd expect
+                    from top brands at prices Indian families love.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 4 -->
+        <div class="why-kidoyz-card">
+
+            <div class="why-kidoyz-icon">
+                🧠
+            </div>
+
+            <div class="why-kidoyz-content">
+
+                <h3>Learning Through Play</h3>
+
+                <p>
+                    Every toy is chosen by child development experts
+                    to support cognitive, social, and motor skill growth.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 5 -->
+        <div class="why-kidoyz-card">
+
+            <div class="why-kidoyz-icon">
+                ↩
+            </div>
+
+            <div class="why-kidoyz-content">
+
+                <h3>Hassle-Free Returns</h3>
+
+                <p>
+                    7-day no-questions-asked returns. If your child
+                    doesn't love it, we'll take it back — no fuss.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 6 -->
+        <div class="why-kidoyz-card">
+
+            <div class="why-kidoyz-icon">
+                ☎
+            </div>
+
+            <div class="why-kidoyz-content">
+
+                <h3>24/7 Customer Support</h3>
+
+                <p>
+                    Real humans available via call, WhatsApp & chat.
+                    We're here whenever you need us.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 7 -->
+        <div class="why-kidoyz-card">
+
+            <div class="why-kidoyz-icon">
+                ★
+            </div>
+
+            <div class="why-kidoyz-content">
+
+                <h3>4.8★ Rated by Parents</h3>
+
+                <p>
+                    Over 12,000 verified reviews from real parents
+                    across India. Consistently rated India's most
+                    trusted toy store.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 8 -->
+        <div class="why-kidoyz-card">
+
+            <div class="why-kidoyz-icon">
+                🎁
+            </div>
+
+            <div class="why-kidoyz-content">
+
+                <h3>Gift-Ready Packaging</h3>
+
+                <p>
+                    Free gift wrapping on every order. Add a
+                    personalised message — perfect for birthdays
+                    & celebrations.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+<!-- ================= WHAT PARENTS ARE SAYING ================= -->
+
+<section class="parent-reviews-section">
+
+    <div class="parent-reviews-heading">
+        <h2>What Parents Are Saying</h2>
+        <p>12,000+ verified reviews from real families across India</p>
+    </div>
+
+    <div class="reviews-top">
+
+        <!-- Rating Summary -->
+        <div class="rating-summary">
+
+            <div class="rating-number">4.8</div>
+
+            <div class="rating-stars">★★★★★</div>
+
+            <div class="rating-count">12,000+ reviews</div>
+
+            <div class="rating-bars">
+
+                <div class="rating-row">
+                    <span>5 ★</span>
+                    <div class="rating-bar">
+                        <div class="rating-fill" style="width:72%;"></div>
+                    </div>
+                    <span>72%</span>
+                </div>
+
+                <div class="rating-row">
+                    <span>4 ★</span>
+                    <div class="rating-bar">
+                        <div class="rating-fill" style="width:18%;"></div>
+                    </div>
+                    <span>18%</span>
+                </div>
+
+                <div class="rating-row">
+                    <span>3 ★</span>
+                    <div class="rating-bar">
+                        <div class="rating-fill" style="width:6%;"></div>
+                    </div>
+                    <span>6%</span>
+                </div>
+
+                <div class="rating-row">
+                    <span>2 ★</span>
+                    <div class="rating-bar">
+                        <div class="rating-fill" style="width:2%;"></div>
+                    </div>
+                    <span>2%</span>
+                </div>
+
+                <div class="rating-row">
+                    <span>1 ★</span>
+                    <div class="rating-bar">
+                        <div class="rating-fill" style="width:2%;"></div>
+                    </div>
+                    <span>2%</span>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Reviews -->
+        <div class="reviews-list">
+
+            <div class="review-card">
+
+                <div class="review-user">
+                    <div class="review-avatar">P</div>
+
+                    <div>
+                        <h3>Priya Sharma</h3>
+                        <p>Mumbai · 2 weeks ago</p>
+                    </div>
+                </div>
+
+                <div class="review-stars">★★★★★ <span>Verified</span></div>
+
+                <p class="review-text">
+                    “My 5-year-old absolutely loves the building blocks we ordered.
+                    They arrived in perfect condition, well-packed and delivered in
+                    2 days. The quality is amazing for the price!”
+                </p>
+
+                <p class="purchased">
+                    Purchased: <strong>Blocks & Construction Set 100pcs</strong>
+                </p>
+
+            </div>
+
+
+            <div class="review-card">
+
+                <div class="review-user">
+                    <div class="review-avatar">R</div>
+
+                    <div>
+                        <h3>Rahul Verma</h3>
+                        <p>Delhi · 1 month ago</p>
+                    </div>
+                </div>
+
+                <div class="review-stars">★★★★★ <span>Verified</span></div>
+
+                <p class="review-text">
+                    “Ordered the RC car as a birthday gift. The packaging was
+                    gift-ready and my nephew couldn't stop playing! Great value,
+                    will definitely order again from Kidoyz.”
+                </p>
+
+                <p class="purchased">
+                    Purchased: <strong>1:16 RC Racing Car</strong>
+                </p>
+
+            </div>
+
+
+            <div class="review-card">
+
+                <div class="review-user">
+                    <div class="review-avatar">A</div>
+
+                    <div>
+                        <h3>Anjali Mehta</h3>
+                        <p>Bangalore · 3 weeks ago</p>
+                    </div>
+                </div>
+
+                <div class="review-stars">★★★★★ <span>Verified</span></div>
+
+                <p class="review-text">
+                    “The art & craft kit is brilliant! My daughter has been creating
+                    non-stop. Materials are high quality and non-toxic. Customer
+                    support was also super helpful when I had a query.”
+                </p>
+
+                <p class="purchased">
+                    Purchased: <strong>80-Piece Art & Craft Kit</strong>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <a href="https://www.kidoyz.com/products" class="reviews-button">
+        All Reviews →
+    </a>
+
+</section>
+
+
+
+
+
+
+
+<!-- ================= DIRECT FROM TOY TREASURE ================= -->
+
+<section class="direct-toy-section">
+
+    <!-- Small Label -->
+    <div class="direct-label">
+        Direct-to-Consumer Brand
+    </div>
+
+    <!-- Main Heading -->
+    <h2>Buy Direct from <span>Toy Treasure</span></h2>
+
+    <p class="direct-intro">
+        We design, source and ship our toys ourselves — so you get better
+        prices, genuine quality, and support straight from the people who
+        make it happen.
+    </p>
+
+
+    <!-- Features -->
+
+    <div class="direct-features">
+
+        <!-- Feature 1 -->
+        <div class="direct-card">
+
+            <div class="direct-icon">
+                💰
+            </div>
+
+            <h3>Best Prices, <span>Always</span></h3>
+
+            <p>
+                No middleman markups — buy straight from us and pay less.
+            </p>
+
+        </div>
+
+
+        <!-- Feature 2 -->
+        <div class="direct-card">
+
+            <div class="direct-icon">
+                🛡️
+            </div>
+
+            <h3>100% <span>Authentic</span></h3>
+
+            <p>
+                Every toy ships direct from the brand — genuine & quality-checked.
+            </p>
+
+        </div>
+
+
+        <!-- Feature 3 -->
+        <div class="direct-card">
+
+            <div class="direct-icon">
+                🎧
+            </div>
+
+            <h3>Direct <span>Support</span></h3>
+
+            <p>
+                Talk to the team that sources, checks & ships your toys.
+            </p>
+
+        </div>
+
+
+        <!-- Feature 4 -->
+        <div class="direct-card">
+
+            <div class="direct-icon">
+                ⭐
+            </div>
+
+            <h3>First <span>Access</span></h3>
+
+            <p>
+                New launches & exclusive deals drop here before anywhere else.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- ================= SUBSCRIBE / GET DEALS ================= -->
+
+<section class="subscribe-section">
+
+    <div class="subscribe-content">
+
+        <!-- Small Label -->
+        <div class="subscribe-label">
+            Join 50,000+ smart parents
+        </div>
+
+        <!-- Heading -->
+        <h2>Get Deals <span>Before Everyone Else</span></h2>
+
+        <p class="subscribe-intro">
+            Subscribe to weekly toy deals, new arrivals, parenting tips,
+            and exclusive discount codes — straight to your inbox.
+        </p>
+
+
+        <!-- Benefits -->
+
+        <div class="subscribe-benefits">
+
+            <div class="subscribe-benefit">
+                <div class="benefit-icon">🎁</div>
+                <div>
+                    <strong>10% OFF</strong>
+                    <p>your first order when you subscribe</p>
+                </div>
+            </div>
+
+            <div class="subscribe-benefit">
+                <div class="benefit-icon">⚡</div>
+                <div>
+                    <strong>Early Access</strong>
+                    <p>to flash sales & festival offers</p>
+                </div>
+            </div>
+
+            <div class="subscribe-benefit">
+                <div class="benefit-icon">🎂</div>
+                <div>
+                    <strong>Free Birthday Guide</strong>
+                    <p>every month</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Subscribe Form -->
+
+        <form class="subscribe-form">
+
+            <input
+                type="email"
+                placeholder="Your email address"
+                required
+            >
+
+            <button type="submit">
+                Subscribe →
+            </button>
+
+        </form>
+
+
+        <!-- WhatsApp -->
+
+        <a
+            href="https://wa.me/918383960500"
+            class="whatsapp-deal"
+            target="_blank"
+        >
+            💬 Get deals on WhatsApp instead
+        </a>
+
+
+        <!-- Disclaimer -->
+
+        <p class="subscribe-note">
+            No spam, ever. Unsubscribe anytime.
+            By subscribing you agree to our
+            <a href="#">Privacy Policy.</a>
+        </p>
+
+    </div>
+
+</section>
+
+
+
+
+<section class="apps-section">
+
+    <div class="apps-heading">
+        <h2>Also available on your favourite apps</h2>
+        <p>Shop Toy Treasure toys wherever you love to shop</p>
+    </div>
+
+    <div class="apps-list">
+
+        <a href="https://www.amazon.in/stores/Kidoyz/page/9C79F0DE-755E-4829-AC07-ABA10D151F84"
+           class="app-card" target="_blank">
+            <img src="https://www.kidoyz.com/icons/amazon.svg" alt="Amazon">
+            <span>Amazon</span>
+        </a>
+
+        <a href="https://www.flipkart.com/search?q=kidoyz"
+           class="app-card" target="_blank">
+            <img src="https://www.kidoyz.com/icons/flipkart.svg" alt="Flipkart">
+            <span>Flipkart</span>
+        </a>
+
+        <a href="https://www.myntra.com/kidoyz"
+           class="app-card" target="_blank">
+            <img src="https://www.kidoyz.com/icons/myntra.svg" alt="Myntra">
+            <span>Myntra</span>
+        </a>
+
+        <a href="https://www.meesho.com/tirfn"
+           class="app-card" target="_blank">
+            <img src="https://www.kidoyz.com/icons/meesho.svg" alt="Meesho">
+            <span>Meesho</span>
+        </a>
+
+        <a href="https://blinkit.com/s/?q=kidoyz"
+           class="app-card" target="_blank">
+            <img src="https://www.kidoyz.com/icons/blinkit.svg" alt="Blinkit">
+            <span>Blinkit</span>
+        </a>
+
+    </div>
+
+</section>
+
+
+
+
+<section class="final-cta-section">
+
+    <div class="final-cta-content">
+
+        <div class="final-cta-icon">🧸</div>
+
+        <h2>Your Child's Next Favourite Toy<br>Is One Click Away</h2>
+
+        <p class="final-cta-text">
+            Join 50,000+ happy families who trust Toy Treasure
+            for safe, fun, and affordable toys delivered across India.
+        </p>
+
+        <div class="final-cta-buttons">
+            <a href="https://www.kidoyz.com/products"
+               class="cta-shop-btn">
+                🛍️ Shop All Toys
+            </a>
+
+            <a href="#cardsec"
+               class="cta-age-btn">
+                🎈 Browse by Age
+            </a>
+        </div>
+
+        <div class="cta-trust">
+
+            <div class="trust-item">
+                <span>✓</span>
+                <strong>Quality Checked</strong>
+            </div>
+
+            <div class="trust-item">
+                <span>🚚</span>
+                <strong>Free Delivery</strong>
+            </div>
+
+            <div class="trust-item">
+                <span>↩</span>
+                <strong>7-day Returns</strong>
+            </div>
+
+            <div class="trust-item">
+                <span>★</span>
+                <strong>4.8★ Rated</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+<footer class="toy-footer">
+
+    <!-- TOP FOOTER -->
+    <div class="footer-top">
+
+        <!-- BRAND -->
+        <div class="footer-brand">
+
+            <a href="#" class="footer-logo">
+                Toy Treasure
+            </a>
+
+            <p>
+                India's trusted online toy store. 5000+ safe,
+                quality-checked toys for kids aged 0–12.
+                Delivered across India with love.
+            </p>
+
+            <!-- SOCIAL ICONS -->
+            <div class="footer-socials">
+
+                <a href="https://instagram.com/kidoyz"
+                   target="_blank"
+                   aria-label="Instagram">
+                    📷
+                </a>
+
+                <a href="https://facebook.com/kidoyz"
+                   target="_blank"
+                   aria-label="Facebook">
+                    f
+                </a>
+
+                <a href="https://wa.me/918383960500"
+                   target="_blank"
+                   aria-label="WhatsApp">
+                    💬
+                </a>
+
+                <a href="https://youtube.com/@kidoyz"
+                   target="_blank"
+                   aria-label="YouTube">
+                    ▶
+                </a>
+
+                <a href="https://pinterest.com/kidoyz"
+                   target="_blank"
+                   aria-label="Pinterest">
+                    P
+                </a>
+
+            </div>
+
+            <!-- PAYMENT -->
+            <div class="payment-box">
+
+                <h4>We accept <span>(prepaid only)</span></h4>
+
+                <div class="payment-methods">
+                    <span>UPI</span>
+                    <span>VISA</span>
+                    <span>Mastercard</span>
+                    <span>RuPay</span>
+                    <span>Paytm</span>
+                    <span>EMI</span>
+                </div>
+
+                <p class="cod-note">
+                    No Cash on Delivery — all orders are prepaid.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- TOYS BY CATEGORY -->
+        <div class="footer-column">
+
+            <h3>Toys by Category</h3>
+
+            <a href="#">Remote Control Toys</a>
+            <a href="#">Toy Guns</a>
+            <a href="#">Educational Toys</a>
+            <a href="#">Musical Toys</a>
+            <a href="#">Board Games for Kids</a>
+            <a href="#">Action Figures</a>
+            <a href="#">Die Cast Toys</a>
+            <a href="#">Pretend Play Sets</a>
+            <a href="#">Building Blocks</a>
+            <a href="#">Dolls</a>
+            <a href="#">Baby & Toddler Toys</a>
+            <a href="#">Friction Toys</a>
+            <a href="#">Flying Toys</a>
+            <a href="#">Wooden Toys</a>
+            <a href="#">Ride-On Toys</a>
+
+        </div>
+
+
+        <!-- MORE CATEGORIES -->
+        <div class="footer-column">
+
+            <h3>More Categories</h3>
+
+            <a href="#">Outdoor Toys</a>
+            <a href="#">Trains & Railed Vehicles</a>
+            <a href="#">Kids Play Tents</a>
+            <a href="#">Playing Cards</a>
+            <a href="#">Spinning & Battling Tops</a>
+            <a href="#">Piggy Banks</a>
+            <a href="#">Handheld Games</a>
+            <a href="#">Squishy & Sensory Toys</a>
+            <a href="#">Bath & Water Toys</a>
+            <a href="#">STEM Toys</a>
+            <a href="#">Art & Craft Toys</a>
+            <a href="#">School Essentials</a>
+            <a href="#">School Bags</a>
+            <a href="#">Lunch Boxes</a>
+            <a href="#">Sippers & Bottles</a>
+            <a href="#">Stationery</a>
+
+            <a href="#" class="view-all">
+                View All Categories →
+            </a>
+
+        </div>
+
+
+        <!-- SHOP BY AGE -->
+        <div class="footer-column">
+
+            <h3>Shop by Age</h3>
+
+            <a href="#">Baby Toys (0–1 Years)</a>
+            <a href="#">Toddler Toys (1–2 Years)</a>
+            <a href="#">Toys for 2–5 Years</a>
+            <a href="#">Toys for 5–8 Years</a>
+            <a href="#">Toys for 8–12 Years</a>
+
+
+            <h3 class="footer-sub-heading">
+                Collections
+            </h3>
+
+            <a href="#">Best Sellers</a>
+            <a href="#">New Arrivals</a>
+            <a href="#">Trending Toys</a>
+            <a href="#">Return Gifts for Kids</a>
+            <a href="#">Gifts Under ₹499</a>
+            <a href="#">Gifts Under ₹999</a>
+            <a href="#">Birthday Gifts</a>
+            <a href="#">Diwali Gifts for Kids</a>
+            <a href="#">Christmas Gifts</a>
+            <a href="#">Children's Day Gifts</a>
+
+        </div>
+
+
+        <!-- CUSTOMER SUPPORT -->
+        <div class="footer-column">
+
+            <h3>Customer Support</h3>
+
+            <a href="#">Track Your Order</a>
+            <a href="#">Returns & Refunds</a>
+            <a href="#">Shipping Policy</a>
+            <a href="#">FAQs</a>
+            <a href="#">Contact Us</a>
+            <a href="#">About Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+
+
+            <h3 class="footer-sub-heading">
+                Contact Us
+            </h3>
+
+            <div class="footer-contact">
+
+                <p>📞 +91 8383960500</p>
+
+                <p>✉ care@toytreasure.com</p>
+
+                <p>🕐 Mon–Sat, 9am–6pm</p>
+
+                <p>🏢 Toy Treasure</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- BOTTOM FOOTER -->
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Toy Treasure · All rights reserved.
+        </p>
+
+        <div class="footer-bottom-links">
+
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Shipping Policy</a>
+            <a href="#">Return Policy</a>
+
+        </div>
+
+        <div class="footer-tagline">
+            Quality Checked Toy Store · Prepaid Only, No COD
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+
+
+    <!-- ================= CATEGORY SLIDER JAVASCRIPT ================= -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const track = document.getElementById("categoryTrack");
+        const next = document.getElementById("categoryNext");
+        const prev = document.getElementById("categoryPrev");
+
+        const dot1 = document.getElementById("dot1");
+        const dot2 = document.getElementById("dot2");
+
+        let currentSlide = 0;
+
+        function showSlide(slide) {
+          currentSlide = slide;
+
+          if (slide === 0) {
+            track.style.transform = "translateX(0%)";
+
+            dot1.classList.add("active");
+            dot2.classList.remove("active");
+          } else {
+            track.style.transform = "translateX(-50%)";
+
+            dot1.classList.remove("active");
+            dot2.classList.add("active");
+          }
+        }
+
+        next.addEventListener("click", function () {
+          if (currentSlide === 0) {
+            showSlide(1);
+          } else {
+            showSlide(0);
+          }
+        });
+
+        prev.addEventListener("click", function () {
+          if (currentSlide === 1) {
+            showSlide(0);
+          } else {
+            showSlide(1);
+          }
+        });
+
+        dot1.addEventListener("click", function () {
+          showSlide(0);
+        });
+
+        dot2.addEventListener("click", function () {
+          showSlide(1);
+        });
+
+        /* Automatic Sliding */
+
+        setInterval(function () {
+          if (currentSlide === 0) {
+            showSlide(1);
+          } else {
+            showSlide(0);
+          }
+        }, 5000);
+      });
+    </script>
+
+
+
+
+
+<!-- Remote control js -->
+    <script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const remoteTrack =
+        document.getElementById("remoteTrack");
+
+    const remoteNext =
+        document.getElementById("remoteNext");
+
+    const remotePrev =
+        document.getElementById("remotePrev");
+
+    const remoteDot1 =
+        document.getElementById("remoteDot1");
+
+    const remoteDot2 =
+        document.getElementById("remoteDot2");
+
+
+    let remoteCurrentSlide = 0;
+
+
+    function showRemoteSlide(slide) {
+
+        remoteCurrentSlide = slide;
+
+
+        if (slide === 0) {
+
+            remoteTrack.style.transform =
+                "translateX(0%)";
+
+            remoteDot1.classList.add("active");
+
+            remoteDot2.classList.remove("active");
+
+        }
+
+        else {
+
+            remoteTrack.style.transform =
+                "translateX(-50%)";
+
+            remoteDot1.classList.remove("active");
+
+            remoteDot2.classList.add("active");
+
+        }
+
+    }
+
+
+    /* NEXT */
+
+    remoteNext.addEventListener("click", function () {
+
+        if (remoteCurrentSlide === 0) {
+
+            showRemoteSlide(1);
+
+        }
+
+        else {
+
+            showRemoteSlide(0);
+
+        }
+
+    });
+
+
+    /* PREVIOUS */
+
+    remotePrev.addEventListener("click", function () {
+
+        if (remoteCurrentSlide === 1) {
+
+            showRemoteSlide(0);
+
+        }
+
+        else {
+
+            showRemoteSlide(1);
+
+        }
+
+    });
+
+
+    /* DOT 1 */
+
+    remoteDot1.addEventListener("click", function () {
+
+        showRemoteSlide(0);
+
+    });
+
+
+    /* DOT 2 */
+
+    remoteDot2.addEventListener("click", function () {
+
+        showRemoteSlide(1);
+
+    });
+
+
+    /* AUTO SLIDE */
+
+    setInterval(function () {
+
+        if (remoteCurrentSlide === 0) {
+
+            showRemoteSlide(1);
+
+        }
+
+        else {
+
+            showRemoteSlide(0);
+
+        }
+
+    }, 5000);
+
+});
+
+</script>
+
+
+
+
+<!-- =========================================================
+     GUN TOYS JAVASCRIPT
+========================================================= -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+    /* =========================================
+       GET ELEMENTS
+    ========================================= */
+
+    const gunTrack =
+        document.getElementById("gunTrack");
+
+    const gunNext =
+        document.getElementById("gunNext");
+
+    const gunPrev =
+        document.getElementById("gunPrev");
+
+    const gunDot1 =
+        document.getElementById("gunDot1");
+
+    const gunDot2 =
+        document.getElementById("gunDot2");
+
+
+    /* =========================================
+       CURRENT SLIDE
+    ========================================= */
+
+    let gunCurrentSlide = 0;
+
+
+    /* =========================================
+       SHOW SLIDE
+    ========================================= */
+
+    function showGunSlide(slide) {
+
+        gunCurrentSlide = slide;
+
+
+        if (slide === 0) {
+
+            gunTrack.style.transform =
+                "translateX(0%)";
+
+            gunDot1.classList.add("active");
+
+            gunDot2.classList.remove("active");
+
+        }
+
+        else {
+
+            gunTrack.style.transform =
+                "translateX(-50%)";
+
+            gunDot1.classList.remove("active");
+
+            gunDot2.classList.add("active");
+
+        }
+
+    }
+
+
+    /* =========================================
+       NEXT
+    ========================================= */
+
+    gunNext.addEventListener("click", function () {
+
+        if (gunCurrentSlide === 0) {
+
+            showGunSlide(1);
+
+        }
+
+        else {
+
+            showGunSlide(0);
+
+        }
+
+    });
+
+
+    /* =========================================
+       PREVIOUS
+    ========================================= */
+
+    gunPrev.addEventListener("click", function () {
+
+        if (gunCurrentSlide === 1) {
+
+            showGunSlide(0);
+
+        }
+
+        else {
+
+            showGunSlide(1);
+
+        }
+
+    });
+
+
+    /* =========================================
+       DOT 1
+    ========================================= */
+
+    gunDot1.addEventListener("click", function () {
+
+        showGunSlide(0);
+
+    });
+
+
+    /* =========================================
+       DOT 2
+    ========================================= */
+
+    gunDot2.addEventListener("click", function () {
+
+        showGunSlide(1);
+
+    });
+
+
+    /* =========================================
+       AUTO SLIDE
+    ========================================= */
+
+    setInterval(function () {
+
+        if (gunCurrentSlide === 0) {
+
+            showGunSlide(1);
+
+        }
+
+        else {
+
+            showGunSlide(0);
+
+        }
+
+    }, 5000);
+
+
+});
+
+</script>
+
+<!-- best deals of the week -->
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const dealsTrack = document.getElementById("dealsTrack");
+    const dealsNext = document.getElementById("dealsNext");
+    const dealsPrev = document.getElementById("dealsPrev");
+
+    const dealsDot1 = document.getElementById("dealsDot1");
+    const dealsDot2 = document.getElementById("dealsDot2");
+
+    let dealsCurrentSlide = 0;
+
+
+    function showDealsSlide(slide) {
+
+        dealsCurrentSlide = slide;
+
+        if (slide === 0) {
+
+            dealsTrack.style.transform = "translateX(0%)";
+
+            dealsDot1.classList.add("active");
+            dealsDot2.classList.remove("active");
+
+        } else {
+
+            dealsTrack.style.transform = "translateX(-50%)";
+
+            dealsDot1.classList.remove("active");
+            dealsDot2.classList.add("active");
+        }
+    }
+
+
+    /* NEXT */
+
+    dealsNext.addEventListener("click", function () {
+
+        if (dealsCurrentSlide === 0) {
+            showDealsSlide(1);
+        } else {
+            showDealsSlide(0);
+        }
+
+    });
+
+
+    /* PREVIOUS */
+
+    dealsPrev.addEventListener("click", function () {
+
+        if (dealsCurrentSlide === 1) {
+            showDealsSlide(0);
+        } else {
+            showDealsSlide(1);
+        }
+
+    });
+
+
+    /* DOT 1 */
+
+    dealsDot1.addEventListener("click", function () {
+
+        showDealsSlide(0);
+
+    });
+
+
+    /* DOT 2 */
+
+    dealsDot2.addEventListener("click", function () {
+
+        showDealsSlide(1);
+
+    });
+
+
+    /* AUTO SLIDE */
+
+    setInterval(function () {
+
+        if (dealsCurrentSlide === 0) {
+            showDealsSlide(1);
+        } else {
+            showDealsSlide(0);
+        }
+
+    }, 5000);
+
+});
+</script>
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const track = document.getElementById("newArrivalsTrack");
+
+    const next = document.getElementById("newNext");
+    const prev = document.getElementById("newPrev");
+
+    const dot1 = document.getElementById("newDot1");
+    const dot2 = document.getElementById("newDot2");
+
+    let currentSlide = 0;
+
+
+    function showNewArrivalsSlide(slide) {
+
+        currentSlide = slide;
+
+        if (slide === 0) {
+
+            track.style.transform = "translateX(0%)";
+
+            dot1.classList.add("active");
+            dot2.classList.remove("active");
+
+        } else {
+
+            track.style.transform = "translateX(-50%)";
+
+            dot1.classList.remove("active");
+            dot2.classList.add("active");
+
+        }
+
+    }
+
+
+    /* NEXT */
+
+    next.addEventListener("click", function () {
+
+        if (currentSlide === 0) {
+            showNewArrivalsSlide(1);
+        } else {
+            showNewArrivalsSlide(0);
+        }
+
+    });
+
+
+    /* PREVIOUS */
+
+    prev.addEventListener("click", function () {
+
+        if (currentSlide === 1) {
+            showNewArrivalsSlide(0);
+        } else {
+            showNewArrivalsSlide(1);
+        }
+
+    });
+
+
+    /* DOT 1 */
+
+    dot1.addEventListener("click", function () {
+
+        showNewArrivalsSlide(0);
+
+    });
+
+
+    /* DOT 2 */
+
+    dot2.addEventListener("click", function () {
+
+        showNewArrivalsSlide(1);
+
+    });
+
+
+    /* AUTO SLIDE */
+
+    setInterval(function () {
+
+        if (currentSlide === 0) {
+            showNewArrivalsSlide(1);
+        } else {
+            showNewArrivalsSlide(0);
+        }
+
+    }, 5000);
+
+});
+</script>
+
+
+
+
+<!-- Return gifts -->
+ <script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const track =
+        document.querySelector(".return-gifts-track");
+
+    const next =
+        document.querySelector(".return-gifts-next");
+
+    const prev =
+        document.querySelector(".return-gifts-prev");
+
+    const dots =
+        document.querySelectorAll(".return-dot");
+
+
+    let currentSlide = 0;
+
+
+    function showReturnGiftsSlide(slide) {
+
+        currentSlide = slide;
+
+        if (slide === 0) {
+
+            track.style.transform =
+                "translateX(0%)";
+
+            dots[0].classList.add("active");
+            dots[1].classList.remove("active");
+
+        } else {
+
+            track.style.transform =
+                "translateX(-50%)";
+
+            dots[0].classList.remove("active");
+            dots[1].classList.add("active");
+
+        }
+
+    }
+
+
+    /* NEXT */
+
+    next.addEventListener("click", function () {
+
+        if (currentSlide === 0) {
+
+            showReturnGiftsSlide(1);
+
+        } else {
+
+            showReturnGiftsSlide(0);
+
+        }
+
+    });
+
+
+    /* PREVIOUS */
+
+    prev.addEventListener("click", function () {
+
+        if (currentSlide === 1) {
+
+            showReturnGiftsSlide(0);
+
+        } else {
+
+            showReturnGiftsSlide(1);
+
+        }
+
+    });
+
+
+    /* DOT 1 */
+
+    dots[0].addEventListener("click", function () {
+
+        showReturnGiftsSlide(0);
+
+    });
+
+
+    /* DOT 2 */
+
+    dots[1].addEventListener("click", function () {
+
+        showReturnGiftsSlide(1);
+
+    });
+
+
+    /* AUTO SLIDE */
+
+    setInterval(function () {
+
+        if (currentSlide === 0) {
+
+            showReturnGiftsSlide(1);
+
+        } else {
+
+            showReturnGiftsSlide(0);
+
+        }
+
+    }, 5000);
+
+});
+
+</script>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

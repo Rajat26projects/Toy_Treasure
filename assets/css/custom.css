@@ -1,0 +1,9257 @@
+/* .container-fluid{
+  background-color: #FF5733;
+  height:70px;
+}
+
+.container-fluid img{
+  height:55px;
+  width:80px;
+  border:5px solid #ebe409;
+}
+
+.container-fluid img:hover{
+  height:59px;
+  width:90px;
+  border:5px solid #f7aa05d4;
+  transition:0.8s;
+}
+
+.container-fluid a{
+  font-family: cursive;
+  font-size: 25px;
+  font-weight:800;
+  padding:2px 3px 3px 3px;
+  color:#FF5733;
+  background-color:#ebe409;
+  border:2px solid #0d0d0cea;
+  border-radius:10%;
+  margin:25px;
+ height:40px;
+ width:140px;
+ text-align: center;
+
+}
+
+.nav-link.active{
+  font-family: cursive;
+  font-size: 25px;
+  font-weight:800;
+  padding:2px 3px 3px 3px;
+  color:#FF5733;
+  background-color:#ebe409;
+  border:2px solid #0d0d0cea;
+  border-radius:10%;
+  margin:25px;
+ height:40px;
+ width:140px;
+ text-align: center;
+}
+
+#head{
+  font-family: cursive;
+  font-size: 25px;
+  font-weight:800;
+  padding:10px;
+  color:#FF5733;
+  background-color:#ebe409;
+  border:2px solid #0d0d0cea;
+  border-radius:10%;
+ margin-left:20px;
+ height:60px;
+ width:180px;
+}
+
+#head.container-fluid a:hover{
+  font-weight:500;
+  color:#000000e9;
+  text-shadow:1px 1px white;
+  text-decoration:underline;
+}
+
+.nav-link.active{
+font-family: cursive;
+  font-size: 25px;
+  font-weight:800;
+  padding:10px;
+  color:#FF5733;
+  background-color:#ebe409;
+  border:2px solid #0d0d0cea;
+  border-radius:10%;
+ margin-left:20px;
+ height:60px;
+ width:180px;
+} */
+
+/* Navbar background with border */
+.navbar {
+  background-color: #FF5733 !important; /* orange */
+  border-bottom: 4px solid yellow;     /* yellow border */
+}
+
+/* Logo */
+.container-fluid img {
+  height: 55px;
+  width: 80px;
+  border: 2px solid yellow;
+  transition: all 0.3s ease-in-out;
+}
+.container-fluid img:hover {
+  transform: scale(1.1) rotate(-3deg); /* playful hover */
+  border: 2px solid #33B5FF; /* blue accent */
+}
+
+/* Shared style for brand + nav links */
+#head,
+.nav-link {
+  font-family: cursive;
+  font-size: 20px;
+  font-weight: 700;
+  color: yellow !important;   /* yellow text default */
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  margin: 0 6px;
+  display: inline-block;
+}
+
+/* Active (Home default look same as others) */
+.nav-link.active {
+  color: yellow !important;   /* yellow text */
+  background-color: transparent !important; /* no background */
+  box-shadow: none !important;
+}
+
+/* Hover effect (same for all, including Home) */
+#head:hover,
+.nav-link:hover,
+.nav-link.active:hover {
+  color: #FF5733 !important;              /* red/orange text */
+  background-color: #FFBD33 !important;   /* orange-yellow background */
+  text-decoration: none;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+  transform: scale(1.05); /* slight zoom */
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  background-color: #A733FF !important; /* purple */
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.dropdown-item {
+  color: #fff !important;
+  transition: all 0.3s ease-in-out;
+}
+.dropdown-item:hover {
+  background-color: #33B5FF !important; /* blue hover */
+  color: #fff !important;
+}
+
+/* Search bar */
+.form-control:focus {
+  border-color: #33B5FF;
+  box-shadow: 0 0 6px #33B5FF;
+  outline: none;
+  border-radius: 6px;
+}
+
+/* Search button */
+.btn-outline-success {
+  border-color: #33FF57 !important; /* green */
+  color: #33FF57 !important;
+  transition: all 0.3s ease-in-out;
+  border-radius: 6px;
+}
+.btn-outline-success:hover {
+  background-color: #33FF57 !important;
+  color: #fff !important;
+}
+
+/* Navbar toggler (mobile menu button) */
+.navbar-toggler {
+  border-color: yellow !important; /* yellow border */
+}
+.navbar-toggler-icon {
+  background-image: none !important;
+  width: 24px;
+  height: 2px;
+  background-color: #fff;
+  display: block;
+  position: relative;
+}
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  width: 24px;
+  height: 2px;
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  left: 0;
+}
+.navbar-toggler-icon::before {
+  top: -6px;
+}
+.navbar-toggler-icon::after {
+  top: 6px;
+}
+
+@media (max-width: 768px) {
+  #head,
+  .nav-link {
+    margin: 6px 0;
+    display: block;
+    text-align: center;
+  }
+}
+
+/* Marquee announcement */
+.new-arrival-marquee {
+  background-color: #ecf412;   /* bright yellow background */
+  color: #f23d14;              /* bold orange/red text */
+  font-family: cursive;        /* playful font */
+  font-size: 18px;
+  font-weight: 900;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2); /* subtle shadow */
+  letter-spacing: 1px;
+  height:40px;
+}
+
+
+/* carousel slider */
+.carousel-inner img{
+height:700px;
+width:100%;
+opacity: 0.7;
+}
+
+ /* ========================================
+   CAROUSEL
+   ======================================== */
+
+/* Carousel image */
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+
+/* Slight dark overlay on image */
+.carousel-item::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.18);
+
+    pointer-events: none;
+}
+
+
+/* ========================================
+   COMMON CAPTION BOX
+   ======================================== */
+
+.carousel-caption {
+    top: 50%;
+    bottom: auto;
+
+    transform: translateY(-50%);
+
+    width: 650px;
+    max-width: 80%;
+
+    margin: auto;
+
+    padding: 30px 35px;
+
+    background: rgba(0, 0, 0, 0.38);
+
+    border-radius: 22px;
+
+    /* Default border */
+    border: 3px solid #A733FF;
+
+    /* Shadow */
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.45),
+        0 0 15px rgba(167, 51, 255, 0.35);
+
+    backdrop-filter: blur(4px);
+
+    z-index: 2;
+
+    /* Smooth hover */
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease,
+        border-color 0.4s ease;
+}
+
+
+/* ========================================
+   BOX HOVER EFFECT
+   ======================================== */
+
+.carousel-caption:hover {
+    transform: translateY(-50%) scale(1.02);
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.55),
+        0 0 25px rgba(167, 51, 255, 0.5);
+}
+
+
+/* ========================================
+   AGE GROUP - H5
+   ======================================== */
+
+.age-title {
+    font-size: 17px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+
+    /* Strong shadow */
+    text-shadow:
+        2px 2px 3px rgba(0, 0, 0, 0.9),
+        0 0 8px rgba(255, 255, 255, 0.25);
+
+    transition: all 0.3s ease;
+}
+
+
+/* H5 hover */
+.carousel-caption:hover .age-title {
+    letter-spacing: 3px;
+
+    transform: scale(1.03);
+}
+
+
+/* ========================================
+   MAIN HEADING
+   ======================================== */
+
+.main-title {
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 43px;
+
+    font-weight: 800;
+
+    line-height: 1.15;
+
+    margin-bottom: 15px;
+
+    text-shadow:
+        3px 3px 5px rgba(0, 0, 0, 0.75);
+
+    transition: all 0.3s ease;
+}
+
+
+/* Main heading hover */
+.carousel-caption:hover .main-title {
+    text-shadow:
+        3px 3px 6px rgba(0, 0, 0, 0.8),
+        0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+
+/* ========================================
+   PARAGRAPH
+   ======================================== */
+
+.carousel-caption p {
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    font-weight: 500;
+
+    max-width: 580px;
+
+    margin: 0 auto 22px;
+
+    text-shadow:
+        2px 2px 5px rgba(0, 0, 0, 0.9);
+
+    transition: all 0.3s ease;
+}
+
+
+/* ========================================
+   BUTTON
+   ======================================== */
+
+.slider-btn {
+    padding: 10px 28px;
+
+    border-radius: 30px;
+
+    font-weight: 700;
+
+    transition: all 0.3s ease;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+/* ========================================
+   SLIDE 1
+   Babies & Toddlers
+   ======================================== */
+
+.carousel-item:nth-child(1) .carousel-caption {
+
+    border: 3px solid #FF5733;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.45),
+        0 0 18px rgba(255, 87, 51, 0.45);
+}
+
+
+/* Slide 1 box hover */
+.carousel-item:nth-child(1) .carousel-caption:hover {
+
+    border-color: #FFBD33;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.55),
+        0 0 30px rgba(255, 189, 51, 0.55);
+}
+
+
+/* Slide 1 age */
+.carousel-item:nth-child(1) .age-title {
+
+    color: #FFBD33;
+
+    text-shadow:
+        2px 2px 4px rgba(0, 0, 0, 0.9),
+        0 0 8px rgba(255, 189, 51, 0.45);
+}
+
+
+/* Slide 1 heading */
+.carousel-item:nth-child(1) .main-title {
+    color: #FF5733;
+}
+
+
+/* Slide 1 paragraph */
+.carousel-item:nth-child(1) .carousel-caption p {
+    color: #ffffff;
+}
+
+
+/* Slide 1 button */
+.carousel-item:nth-child(1) .slider-btn {
+
+    background: #FF5733;
+
+    color: #ffffff;
+
+    border: 2px solid #FF5733;
+}
+
+
+/* Slide 1 button hover */
+.carousel-item:nth-child(1) .slider-btn:hover {
+
+    background: #FFBD33;
+
+    border-color: #FFBD33;
+
+    color: #333;
+
+    transform: translateY(-3px) scale(1.05);
+
+    box-shadow:
+        0 7px 18px rgba(255, 189, 51, 0.5);
+}
+
+
+/* ========================================
+   SLIDE 2
+   Kids 4-7 Years
+   ======================================== */
+
+.carousel-item:nth-child(2) .carousel-caption {
+
+    border: 3px solid #A733FF;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.45),
+        0 0 18px rgba(167, 51, 255, 0.45);
+}
+
+
+/* Slide 2 box hover */
+.carousel-item:nth-child(2) .carousel-caption:hover {
+
+    border-color: #33B5FF;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.55),
+        0 0 30px rgba(51, 181, 255, 0.55);
+}
+
+
+/* Slide 2 age */
+.carousel-item:nth-child(2) .age-title {
+
+    color: #A733FF;
+
+    text-shadow:
+        2px 2px 4px rgba(0, 0, 0, 0.9),
+        0 0 8px rgba(167, 51, 255, 0.55);
+}
+
+
+/* Slide 2 heading */
+.carousel-item:nth-child(2) .main-title {
+
+    color: #33B5FF;
+
+    text-shadow:
+        3px 3px 5px rgba(0, 0, 0, 0.75),
+        0 0 8px rgba(51, 181, 255, 0.25);
+}
+
+
+/* Slide 2 paragraph */
+.carousel-item:nth-child(2) .carousel-caption p {
+
+    color: #FFBD33;
+
+    font-weight: 600;
+
+    text-shadow:
+        2px 2px 5px rgba(0, 0, 0, 0.95);
+}
+
+
+/* Slide 2 button */
+.carousel-item:nth-child(2) .slider-btn {
+
+    background: #A733FF;
+
+    color: #ffffff;
+
+    border: 2px solid #A733FF;
+}
+
+
+/* Slide 2 button hover */
+.carousel-item:nth-child(2) .slider-btn:hover {
+
+    background: #33B5FF;
+
+    border-color: #33B5FF;
+
+    color: #ffffff;
+
+    transform: translateY(-3px) scale(1.05);
+
+    box-shadow:
+        0 7px 18px rgba(51, 181, 255, 0.5);
+}
+
+
+/* ========================================
+   SLIDE 3
+   Young Explorers
+   ======================================== */
+
+.carousel-item:nth-child(3) .carousel-caption {
+
+    border: 3px solid #33FF57;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.45),
+        0 0 18px rgba(51, 255, 87, 0.35);
+}
+
+
+/* Slide 3 box hover */
+.carousel-item:nth-child(3) .carousel-caption:hover {
+
+    border-color: #FFBD33;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.55),
+        0 0 30px rgba(255, 189, 51, 0.5);
+}
+
+
+/* Slide 3 age */
+.carousel-item:nth-child(3) .age-title {
+
+    color: #33FF57;
+
+    text-shadow:
+        2px 2px 4px rgba(0, 0, 0, 0.9),
+        0 0 8px rgba(51, 255, 87, 0.45);
+}
+
+
+/* Slide 3 heading */
+.carousel-item:nth-child(3) .main-title {
+
+    color: #FFBD33;
+}
+
+
+/* Slide 3 paragraph */
+.carousel-item:nth-child(3) .carousel-caption p {
+
+    color: #ffffff;
+}
+
+
+/* Slide 3 button */
+.carousel-item:nth-child(3) .slider-btn {
+
+    background: #33B5FF;
+
+    color: #ffffff;
+
+    border: 2px solid #33B5FF;
+}
+
+
+/* Slide 3 button hover */
+.carousel-item:nth-child(3) .slider-btn:hover {
+
+    background: #33FF57;
+
+    border-color: #33FF57;
+
+    color: #222;
+
+    transform: translateY(-3px) scale(1.05);
+
+    box-shadow:
+        0 7px 18px rgba(51, 255, 87, 0.5);
+}
+
+
+/* ========================================
+   CAROUSEL INDICATORS
+   ======================================== */
+
+.carousel-indicators button {
+
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+
+    transition: all 0.3s ease;
+}
+
+
+.carousel-indicators button:hover {
+
+    transform: scale(1.3);
+}
+
+
+/* ========================================
+   PREVIOUS / NEXT BUTTON
+   ======================================== */
+
+.carousel-control-prev,
+.carousel-control-next {
+
+    transition: all 0.3s ease;
+}
+
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+
+    transform: scale(1.1);
+}
+
+
+
+
+/* ========================================
+   ABOUT CONTENT
+   ======================================== */
+
+.about-content {
+    width: 95%;
+    margin: 30px auto 45px;
+
+    padding: 35px 45px 45px;
+
+    background: linear-gradient(
+        135deg,
+        #d8b4fe,
+        #9edcf5
+    );
+
+    border-radius: 25px;
+
+    border: 3px solid #A733FF;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* ========================================
+   ABOUT HEADING
+   ======================================== */
+
+.about-heading {
+    width: fit-content;
+    margin: 0 auto 35px;
+    padding: 12px 35px;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #A733FF,
+        #33B5FF
+    );
+
+    border-radius: 15px;
+
+    border: 3px solid #FFBD33;
+
+    box-shadow:
+        0 7px 18px rgba(0, 0, 0, 0.25),
+        0 0 15px rgba(167, 51, 255, 0.25);
+
+    transition: all 0.3s ease;
+}
+
+
+/* Heading */
+
+.about-heading h2 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 34px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    text-shadow:
+        2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+
+/* Subtitle */
+
+.about-heading p {
+    margin: 5px 0 0;
+
+    color: #FFBD33;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    text-shadow:
+        1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+/* ========================================
+   HOVER EFFECT
+   ======================================== */
+
+.about-heading:hover {
+    transform: translateY(-4px) scale(1.02);
+
+    border-color: #FF5733;
+
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.3),
+        0 0 25px rgba(51, 181, 255, 0.5);
+}
+
+.about-heading:hover h2 {
+    letter-spacing: 3px;
+
+    text-shadow:
+        2px 2px 5px rgba(0, 0, 0, 0.7),
+        0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* ========================================
+   ABOUT VIDEO - 60%
+   ======================================== */
+
+.about-video {
+    width: 100%;
+    height: 480px;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 22px;
+
+    border: 6px solid #FFBD33;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.35),
+        0 0 20px rgba(255, 189, 51, 0.4);
+
+    transition: all 0.3s ease;
+}
+
+.about-video:hover {
+    transform: scale(1.02);
+
+    border-color: #FF5733;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.4),
+        0 0 25px rgba(255, 87, 51, 0.45);
+}
+
+
+/* ========================================
+   ACCORDION - 40%
+   ======================================== */
+
+.accordion {
+    border-radius: 18px;
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 22px rgba(0, 0, 0, 0.25);
+}
+
+.accordion-item {
+    border: none;
+    border-bottom: 2px solid #ffffff;
+}
+
+.accordion-button {
+    padding: 20px;
+
+    background: #A733FF;
+    color: #ffffff;
+
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+
+    transition: all 0.3s ease;
+}
+
+.accordion-button:hover {
+    background: #33B5FF;
+    color: #ffffff;
+
+    padding-left: 28px;
+
+    text-shadow:
+        2px 2px 4px rgba(0, 0, 0, 0.45);
+}
+
+.accordion-button:not(.collapsed) {
+    background: #FF5733;
+    color: #ffffff;
+
+    box-shadow:
+        0 4px 12px rgba(255, 87, 51, 0.35);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-body {
+    padding: 22px;
+
+    background: #fff8e7;
+
+    color: #333333;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 15px;
+    line-height: 1.7;
+
+    border-left: 5px solid #FFBD33;
+}
+
+.accordion-body p {
+    margin: 0;
+
+    text-shadow:
+        1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ========================================
+   MOBILE
+   ======================================== */
+
+@media (max-width: 767px) {
+
+    .about-content {
+        width: 92%;
+        padding: 20px;
+    }
+
+    .about-video {
+        height: 320px;
+    }
+}
+
+/* ============================= */
+/*        AGE CARD SECTION        */
+/* ============================= */
+
+#cardsec {
+    width: 95%;
+    margin: 45px auto;
+    padding: 35px 40px 45px;
+
+    background: linear-gradient(
+        135deg,
+        #fff1c1,
+        #e7d5ff,
+        #ccefff
+    );
+
+    border-radius: 25px;
+    border: 3px solid #A733FF;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.25);
+
+    transition: all 0.4s ease;
+}
+
+
+/* Outer section hover */
+
+#cardsec:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.3),
+        0 0 25px rgba(167, 51, 255, 0.25);
+}
+
+
+/* ============================= */
+/*           SECTION HEADING      */
+/* ============================= */
+
+#cardsec > h2 {
+    width: fit-content;
+
+    margin: 0 auto 35px;
+    padding: 12px 30px;
+
+    background: linear-gradient(
+        135deg,
+        #A733FF,
+        #33B5FF
+    );
+
+    color: white;
+
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    font-style: normal;
+
+    letter-spacing: 1.5px;
+
+    text-align: center;
+
+    border-radius: 15px;
+    border: 3px solid #FFBD33;
+
+    text-shadow:
+        2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    box-shadow:
+        0 8px 18px rgba(0, 0, 0, 0.25);
+
+    transition: all 0.3s ease;
+}
+
+
+/* Heading hover */
+
+#cardsec > h2:hover {
+    transform: translateY(-4px) scale(1.02);
+
+    background: linear-gradient(
+        135deg,
+        #FF5733,
+        #A733FF
+    );
+
+    border-color: #33FF57;
+
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.3),
+        0 0 20px rgba(167, 51, 255, 0.4);
+
+    letter-spacing: 2px;
+}
+
+
+/* ============================= */
+/*              ROW               */
+/* ============================= */
+
+#cardsec .row {
+    row-gap: 30px;
+}
+
+
+/* ============================= */
+/*              CARD              */
+/* ============================= */
+
+#cardsec .card {
+    height: 100%;
+
+    border: none;
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.2);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        background 0.35s ease;
+}
+
+
+/* Card hover */
+
+#cardsec .card:hover {
+    transform: translateY(-10px);
+
+    background: #fff8e7;
+
+    box-shadow:
+        0 16px 30px rgba(0, 0, 0, 0.3),
+        0 0 20px rgba(51, 181, 255, 0.35);
+}
+
+
+/* ============================= */
+/*             IMAGE              */
+/* ============================= */
+
+#cardsec .card-img-top {
+    width: 100%;
+    height: 220px;
+
+    object-fit: contain;
+    padding: 8px;
+
+    background: #ffffff;
+
+    display: block;
+
+    border-bottom: 5px solid #FFBD33;
+
+    transition: transform 0.5s ease;
+}
+
+
+/* Image hover */
+
+#cardsec .card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+/* ============================= */
+/*          CARD BODY             */
+/* ============================= */
+
+#cardsec .card-body {
+    padding: 22px;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ============================= */
+/*         CARD HEADING           */
+/* ============================= */
+
+#cardsec .card-title {
+    margin-bottom: 12px;
+
+    color: #A733FF;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 21px;
+    font-weight: 800;
+    font-style: normal;
+
+    letter-spacing: 0.5px;
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* Heading hover */
+
+#cardsec .card:hover .card-title {
+    color: #FF5733;
+
+    transform: scale(1.04);
+}
+
+
+/* ============================= */
+/*          CARD TEXT             */
+/* ============================= */
+
+#cardsec .card-text {
+     color: #355872;;
+
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: normal;
+
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+
+    transition: color 0.3s ease;
+}
+
+#cardsec .card:hover .card-text {
+    color: #5B3F8C;
+}
+
+
+/* ============================= */
+/*             BUTTON             */
+/* ============================= */
+
+#cardsec .btn {
+    margin-top: auto;
+
+    padding: 10px 18px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #A733FF;
+
+    color: white;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* Button hover */
+
+#cardsec .btn:hover {
+    background: #FF5733;
+
+    color: white;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 6px 15px rgba(255, 87, 51, 0.4);
+}
+
+
+/* ============================= */
+/*          RESPONSIVE            */
+/* ============================= */
+
+@media (max-width: 767px) {
+
+    #cardsec {
+        width: 92%;
+        padding: 25px 18px 35px;
+    }
+
+    #cardsec > h2 {
+        font-size: 25px;
+        padding: 10px 20px;
+    }
+
+    #cardsec .card-img-top {
+        height: 200px;
+    }
+
+}
+
+/* ============================= */
+/*       OUTER CARD SECTION       */
+/* ============================= */
+
+#cardsec {
+    width: 95%;
+    margin: 45px auto;
+    padding: 35px 40px 45px;
+
+    /* Soft colorful background */
+    background: linear-gradient(
+        135deg,
+        #fff3c4,
+        #f0dcff,
+        #d8f3ff
+    );
+
+    border-radius: 25px;
+    border: 3px solid #A733FF;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.22),
+        0 0 20px rgba(167, 51, 255, 0.15);
+
+    transition: 0.4s ease;
+}
+
+#cardsec:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.28),
+        0 0 30px rgba(167, 51, 255, 0.25);
+}
+
+
+/* ============================= */
+/*             CARD              */
+/* ============================= */
+
+#cardsec .card {
+    height: 100%;
+
+    border: none;
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.18);
+
+    transition: 0.35s ease;
+}
+
+#cardsec .card:hover {
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 18px 35px rgba(0, 0, 0, 0.28),
+        0 0 22px rgba(51, 181, 255, 0.35);
+}
+
+
+/* ============================= */
+/*          IMAGE AREA            */
+/* ============================= */
+
+#cardsec .card-img-top {
+    width: 100%;
+    height: 230px;
+
+    /* Don't crop the toy */
+    object-fit: contain;
+
+    /* Space around image */
+    padding: 12px;
+
+    /* Beautiful image background */
+    background: linear-gradient(
+        135deg,
+        #fff4d6,
+        #ffe3ef
+    );
+
+    display: block;
+
+    border-bottom: 5px solid #FFBD33;
+
+    transition:
+        transform 0.5s ease,
+        background 0.4s ease;
+}
+
+
+/* Image zoom + background change */
+
+#cardsec .card:hover .card-img-top {
+    transform: scale(1.05);
+
+    background: linear-gradient(
+        135deg,
+        #e8dcff,
+        #d5f3ff
+    );
+}
+
+/* Babies */
+#cardsec .baby-img {
+    background: linear-gradient(
+        135deg,
+        #fff1c1,
+        #ffd6e7
+    );
+}
+
+
+/* Kids */
+#cardsec .kids-img {
+    background: linear-gradient(
+        135deg,
+        #e5d4ff,
+        #d2e9ff
+    );
+}
+
+
+/* Young Explorers */
+#cardsec .explorer-img {
+    background: linear-gradient(
+        135deg,
+        #d5ffd9,
+        #d5f3ff
+    );
+}
+
+
+/* Family */
+#cardsec .family-img {
+    background: linear-gradient(
+        135deg,
+        #ffe0c2,
+        #fff1c7
+    );
+}
+
+.cardsec {
+    width: 95%;
+    margin: 45px auto;
+    padding: 35px 40px 45px;
+
+    background: linear-gradient(
+        135deg,
+        #d6c28f,
+        #b99bd4,
+        #8fc4d8
+    );
+
+    border-radius: 25px;
+    border: 3px solid #A733FF;
+
+    box-shadow:
+        0 14px 35px rgba(0, 0, 0, 0.3);
+
+    transition: 0.4s ease;
+}
+
+
+
+
+
+
+
+
+/* =========================================================
+   EXPLORE TOYS BY CATEGORY
+   ========================================================= */
+
+.category-section {
+
+    width: 95%;
+    margin: 50px auto;
+
+    padding: 35px 35px 40px;
+
+    background: linear-gradient(
+        135deg,
+        #fff0c9,
+        #f4d9ec,
+        #d9e7ff
+    );
+
+    border: 3px solid #33B5FF;
+    border-radius: 28px;
+
+    box-shadow: 0 12px 30px rgba(0,0,0,0.20);
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.category-heading {
+
+    width: fit-content;
+
+    margin: 0 auto 45px;
+
+    padding: 12px 40px;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #A733FF,
+        #33B5FF
+    );
+
+    border: 3px solid #FFBD33;
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.25),
+        0 0 15px rgba(167,51,255,0.25);
+
+    transition: 0.3s ease;
+}
+
+
+.category-heading:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 14px 28px rgba(0,0,0,0.30),
+        0 0 25px rgba(51,181,255,0.40);
+}
+
+
+.category-heading h2 {
+
+    margin: 0;
+
+    color: white;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 34px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    text-shadow:
+        2px 2px 5px rgba(0,0,0,0.6);
+}
+
+
+.category-heading p {
+
+    margin: 6px 0 0;
+
+    color: #1f1550;
+
+    font-size: 16px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   SLIDER
+   ========================================================= */
+
+.category-slider {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 55px minmax(0,1fr) 55px;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+/* =========================================================
+   WINDOW
+   ========================================================= */
+
+.category-window {
+
+    width: 100%;
+
+    overflow: hidden;
+
+    background: transparent;
+
+    border: none;
+
+    box-shadow: none;
+}
+
+
+/* =========================================================
+   TRACK
+   ========================================================= */
+
+.category-track {
+
+    width: 200%;
+
+    display: flex;
+
+    transition: transform 0.7s ease-in-out;
+}
+
+
+/* =========================================================
+   EACH SLIDE
+   ========================================================= */
+
+.category-page {
+
+    width: 50%;
+
+    flex: 0 0 50%;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 22px;
+
+    padding: 10px;
+}
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.category-card {
+
+    min-width: 0;
+
+    background: white;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    border: 3px solid transparent;
+
+    background-image:
+        linear-gradient(white, white),
+        linear-gradient(
+            135deg,
+            #FF5733,
+            #FFBD33,
+            #A733FF,
+            #33B5FF
+        );
+
+    background-origin: border-box;
+
+    background-clip:
+        padding-box,
+        border-box;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.20);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+.category-card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 18px 35px rgba(0,0,0,0.28),
+        0 0 22px rgba(51,181,255,0.35);
+}
+
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.category-image {
+
+    width: 100%;
+
+    height: 255px;
+
+    padding: 8px;
+
+    background: #f8f8f8;
+
+    border-bottom: 5px solid #FFBD33;
+
+    overflow: hidden;
+}
+
+
+.category-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+
+    border-radius: 16px;
+
+    transition:
+        transform 0.5s ease,
+        filter 0.4s ease;
+}
+
+
+.category-card:hover .category-image img {
+
+    transform: scale(1.07);
+
+    filter: brightness(1.05);
+}
+
+
+/* =========================================================
+   CARD CONTENT
+   ========================================================= */
+
+.category-info {
+
+    min-height: 250px;
+
+    padding: 20px 18px 18px;
+
+    text-align: center;
+
+    background: linear-gradient(
+        180deg,
+        #ffffff,
+        #f7edff
+    );
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+
+.category-info h3 {
+
+    margin: 0 0 14px;
+
+    color: #7B16D1;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 21px;
+
+    font-weight: 800;
+
+    line-height: 1.3;
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.category-card:hover .category-info h3 {
+
+    color: #FF5733;
+
+    transform: scale(1.03);
+}
+
+
+.category-info p {
+
+    margin: 0;
+
+    color: #263A5B;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   BUTTON
+   ========================================================= */
+
+.category-btn {
+
+    width: 90%;
+
+    margin-top: auto;
+
+    padding: 12px 15px;
+
+    text-decoration: none;
+
+    border-radius: 12px;
+
+    background: linear-gradient(
+        135deg,
+        #8E24AA,
+        #A733FF
+    );
+
+    color: white;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 6px 15px rgba(167,51,255,0.25);
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.category-btn:hover {
+
+    background: linear-gradient(
+        135deg,
+        #FF5733,
+        #FFBD33
+    );
+
+    color: white;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 18px rgba(255,87,51,0.35);
+}
+
+
+/* =========================================================
+   ARROWS
+   ========================================================= */
+
+.category-arrow {
+
+    width: 55px;
+
+    height: 55px;
+
+    padding: 0;
+
+    border: 3px solid #FFBD33;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        #A733FF,
+        #33B5FF
+    );
+
+    color: white;
+
+    font-size: 27px;
+
+    font-weight: bold;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    cursor: pointer;
+
+    z-index: 10;
+
+    box-shadow:
+        0 7px 15px rgba(0,0,0,0.25);
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.category-arrow:hover {
+
+    background: linear-gradient(
+        135deg,
+        #FF5733,
+        #FFBD33
+    );
+
+    transform: scale(1.12);
+
+    box-shadow:
+        0 9px 20px rgba(0,0,0,0.30);
+}
+
+
+/* =========================================================
+   DOTS
+   ========================================================= */
+
+.category-dots {
+
+    margin-top: 30px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.category-dot {
+
+    width: 18px;
+
+    height: 18px;
+
+    padding: 0;
+
+    border-radius: 50%;
+
+    border: 2px solid #A733FF;
+
+    background: #d9c8ff;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.category-dot.active {
+
+    background: #FF5733;
+
+    border-color: #FFBD33;
+
+    transform: scale(1.15);
+
+    box-shadow:
+        0 0 10px rgba(255,87,51,0.5);
+}
+
+
+.category-dot:hover {
+
+    transform: scale(1.2);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .category-page {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .category-image {
+
+        height: 240px;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    .category-section {
+
+        width: 92%;
+
+        padding: 25px 12px 30px;
+
+    }
+
+
+    .category-heading {
+
+        margin-bottom: 25px;
+
+        padding: 12px 18px;
+
+    }
+
+
+    .category-heading h2 {
+
+        font-size: 25px;
+
+    }
+
+
+    .category-heading p {
+
+        font-size: 13px;
+
+    }
+
+
+    .category-slider {
+
+        grid-template-columns: 42px minmax(0,1fr) 42px;
+
+        gap: 6px;
+
+    }
+
+
+    .category-page {
+
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+
+        padding: 8px;
+
+    }
+
+
+    .category-image {
+
+        height: 280px;
+
+    }
+
+
+    .category-arrow {
+
+        width: 42px;
+
+        height: 42px;
+
+        font-size: 21px;
+
+    }
+
+
+    .category-info {
+
+        min-height: 220px;
+
+    }
+
+}
+
+
+
+
+/* =========================================================
+   REMOTE CONTROL TOYS
+========================================================= */
+
+.remote-section {
+
+    width: 95%;
+
+    margin: 45px auto;
+
+    padding: 35px 45px 55px;
+
+    background: linear-gradient(
+        135deg,
+        #fff0c9,
+        #eadcff,
+        #d5f2ff
+    );
+
+    border: 3px solid #33B5FF;
+
+    border-radius: 28px;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, .25),
+        0 0 30px rgba(167, 51, 255, .18);
+
+    position: relative;
+}
+
+
+/* =========================================================
+   HEADING
+   SAME AS EXPLORE TOYS BY CATEGORY
+========================================================= */
+
+.remote-header {
+
+    text-align: center;
+
+    margin-bottom: 8px;
+}
+
+
+.remote-header h2 {
+
+    width: fit-content;
+
+    margin: 0 auto 8px;
+
+    padding: 12px 35px;
+
+    background: linear-gradient(
+        135deg,
+        #A733FF,
+        #33B5FF
+    );
+
+    border: 3px solid #FFBD33;
+
+    border-radius: 16px;
+
+    color: white;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 34px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    text-align: center;
+
+    text-shadow:
+        2px 3px 4px rgba(0,0,0,.55);
+
+    box-shadow:
+        0 8px 18px rgba(0,0,0,.25),
+        0 0 20px rgba(167,51,255,.25);
+
+    transition: all .35s ease;
+}
+
+
+/* EXACT HEADING HOVER EFFECT */
+
+.remote-header h2:hover {
+
+    transform:
+        translateY(-5px)
+        scale(1.03);
+
+    border-color: #FF5733;
+
+    box-shadow:
+        0 13px 25px rgba(0,0,0,.3),
+        0 0 30px rgba(51,181,255,.45);
+
+    letter-spacing: 3px;
+}
+
+
+/* Subtitle */
+
+.remote-header p {
+
+    margin: 0 auto 32px;
+
+    text-align: center;
+
+    color: #3e416b;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    transition: .3s ease;
+}
+
+
+.remote-header p:hover {
+
+    color: #A733FF;
+
+    transform: scale(1.03);
+}
+
+
+/* Remove old line */
+
+.remote-line {
+    display: none;
+}
+
+
+/* =========================================================
+   VIEW ALL
+========================================================= */
+
+.remote-view-btn {
+
+    position: absolute;
+
+    top: 35px;
+
+    right: 35px;
+
+    padding: 10px 20px;
+
+    border-radius: 12px;
+
+    background: linear-gradient(
+        135deg,
+        #8A20D8,
+        #A733FF
+    );
+
+    border: 2px solid transparent;
+
+    color: white;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 12px rgba(167,51,255,.25);
+
+    transition: all .3s ease;
+}
+
+
+.remote-view-btn span {
+    margin-left: 5px;
+}
+
+
+.remote-view-btn:hover {
+
+    background: linear-gradient(
+        135deg,
+        #FF5733,
+        #ff7b4f
+    );
+
+    border-color: #FFBD33;
+
+    transform:
+        translateY(-4px)
+        scale(1.03);
+
+    box-shadow:
+        0 8px 18px rgba(255,87,51,.4);
+}
+
+
+/* =========================================================
+   SLIDER
+========================================================= */
+
+.remote-slider {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        55px
+        minmax(0,1fr)
+        55px;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+/* Visible area */
+
+.remote-window {
+
+    width: 100%;
+
+    overflow: hidden;
+}
+
+
+/* IMPORTANT */
+
+.remote-track {
+
+    width: 200%;
+
+    display: flex;
+
+    transition:
+        transform .4s ease-in-out;
+}
+
+
+/* Each page */
+
+.remote-page {
+
+    width: 50%;
+
+    flex: 0 0 50%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 15px;
+
+    padding: 5px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.remote-card {
+
+    height: 100%;
+
+    overflow: hidden;
+
+    border-radius: 24px;
+
+    background: linear-gradient(
+        180deg,
+        #ffffff,
+        #f7f1ff
+    );
+
+    border: 3px solid rgba(167,51,255,.25);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.20);
+
+    position: relative;
+
+    transition:
+        transform .4s ease,
+        box-shadow .4s ease,
+        border-color .4s ease;
+}
+
+
+/* Colorful top strip */
+
+.remote-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 7px;
+
+    background: linear-gradient(
+        90deg,
+        #FF5733,
+        #FFBD33,
+        #A733FF,
+        #33B5FF
+    );
+
+    z-index: 5;
+}
+
+
+/* Card hover */
+
+.remote-card:hover {
+
+    transform:
+        translateY(-12px)
+        scale(1.02);
+
+    border-color: #FFBD33;
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.28),
+        0 0 25px rgba(167,51,255,.30);
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.remote-image-box {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 310px;
+
+    overflow: hidden;
+
+    background: transparent;
+}
+
+
+.remote-image-box img {
+
+    width: 100%;
+
+    height: 310px;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    padding: 0;
+
+    margin: 0;
+
+    background: transparent;
+
+    border: none;
+
+    transition:
+        transform .6s ease,
+        filter .4s ease;
+}
+
+
+.remote-card:hover .remote-image-box img {
+
+    transform: scale(1.06);
+
+    filter:
+        brightness(1.05)
+        saturate(1.08);
+}
+
+
+/* =========================================================
+   DISCOUNT
+========================================================= */
+
+.remote-discount {
+
+    position: absolute;
+
+    top: 14px;
+    left: 12px;
+
+    z-index: 8;
+
+    padding: 6px 11px;
+
+    border-radius: 15px;
+
+    background: #FF5733;
+
+    color: white;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    box-shadow:
+        0 5px 12px rgba(255,87,51,.3);
+
+    transition: .3s ease;
+}
+
+
+.remote-card:hover .remote-discount {
+
+    transform: scale(1.08);
+
+    background: #A733FF;
+}
+
+
+/* =========================================================
+   HEART
+========================================================= */
+
+.remote-heart {
+
+    position: absolute;
+
+    top: 12px;
+    right: 12px;
+
+    z-index: 8;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    border: 2px solid #FFBD33;
+
+    color: #A733FF;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    transition: all .3s ease;
+}
+
+
+.remote-heart:hover {
+
+    background: #FF5733;
+
+    color: white;
+
+    border-color: #FF5733;
+
+    transform: scale(1.15);
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.remote-card-content {
+
+    min-height: 235px;
+
+    padding: 20px 18px 22px;
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    background: linear-gradient(
+        135deg,
+        #fff8d6,
+        #ffe4ef
+    );
+
+    transition:
+        background .4s ease;
+}
+
+
+.remote-card:hover .remote-card-content {
+
+    background: linear-gradient(
+        135deg,
+        #f4e4ff,
+        #dff6ff
+    );
+}
+
+
+/* =========================================================
+   RATING
+========================================================= */
+
+.remote-rating {
+
+    margin-bottom: 10px;
+
+    color: #FFBD33;
+
+    font-size: 14px;
+
+    letter-spacing: 1px;
+}
+
+
+.remote-rating span {
+
+    color: #777;
+
+    font-size: 13px;
+
+    letter-spacing: 0;
+
+    margin-left: 4px;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.remote-card h3 {
+
+    margin: 0 0 10px;
+
+    color: #8A20D8;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 20px;
+
+    font-weight: 800;
+
+    letter-spacing: .5px;
+
+    transition:
+        transform .3s ease,
+        color .3s ease;
+}
+
+
+.remote-card:hover h3 {
+
+    color: #FF5733;
+
+    transform: scale(1.06);
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.remote-card p {
+
+    margin: 0 auto 18px;
+
+    max-width: 260px;
+
+    color: #3f4268;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    line-height: 1.6;
+
+    transition: color .3s ease;
+}
+
+
+.remote-card:hover p {
+
+    color: #5B3F8C;
+}
+
+
+/* =========================================================
+   PRICE
+========================================================= */
+
+.remote-price {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin-bottom: 12px;
+}
+
+
+.remote-price strong {
+
+    color: #FF5733;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 21px;
+
+    font-weight: 800;
+}
+
+
+.remote-price del {
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   ADD BUTTON
+========================================================= */
+
+.remote-add-btn {
+
+    width: 90%;
+
+    margin: auto auto 0;
+
+    padding: 11px 15px;
+
+    display: block;
+
+    border-radius: 12px;
+
+    background: linear-gradient(
+        135deg,
+        #8A20D8,
+        #A733FF
+    );
+
+    border: 2px solid transparent;
+
+    color: white;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 12px rgba(167,51,255,.25);
+
+    transition: all .3s ease;
+}
+
+
+.remote-add-btn:hover {
+
+    background: linear-gradient(
+        135deg,
+        #FF5733,
+        #ff7b4f
+    );
+
+    border-color: #FFBD33;
+
+    transform:
+        translateY(-4px)
+        scale(1.03);
+
+    box-shadow:
+        0 8px 18px rgba(255,87,51,.4);
+}
+
+
+/* =========================================================
+   ARROWS
+========================================================= */
+
+.remote-arrow {
+
+    width: 52px;
+    height: 52px;
+
+    padding: 0;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        #A733FF,
+        #8A20D8
+    );
+
+    border: 3px solid #FFBD33;
+
+    color: white;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 7px 16px rgba(0,0,0,.25);
+
+    transition: all .3s ease;
+}
+
+
+.remote-arrow:hover {
+
+    background: linear-gradient(
+        135deg,
+        #FF5733,
+        #ff7b4f
+    );
+
+    transform: scale(1.15);
+
+    box-shadow:
+        0 8px 20px rgba(255,87,51,.45);
+}
+
+
+/* =========================================================
+   DOTS
+========================================================= */
+
+.remote-dots {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin-top: 25px;
+}
+
+
+.remote-dot {
+
+    width: 13px;
+    height: 13px;
+
+    padding: 0;
+
+    border-radius: 50%;
+
+    background-color: #A733FF;
+
+    border: 2px solid #FFBD33;
+
+    opacity: .65;
+
+    cursor: pointer;
+
+    transition: all .3s ease;
+}
+
+
+.remote-dot.active {
+
+    background-color: #FF5733;
+
+    opacity: 1;
+
+    transform: scale(1.35);
+
+    box-shadow:
+        0 0 12px rgba(255,87,51,.55);
+}
+
+
+.remote-dot:hover {
+
+    opacity: 1;
+
+    transform: scale(1.2);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .remote-section {
+
+        padding:
+            30px
+            25px
+            50px;
+    }
+
+    .remote-header h2 {
+
+        font-size: 29px;
+    }
+
+    .remote-slider {
+
+        grid-template-columns:
+            45px
+            minmax(0,1fr)
+            45px;
+    }
+
+    .remote-image-box,
+    .remote-image-box img {
+
+        height: 300px;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    .remote-section {
+
+        width: 92%;
+
+        padding:
+            25px
+            15px
+            45px;
+
+        border-radius: 22px;
+    }
+
+    .remote-header h2 {
+
+        font-size: 24px;
+
+        padding:
+            10px
+            20px;
+
+        letter-spacing: 1px;
+    }
+
+    .remote-header p {
+
+        font-size: 14px;
+    }
+
+    .remote-view-btn {
+
+        position: static;
+
+        margin-bottom: 20px;
+    }
+
+    .remote-slider {
+
+        grid-template-columns:
+            42px
+            minmax(0,1fr)
+            42px;
+
+        gap: 5px;
+    }
+
+    .remote-page {
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+        gap: 10px;
+    }
+
+    .remote-image-box,
+    .remote-image-box img {
+
+        height: 300px;
+    }
+
+    .remote-arrow {
+
+        width: 42px;
+        height: 42px;
+
+        font-size: 20px;
+    }
+
+}
+
+
+@media (max-width: 575px) {
+
+    .remote-page {
+
+        grid-template-columns: 1fr;
+    }
+
+    .remote-image-box,
+    .remote-image-box img {
+
+        height: 280px;
+    }
+
+}
+
+/* =========================================================
+   FORCE ALL REMOTE CARDS TO SAME SIZE
+========================================================= */
+
+.remote-page {
+    align-items: stretch;
+}
+
+
+.remote-card {
+    height: 100%;
+    min-height: 570px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Same image box for EVERY card */
+
+.remote-image-box {
+    width: 100%;
+    height: 310px;
+    min-height: 310px;
+    flex-shrink: 0;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+}
+
+
+/* Same image area */
+
+.remote-image-box img {
+    width: 100%;
+    height: 310px;
+    min-height: 310px;
+
+    object-fit: contain;
+    object-position: center;
+
+    display: block;
+}
+
+
+/* Same content height */
+
+.remote-card-content {
+    flex: 1;
+
+    min-height: 260px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Keep button at exactly same position */
+
+.remote-add-btn {
+    margin-top: auto;
+}
+
+
+
+
+
+
+
+
+/* toy gun css */
+
+
+/* =========================================================
+   MAIN SECTION
+========================================================= */
+
+/* =========================================================
+   GUN TOYS MAIN DIV BACKGROUND
+========================================================= */
+
+/* =========================================================
+   GUN TOYS SECTION
+   SAME BACKGROUND AS YOUR OTHER SECTIONS
+========================================================= */
+
+.gun-section {
+    width: 95%;
+    margin: 45px auto;
+    padding: 35px 45px 55px;
+
+    background: linear-gradient(
+        135deg,
+        #fff0d5 0%,
+        #f5dff0 45%,
+        #d9e6ff 100%
+    );
+
+    border: 3px solid #28aef5;
+    border-radius: 28px;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.20);
+
+    position: relative;
+}
+/* =========================================================
+   HEADING
+========================================================= */
+
+.gun-header {
+
+    text-align: center;
+
+    margin-bottom: 8px;
+}
+
+
+.gun-header h2 {
+
+    width: fit-content;
+
+    margin: 0 auto 8px;
+
+    padding: 12px 35px;
+
+    background: linear-gradient(
+        135deg,
+        #A733FF,
+        #33B5FF
+    );
+
+    border: 3px solid #FFBD33;
+
+    border-radius: 16px;
+
+    color: white;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 34px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    text-align: center;
+
+    text-shadow:
+        2px 3px 4px rgba(0,0,0,.55);
+
+    box-shadow:
+        0 8px 18px rgba(0,0,0,.25),
+        0 0 20px rgba(167,51,255,.25);
+
+    transition: all .35s ease;
+}
+
+
+.gun-header h2:hover {
+
+    transform:
+        translateY(-5px)
+        scale(1.03);
+
+    border-color: #FF5733;
+
+    box-shadow:
+        0 13px 25px rgba(0,0,0,.3),
+        0 0 30px rgba(51,181,255,.45);
+
+    letter-spacing: 3px;
+}
+
+
+.gun-header p {
+
+    margin: 0 auto 32px;
+
+    text-align: center;
+
+    color: #3e416b;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    transition: .3s ease;
+}
+
+
+.gun-header p:hover {
+
+    color: #A733FF;
+
+    transform: scale(1.03);
+}
+
+
+/* =========================================================
+   VIEW ALL
+========================================================= */
+
+.gun-view-btn {
+
+    position: absolute;
+
+    top: 35px;
+
+    right: 35px;
+
+    padding: 10px 20px;
+
+    border-radius: 12px;
+
+    background: linear-gradient(
+        135deg,
+        #8A20D8,
+        #A733FF
+    );
+
+    border: 2px solid transparent;
+
+    color: white;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 12px rgba(167,51,255,.25);
+
+    transition: all .3s ease;
+}
+
+
+.gun-view-btn:hover {
+
+    background: linear-gradient(
+        135deg,
+        #FF5733,
+        #ff7b4f
+    );
+
+    border-color: #FFBD33;
+
+    transform:
+        translateY(-4px)
+        scale(1.03);
+
+    box-shadow:
+        0 8px 18px rgba(255,87,51,.4);
+}
+
+
+/* =========================================================
+   SLIDER
+========================================================= */
+
+.gun-slider {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        55px
+        minmax(0,1fr)
+        55px;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+/* Window */
+
+.gun-window {
+
+    width: 100%;
+
+    overflow: hidden;
+}
+
+
+/* Track */
+
+.gun-track {
+
+    width: 200%;
+
+    display: flex;
+
+    transition:
+        transform .4s ease-in-out;
+}
+
+
+/* Page */
+
+.gun-page {
+
+    width: 50%;
+
+    flex: 0 0 50%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 15px;
+
+    padding: 5px;
+
+    box-sizing: border-box;
+
+    align-items: stretch;
+
+    grid-auto-rows: 1fr;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.gun-card {
+
+    min-width: 0;
+
+    min-height: 570px;
+
+    height: 100%;
+
+    overflow: hidden;
+
+    border-radius: 24px;
+
+    background: linear-gradient(
+        180deg,
+        #ffffff,
+        #f7f1ff
+    );
+
+    border: 3px solid rgba(167,51,255,.25);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.20);
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    transition:
+        transform .4s ease,
+        box-shadow .4s ease,
+        border-color .4s ease;
+}
+
+
+/* Colorful top line */
+
+.gun-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 7px;
+
+    background: linear-gradient(
+        90deg,
+        #FF5733,
+        #FFBD33,
+        #A733FF,
+        #33B5FF
+    );
+
+    z-index: 5;
+}
+
+
+/* Card hover */
+
+.gun-card:hover {
+
+    transform:
+        translateY(-12px)
+        scale(1.02);
+
+    border-color: #FFBD33;
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.28),
+        0 0 25px rgba(167,51,255,.30);
+}
+
+
+/* =========================================================
+   IMAGE BOX
+========================================================= */
+
+.gun-image-box {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 310px;
+
+    min-height: 310px;
+
+    flex-shrink: 0;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #ffffff;
+}
+
+
+.gun-image-box img {
+
+    width: 100%;
+
+    height: 310px;
+
+    min-height: 310px;
+
+    display: block;
+
+    object-fit: contain;
+
+    object-position: center;
+
+    background: white;
+
+    transition:
+        transform .6s ease,
+        filter .4s ease;
+}
+
+
+.gun-card:hover .gun-image-box img {
+
+    transform: scale(1.06);
+
+    filter:
+        brightness(1.05)
+        saturate(1.08);
+}
+
+
+/* =========================================================
+   DISCOUNT
+========================================================= */
+
+.gun-discount {
+
+    position: absolute;
+
+    top: 14px;
+    left: 12px;
+
+    z-index: 8;
+
+    padding: 6px 11px;
+
+    border-radius: 15px;
+
+    background: #FF5733;
+
+    color: white;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    box-shadow:
+        0 5px 12px rgba(255,87,51,.3);
+
+    transition: .3s ease;
+}
+
+
+.gun-card:hover .gun-discount {
+
+    transform: scale(1.08);
+
+    background: #A733FF;
+}
+
+
+/* =========================================================
+   HEART
+========================================================= */
+
+.gun-heart {
+
+    position: absolute;
+
+    top: 12px;
+    right: 12px;
+
+    z-index: 8;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    border: 2px solid #FFBD33;
+
+    color: #A733FF;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    transition: all .3s ease;
+}
+
+
+.gun-heart:hover {
+
+    background: #FF5733;
+
+    color: white;
+
+    border-color: #FF5733;
+
+    transform: scale(1.15);
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+/* .gun-card-content {
+
+    flex: 1;
+
+    min-height: 260px;
+
+    padding: 20px 18px 22px;
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    background: linear-gradient(
+        135deg,
+        #fff8d6,
+        #ffe4ef
+    );
+
+    transition:
+        background .4s ease;
+}
+
+
+.gun-card:hover .gun-card-content {
+
+    background: linear-gradient(
+        135deg,
+        #f4e4ff,
+        #dff6ff
+    );
+} */
+
+.gun-card-content {
+    flex: 1;
+    min-height: 260px;
+
+    padding: 20px 18px 22px;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background: linear-gradient(
+        135deg,
+        #fff0d5 0%,
+        #f6e3ef 50%,
+        #dceaff 100%
+    );
+
+    transition: all .4s ease;
+}
+
+.gun-card:hover .gun-card-content {
+    background: linear-gradient(
+        135deg,
+        #eadbff,
+        #d8f2ff
+    );
+}
+
+/* =========================================================
+   RATING
+========================================================= */
+
+.gun-rating {
+
+    margin-bottom: 10px;
+
+    color: #FFBD33;
+
+    font-size: 14px;
+
+    letter-spacing: 1px;
+}
+
+
+.gun-rating span {
+
+    color: #777;
+
+    font-size: 13px;
+
+    letter-spacing: 0;
+
+    margin-left: 4px;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.gun-card h3 {
+
+    margin: 0 0 10px;
+
+    color: #8A20D8;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 19px;
+
+    font-weight: 800;
+
+    line-height: 1.35;
+
+    letter-spacing: .5px;
+
+    transition:
+        transform .3s ease,
+        color .3s ease;
+}
+
+
+.gun-card:hover h3 {
+
+    color: #FF5733;
+
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.gun-card p {
+
+    margin: 0 auto 18px;
+
+    max-width: 260px;
+
+    color: #3f4268;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    line-height: 1.6;
+
+    transition: color .3s ease;
+}
+
+
+.gun-card:hover p {
+
+    color: #5B3F8C;
+}
+
+
+/* =========================================================
+   PRICE
+========================================================= */
+
+.gun-price {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin-bottom: 12px;
+}
+
+
+.gun-price strong {
+
+    color: #FF5733;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 21px;
+
+    font-weight: 800;
+}
+
+
+.gun-price del {
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   ADD BUTTON
+========================================================= */
+
+.gun-add-btn {
+
+    width: 90%;
+
+    margin: auto auto 0;
+
+    padding: 11px 15px;
+
+    display: block;
+
+    border-radius: 12px;
+
+    background: linear-gradient(
+        135deg,
+        #8A20D8,
+        #A733FF
+    );
+
+    border: 2px solid transparent;
+
+    color: white;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 12px rgba(167,51,255,.25);
+
+    transition: all .3s ease;
+}
+
+
+.gun-add-btn:hover {
+
+    background: linear-gradient(
+        135deg,
+        #FF5733,
+        #ff7b4f
+    );
+
+    border-color: #FFBD33;
+
+    transform:
+        translateY(-4px)
+        scale(1.03);
+
+    box-shadow:
+        0 8px 18px rgba(255,87,51,.4);
+}
+
+
+/* =========================================================
+   ARROWS
+========================================================= */
+
+.gun-arrow {
+
+    width: 52px;
+    height: 52px;
+
+    padding: 0;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        #A733FF,
+        #8A20D8
+    );
+
+    border: 3px solid #FFBD33;
+
+    color: white;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 7px 16px rgba(0,0,0,.25);
+
+    transition: all .3s ease;
+}
+
+
+.gun-arrow:hover {
+
+    background: linear-gradient(
+        135deg,
+        #FF5733,
+        #ff7b4f
+    );
+
+    transform: scale(1.15);
+
+    box-shadow:
+        0 8px 20px rgba(255,87,51,.45);
+}
+
+
+.gun-arrow:active {
+
+    transform: scale(.95);
+}
+
+
+/* =========================================================
+   DOTS
+========================================================= */
+
+.gun-dots {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin-top: 25px;
+}
+
+
+.gun-dot {
+
+    width: 13px;
+    height: 13px;
+
+    padding: 0;
+
+    margin: 0 4px;
+
+    border-radius: 50%;
+
+    background-color: #A733FF;
+
+    border: 2px solid #FFBD33;
+
+    opacity: .65;
+
+    cursor: pointer;
+
+    transition: all .3s ease;
+}
+
+
+.gun-dot.active {
+
+    background-color: #FF5733;
+
+    opacity: 1;
+
+    transform: scale(1.35);
+
+    box-shadow:
+        0 0 12px rgba(255,87,51,.55);
+}
+
+
+.gun-dot:hover {
+
+    opacity: 1;
+
+    transform: scale(1.2);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .gun-section {
+
+        padding:
+            30px
+            25px
+            50px;
+    }
+
+    .gun-header h2 {
+
+        font-size: 29px;
+    }
+
+    .gun-slider {
+
+        grid-template-columns:
+            45px
+            minmax(0,1fr)
+            45px;
+    }
+
+    .gun-image-box,
+    .gun-image-box img {
+
+        height: 300px;
+
+        min-height: 300px;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    .gun-section {
+
+        width: 92%;
+
+        padding:
+            25px
+            15px
+            45px;
+
+        border-radius: 22px;
+    }
+
+
+    .gun-header h2 {
+
+        font-size: 24px;
+
+        padding:
+            10px
+            20px;
+
+        letter-spacing: 1px;
+    }
+
+
+    .gun-header p {
+
+        font-size: 14px;
+    }
+
+
+    .gun-view-btn {
+
+        position: static;
+
+        margin-bottom: 20px;
+    }
+
+
+    .gun-slider {
+
+        grid-template-columns:
+            42px
+            minmax(0,1fr)
+            42px;
+
+        gap: 5px;
+    }
+
+
+    .gun-page {
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+        gap: 10px;
+    }
+
+
+    .gun-image-box,
+    .gun-image-box img {
+
+        height: 300px;
+
+        min-height: 300px;
+    }
+
+
+    .gun-arrow {
+
+        width: 42px;
+        height: 42px;
+
+        font-size: 20px;
+    }
+
+}
+
+
+@media (max-width: 575px) {
+
+    .gun-page {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .gun-image-box,
+    .gun-image-box img {
+
+        height: 280px;
+
+        min-height: 280px;
+    }
+
+}
+
+
+
+
+/* =========================================================
+   BEST DEALS OF THE WEEK
+========================================================= */
+
+.deals-section {
+    width: 95%;
+    margin: 45px auto;
+    padding: 35px 45px 55px;
+
+    background: linear-gradient(
+        135deg,
+        #fff0d5 0%,
+        #f5dff0 45%,
+        #d9e6ff 100%
+    );
+
+    border: 3px solid #28aef5;
+    border-radius: 28px;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, .20);
+
+    position: relative;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.deals-heading {
+    width: fit-content;
+    margin: 0 auto 35px;
+
+    padding: 12px 40px;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #a733ff,
+        #33b5ff
+    );
+
+    border: 3px solid #ffbd33;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, .25);
+
+    transition: all .35s ease;
+}
+
+
+/* Heading hover */
+
+.deals-heading:hover {
+    transform: translateY(-7px) scale(1.03);
+
+    box-shadow:
+        0 15px 30px rgba(100, 40, 180, .35);
+}
+
+
+.deals-heading h2 {
+    margin: 0;
+
+    color: white;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 34px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    text-shadow:
+        2px 2px 4px rgba(0, 0, 0, .55);
+}
+
+
+.deals-heading p {
+    margin: 7px 0 0;
+
+    color: #253b70;
+
+    font-size: 16px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   VIEW ALL
+========================================================= */
+
+.deals-view-all {
+    position: absolute;
+
+    top: 40px;
+    right: 40px;
+
+    padding: 13px 23px;
+
+    background: linear-gradient(
+        135deg,
+        #8d20e8,
+        #b12cff
+    );
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 7px 18px rgba(120, 30, 200, .30);
+
+    transition: all .3s ease;
+}
+
+
+.deals-view-all span {
+    font-size: 18px;
+
+    margin-left: 4px;
+}
+
+
+.deals-view-all:hover {
+    color: white;
+
+    transform: translateY(-4px);
+
+    background: linear-gradient(
+        135deg,
+        #ff5733,
+        #ff8c42
+    );
+
+    box-shadow:
+        0 10px 22px rgba(255, 87, 51, .35);
+}
+
+
+/* =========================================================
+   SLIDER
+========================================================= */
+
+.deals-slider {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        55px
+        minmax(0, 1fr)
+        55px;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.deals-window {
+    width: 100%;
+
+    overflow: hidden;
+}
+
+
+.deals-track {
+    width: 200%;
+
+    display: flex;
+
+    transition:
+        transform .45s ease-in-out;
+}
+
+
+.deals-page {
+    width: 50%;
+
+    flex: 0 0 50%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 18px;
+
+    padding: 5px;
+}
+
+
+/* =========================================================
+   PRODUCT CARD
+========================================================= */
+
+.deals-card {
+    min-width: 0;
+
+    height: 540px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    overflow: hidden;
+
+    background: white;
+
+    border: 3px solid #f1c21b;
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 8px 20px rgba(80, 60, 120, .18);
+
+    transition: all .4s ease;
+}
+
+
+.deals-card:hover {
+    transform:
+        translateY(-10px)
+        scale(1.015);
+
+    border-color: #a733ff;
+
+    box-shadow:
+        0 18px 35px rgba(100, 50, 180, .28);
+}
+
+
+/* =========================================================
+   IMAGE AREA
+========================================================= */
+
+.deals-image-box {
+    height: 270px;
+
+    min-height: 270px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: white;
+
+    border-bottom: 3px solid #f1c21b;
+}
+
+
+.deals-image-box::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 8px;
+
+    background: linear-gradient(
+        90deg,
+        #ff5733,
+        #ffbd33,
+        #a733ff,
+        #33b5ff
+    );
+
+    z-index: 2;
+}
+
+
+.deals-image-box img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+
+    padding: 8px;
+
+    transition:
+        transform .45s ease;
+}
+
+
+.deals-card:hover
+.deals-image-box img {
+    transform: scale(1.08);
+}
+
+
+/* =========================================================
+   DISCOUNT
+========================================================= */
+
+.deals-discount {
+    position: absolute;
+
+    top: 15px;
+    left: 13px;
+
+    z-index: 5;
+
+    padding: 6px 11px;
+
+    background: #ff5733;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 5px 12px rgba(255, 87, 51, .35);
+
+    transition: all .3s ease;
+}
+
+
+.deals-card:hover .deals-discount {
+    background: #a733ff;
+
+    transform: scale(1.08);
+}
+
+
+/* =========================================================
+   HEART
+========================================================= */
+
+.deals-heart {
+    position: absolute;
+
+    top: 12px;
+    right: 12px;
+
+    z-index: 5;
+
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+
+    border: 2px solid #ffbd33;
+
+    background: white;
+
+    color: #a733ff;
+
+    font-size: 27px;
+
+    cursor: pointer;
+
+    transition: all .3s ease;
+}
+
+
+.deals-heart:hover {
+    background: #a733ff;
+
+    color: white;
+
+    border-color: #a733ff;
+
+    transform: scale(1.12) rotate(-5deg);
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.deals-card-content {
+    flex: 1;
+
+    min-height: 267px;
+
+    padding: 18px 17px 20px;
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    background: linear-gradient(
+        135deg,
+        #fff0d5 0%,
+        #f6e3ef 50%,
+        #dceaff 100%
+    );
+
+    transition:
+        background .4s ease;
+}
+
+
+.deals-card:hover
+.deals-card-content {
+    background: linear-gradient(
+        135deg,
+        #eadbff,
+        #d8f2ff
+    );
+}
+
+
+/* =========================================================
+   RATING
+========================================================= */
+
+.deals-rating {
+    color: #ffbd33;
+
+    font-size: 15px;
+
+    letter-spacing: 1px;
+}
+
+
+.deals-rating span {
+    color: #777;
+
+    font-size: 14px;
+
+    margin-left: 5px;
+
+    letter-spacing: 0;
+}
+
+
+/* =========================================================
+   PRODUCT TITLE
+========================================================= */
+
+.deals-card-content h3 {
+    min-height: 50px;
+
+    margin: 5px 0 4px;
+
+    color: #8d20e8;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 20px;
+
+    line-height: 1.25;
+
+    font-weight: 800;
+
+    transition:
+        color .3s ease,
+        transform .3s ease;
+}
+
+
+.deals-card:nth-child(even)
+.deals-card-content h3 {
+    color: #ff5733;
+}
+
+
+.deals-card:hover
+.deals-card-content h3 {
+    transform: translateY(-2px);
+
+    color: #a733ff;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.deals-card-content p {
+    min-height: 58px;
+
+    margin: 0;
+
+    color: #253b70;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   PRICE
+========================================================= */
+
+.deals-price {
+    margin: 5px 0;
+
+    color: #ff5733;
+
+    font-size: 22px;
+
+    font-weight: 800;
+}
+
+
+.deals-price del {
+    margin-left: 7px;
+
+    color: #777;
+
+    font-size: 13px;
+
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   ADD BUTTON
+========================================================= */
+
+.deals-add-btn {
+    width: 90%;
+
+    margin: 0 auto;
+
+    padding: 13px 10px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background: linear-gradient(
+        135deg,
+        #8d20e8,
+        #b12cff
+    );
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 7px 15px rgba(130, 30, 210, .28);
+
+    transition: all .3s ease;
+}
+
+
+.deals-add-btn:hover {
+    transform: translateY(-4px);
+
+    background: linear-gradient(
+        135deg,
+        #ff5733,
+        #ff8c42
+    );
+
+    box-shadow:
+        0 10px 20px rgba(255, 87, 51, .35);
+}
+
+
+/* =========================================================
+   ARROWS
+========================================================= */
+
+.deals-arrow {
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
+
+    border: 3px solid #ffbd33;
+
+    background: linear-gradient(
+        135deg,
+        #8d20e8,
+        #b12cff
+    );
+
+    color: white;
+
+    font-size: 32px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    box-shadow:
+        0 8px 18px rgba(80, 50, 120, .28);
+
+    transition: all .3s ease;
+
+    z-index: 10;
+}
+
+
+.deals-arrow:hover {
+    transform: scale(1.12);
+
+    background: linear-gradient(
+        135deg,
+        #ff5733,
+        #ff8c42
+    );
+
+    border-color: #ff5733;
+
+    box-shadow:
+        0 12px 24px rgba(255, 87, 51, .35);
+}
+
+
+/* =========================================================
+   DOTS
+========================================================= */
+
+.deals-dots {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+
+.deals-dot {
+    width: 13px;
+    height: 13px;
+
+    border-radius: 50%;
+
+    background: #c7b8d8;
+
+    border: 2px solid #8d20e8;
+
+    cursor: pointer;
+
+    transition: all .3s ease;
+}
+
+
+.deals-dot:hover {
+    transform: scale(1.2);
+}
+
+
+.deals-dot.active {
+    width: 32px;
+
+    border-radius: 20px;
+
+    background: linear-gradient(
+        90deg,
+        #a733ff,
+        #33b5ff
+    );
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .deals-section {
+        padding: 30px 25px 45px;
+    }
+
+    .deals-page {
+        gap: 14px;
+    }
+
+    .deals-card {
+        height: 525px;
+    }
+
+    .deals-image-box {
+        height: 255px;
+        min-height: 255px;
+    }
+
+    .deals-card-content h3 {
+        font-size: 18px;
+    }
+
+    .deals-card-content p {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 850px) {
+
+    .deals-page {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        row-gap: 18px;
+    }
+
+    .deals-card {
+        height: 520px;
+    }
+
+    .deals-heading h2 {
+        font-size: 28px;
+    }
+
+    .deals-view-all {
+        position: static;
+
+        display: block;
+
+        width: fit-content;
+
+        margin: -15px auto 25px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .deals-section {
+        width: 94%;
+
+        padding: 25px 12px 40px;
+
+        border-radius: 20px;
+    }
+
+    .deals-slider {
+        grid-template-columns:
+            40px
+            minmax(0, 1fr)
+            40px;
+
+        gap: 5px;
+    }
+
+    .deals-page {
+        grid-template-columns:
+            1fr;
+    }
+
+    .deals-card {
+        height: 500px;
+    }
+
+    .deals-image-box {
+        height: 250px;
+        min-height: 250px;
+    }
+
+    .deals-arrow {
+        width: 40px;
+        height: 40px;
+
+        font-size: 24px;
+    }
+
+    .deals-heading {
+        padding: 10px 20px;
+    }
+
+    .deals-heading h2 {
+        font-size: 24px;
+    }
+
+    .deals-heading p {
+        font-size: 13px;
+    }
+}
+
+
+
+
+
+/* =====================================================
+   NEW ARRIVALS / TOY PRODUCT SLIDER
+   ===================================================== */
+
+.new-arrivals-section {
+    width: 95%;
+    margin: 45px auto;
+    padding: 40px 35px 45px;
+
+    background: linear-gradient(
+        135deg,
+        #fff0f5,
+        #e9ddff,
+        #d9efff
+    );
+
+    border: 3px solid #33b5ff;
+    border-radius: 30px;
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.20),
+        inset 0 0 25px rgba(255,255,255,.6);
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   HEADER
+   ===================================================== */
+
+.toy-section-header {
+    text-align: center;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+
+/* Heading box */
+
+.toy-heading-box {
+    display: inline-block;
+
+    padding: 12px 40px;
+
+    background: linear-gradient(
+        135deg,
+        #9b2cff,
+        #25aaf5
+    );
+
+    border: 3px solid #ffbd33;
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.25);
+
+    transition: all .35s ease;
+}
+
+
+/* Heading */
+
+.toy-heading-box h2 {
+    margin: 0;
+
+    color: white;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 34px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    text-shadow:
+        2px 3px 4px rgba(0,0,0,.45);
+
+    transition: all .35s ease;
+}
+
+
+/* Heading hover */
+
+.toy-heading-box:hover {
+    transform: translateY(-5px) scale(1.03);
+
+    box-shadow:
+        0 15px 30px rgba(0,0,0,.30),
+        0 0 20px rgba(155,44,255,.45);
+}
+
+
+.toy-heading-box:hover h2 {
+    letter-spacing: 3px;
+}
+
+
+/* Description */
+
+.toy-section-header > p {
+    margin: 12px auto 0;
+
+    color: #263b70;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    max-width: 800px;
+}
+
+
+/* View All */
+
+.toy-view-all {
+    position: absolute;
+
+    right: 0;
+    top: 8px;
+
+    padding: 13px 24px;
+
+    background: linear-gradient(
+        135deg,
+        #8f20ed,
+        #b52cff
+    );
+
+    color: white;
+
+    border-radius: 15px;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 7px 15px rgba(0,0,0,.20);
+
+    transition: all .3s ease;
+}
+
+
+.toy-view-all:hover {
+    color: white;
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 12px 22px rgba(0,0,0,.30);
+}
+
+
+/* =====================================================
+   SLIDER
+   ===================================================== */
+
+.toy-slider-wrapper {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        55px
+        minmax(0,1fr)
+        55px;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.toy-slider-window {
+    width: 100%;
+
+    overflow: hidden;
+
+    border-radius: 22px;
+}
+
+
+.toy-slider-track {
+    width: 200%;
+
+    display: flex;
+
+    transition:
+        transform .45s ease-in-out;
+}
+
+
+.toy-slider-page {
+    width: 50%;
+
+    flex-shrink: 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0,1fr));
+
+    gap: 20px;
+
+    padding: 5px;
+}
+
+
+/* =====================================================
+   PRODUCT CARD
+   ===================================================== */
+
+.toy-product-card {
+    min-width: 0;
+
+    background: linear-gradient(
+        180deg,
+        #ffffff,
+        #f8efff
+    );
+
+    border: 2px solid #d9b7ff;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.15);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
+
+    display: flex;
+
+    flex-direction: column;
+
+    height: 100%;
+}
+
+
+/* Card hover */
+
+.toy-product-card:hover {
+    transform: translateY(-9px);
+
+    border-color: #9b2cff;
+
+    box-shadow:
+        0 16px 30px rgba(0,0,0,.25),
+        0 0 18px rgba(155,44,255,.20);
+}
+
+
+/* =====================================================
+   IMAGE
+   ===================================================== */
+
+.toy-image-box {
+    height: 290px;
+
+    background: white;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+
+.toy-image-box img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    padding: 10px;
+
+    transition:
+        transform .4s ease;
+}
+
+
+.toy-product-card:hover
+.toy-image-box img {
+    transform: scale(1.06);
+}
+
+
+/* Discount */
+
+.toy-discount {
+    position: absolute;
+
+    left: 12px;
+    top: 12px;
+
+    z-index: 5;
+
+    padding: 7px 12px;
+
+    background: #ff6548;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 5px 12px rgba(255,101,72,.35);
+}
+
+
+/* Heart */
+
+.toy-heart {
+    position: absolute;
+
+    right: 12px;
+    top: 12px;
+
+    z-index: 5;
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    border: 2px solid #ffbd33;
+
+    background: white;
+
+    color: #9b2cff;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    transition: all .3s ease;
+}
+
+
+.toy-heart:hover {
+    background: #9b2cff;
+
+    color: white;
+
+    transform: scale(1.12) rotate(-5deg);
+}
+
+
+/* =====================================================
+   PRODUCT INFORMATION
+   ===================================================== */
+
+.toy-product-info {
+    flex: 1;
+
+    padding: 18px;
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    background: linear-gradient(
+        135deg,
+        #fff3e9,
+        #eee8ff
+    );
+}
+
+
+/* Rating */
+
+.toy-rating {
+    color: #ffb51b;
+
+    font-size: 15px;
+
+    margin-bottom: 8px;
+}
+
+
+.toy-rating span {
+    color: #777;
+
+    margin-left: 6px;
+
+    font-size: 14px;
+}
+
+
+/* Product title */
+
+.toy-product-info h3 {
+    min-height: 55px;
+
+    margin: 5px 0 8px;
+
+    color: #8125d6;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 19px;
+
+    font-weight: 800;
+
+    line-height: 1.3;
+
+    display: -webkit-box;
+
+    -webkit-line-clamp: 2;
+
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+}
+
+
+/* Product description */
+
+.toy-product-info p {
+    min-height: 48px;
+
+    margin: 0 0 12px;
+
+    color: #263b70;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    display: -webkit-box;
+
+    -webkit-line-clamp: 2;
+
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+}
+
+
+/* Price */
+
+.toy-price {
+    margin-top: auto;
+
+    color: #ff4f32;
+
+    font-size: 22px;
+
+    font-weight: 800;
+}
+
+
+.toy-price del {
+    color: #777;
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    margin-left: 5px;
+}
+
+
+/* Add button */
+
+.toy-add-btn {
+    width: 90%;
+
+    margin: 18px auto 0;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background: linear-gradient(
+        135deg,
+        #9224ed,
+        #b72cff
+    );
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 7px 15px rgba(146,36,237,.30);
+
+    transition: all .3s ease;
+}
+
+
+.toy-add-btn:hover {
+    transform: translateY(-4px);
+
+    background: linear-gradient(
+        135deg,
+        #ff5733,
+        #ff8a33
+    );
+
+    box-shadow:
+        0 10px 20px rgba(255,87,51,.35);
+}
+
+
+/* =====================================================
+   ARROWS
+   ===================================================== */
+
+.toy-slider-arrow {
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
+
+    border: 3px solid #ffbd33;
+
+    background: linear-gradient(
+        135deg,
+        #8f20ed,
+        #b72cff
+    );
+
+    color: white;
+
+    font-size: 28px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    z-index: 10;
+
+    box-shadow:
+        0 8px 18px rgba(0,0,0,.25);
+
+    transition: all .3s ease;
+}
+
+
+.toy-slider-arrow:hover {
+    transform: scale(1.12);
+
+    background: linear-gradient(
+        135deg,
+        #ff5733,
+        #ff8a33
+    );
+
+    box-shadow:
+        0 12px 25px rgba(0,0,0,.30);
+}
+
+
+/* =====================================================
+   DOTS
+   ===================================================== */
+
+.toy-slider-dots {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+
+.new-dot {
+    width: 13px;
+    height: 13px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #b9a4d6;
+
+    cursor: pointer;
+
+    transition: all .3s ease;
+}
+
+
+.new-dot.active {
+    width: 32px;
+
+    border-radius: 10px;
+
+    background: linear-gradient(
+        90deg,
+        #9b2cff,
+        #25aaf5
+    );
+}
+
+
+.new-dot:hover {
+    transform: scale(1.2);
+}
+
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 1100px) {
+
+    .toy-slider-page {
+        grid-template-columns:
+            repeat(2, minmax(0,1fr));
+    }
+
+    .toy-slider-track {
+        width: 200%;
+    }
+
+    .toy-slider-page {
+        width: 50%;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .new-arrivals-section {
+        width: 94%;
+        padding: 25px 15px 35px;
+    }
+
+    .toy-heading-box {
+        padding: 10px 20px;
+    }
+
+    .toy-heading-box h2 {
+        font-size: 25px;
+    }
+
+    .toy-section-header > p {
+        font-size: 14px;
+    }
+
+    .toy-view-all {
+        position: static;
+
+        display: inline-block;
+
+        margin-top: 15px;
+    }
+
+    .toy-slider-wrapper {
+        grid-template-columns:
+            40px
+            minmax(0,1fr)
+            40px;
+
+        gap: 7px;
+    }
+
+    .toy-slider-page {
+        grid-template-columns: 1fr;
+    }
+
+    .toy-slider-arrow {
+        width: 40px;
+        height: 40px;
+
+        font-size: 20px;
+    }
+
+    .toy-image-box {
+        height: 250px;
+    }
+
+}
+
+
+
+/* =========================================================
+   RETURN GIFTS SECTION
+   ========================================================= */
+
+.return-gifts-section {
+    width: 96%;
+    margin: 45px auto;
+    padding: 35px 30px 40px;
+
+    background: linear-gradient(
+        135deg,
+        #fff1d6,
+        #f7dff3,
+        #dddfff,
+        #ccecff
+    );
+
+    border: 3px solid #28a9ff;
+    border-radius: 30px;
+
+    box-shadow:
+        0 12px 30px rgba(70, 50, 120, 0.25),
+        inset 0 0 25px rgba(255,255,255,0.6);
+
+    overflow: hidden;
+}
+
+
+/* ================= HEADING ================= */
+
+.return-gifts-heading {
+    position: relative;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+
+/* Heading box */
+
+.return-gifts-title-box {
+    width: fit-content;
+    margin: 0 auto 12px;
+
+    padding: 10px 38px;
+
+    background: linear-gradient(
+        135deg,
+        #9b2cff,
+        #7b35ff,
+        #20a9ff
+    );
+
+    border: 3px solid #ffbd00;
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 20px rgba(60,40,100,0.35),
+        0 0 18px rgba(155,44,255,0.25);
+
+    transition: all 0.35s ease;
+}
+
+
+/* Heading hover */
+
+.return-gifts-title-box:hover {
+    transform: translateY(-5px) scale(1.02);
+
+    box-shadow:
+        0 15px 28px rgba(60,40,100,0.4),
+        0 0 25px rgba(32,169,255,0.4);
+
+    background: linear-gradient(
+        135deg,
+        #20a9ff,
+        #7b35ff,
+        #9b2cff
+    );
+}
+
+
+.return-gifts-title-box h2 {
+    margin: 0;
+
+    color: white;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 38px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    text-shadow:
+        2px 3px 5px rgba(0,0,0,0.45);
+}
+
+
+/* Description */
+
+.return-gifts-heading p {
+    margin: 10px auto 0;
+
+    color: #24376b;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 17px;
+    font-weight: 600;
+}
+
+
+/* View All */
+
+.return-gifts-view-btn {
+    position: absolute;
+
+    right: 10px;
+    top: 5px;
+
+    padding: 13px 25px;
+
+    background: linear-gradient(
+        135deg,
+        #9b2cff,
+        #7d20df
+    );
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 15px;
+
+    font-weight: 700;
+
+    box-shadow: 0 8px 18px rgba(100,30,160,0.3);
+
+    transition: all 0.3s ease;
+}
+
+
+.return-gifts-view-btn:hover {
+    color: white;
+
+    transform: translateY(-4px);
+
+    background: linear-gradient(
+        135deg,
+        #20a9ff,
+        #9b2cff
+    );
+
+    box-shadow: 0 12px 24px rgba(50,70,180,0.35);
+}
+
+
+
+/* =========================================================
+   SLIDER
+   ========================================================= */
+
+.return-gifts-slider {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        55px
+        minmax(0, 1fr)
+        55px;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+/* Window */
+
+.return-gifts-window {
+    width: 100%;
+
+    overflow: hidden;
+
+    padding: 5px;
+}
+
+
+/* Track */
+
+.return-gifts-track {
+    width: 200%;
+
+    display: flex;
+
+    transition:
+        transform 0.55s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+
+/* Each page */
+
+.return-gifts-page {
+    width: 50%;
+
+    flex: 0 0 50%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 18px;
+
+    padding: 5px;
+}
+
+
+
+/* =========================================================
+   PRODUCT CARD
+   ========================================================= */
+
+.return-gifts-card {
+    min-width: 0;
+
+    height: 680px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    background: linear-gradient(
+        180deg,
+        #ffffff,
+        #f8edff
+    );
+
+    border: 2px solid #f1c44f;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 18px rgba(50,50,100,0.18);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+
+/* Card hover */
+
+.return-gifts-card:hover {
+    transform: translateY(-10px);
+
+    border-color: #8e2de2;
+
+    box-shadow:
+        0 18px 35px rgba(70,40,130,0.3),
+        0 0 18px rgba(155,44,255,0.2);
+}
+
+
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.return-gifts-image-box {
+    position: relative;
+
+    width: 100%;
+
+    height: 360px;
+
+    flex-shrink: 0;
+
+    background: white;
+
+    overflow: hidden;
+}
+
+
+/* Image */
+
+.return-gifts-image-box img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+
+    transition:
+        transform 0.45s ease;
+}
+
+
+/* Image zoom */
+
+.return-gifts-card:hover
+.return-gifts-image-box img {
+    transform: scale(1.07);
+}
+
+
+
+/* =========================================================
+   DISCOUNT
+   ========================================================= */
+
+.return-gifts-discount {
+    position: absolute;
+
+    top: 14px;
+    left: 14px;
+
+    z-index: 5;
+
+    padding: 7px 12px;
+
+    background: linear-gradient(
+        135deg,
+        #ff593d,
+        #ff7b55
+    );
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 5px 12px rgba(255,80,50,0.3);
+}
+
+
+
+/* =========================================================
+   HEART
+   ========================================================= */
+
+.return-gifts-heart {
+    position: absolute;
+
+    top: 12px;
+    right: 12px;
+
+    z-index: 5;
+
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+
+    border: 2px solid #ffbd00;
+
+    background: white;
+
+    color: #9b2cff;
+
+    font-size: 27px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+.return-gifts-heart:hover {
+    background: #9b2cff;
+
+    color: white;
+
+    border-color: #9b2cff;
+
+    transform: scale(1.12) rotate(8deg);
+
+    box-shadow:
+        0 6px 15px rgba(120,40,200,0.3);
+}
+
+
+
+/* =========================================================
+   CARD INFORMATION
+   ========================================================= */
+
+.return-gifts-info {
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 18px 18px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #fff0e8,
+        #eee7ff
+    );
+}
+
+
+/* Rating */
+
+.return-gifts-rating {
+    color: #ffb900;
+
+    font-size: 15px;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 10px;
+}
+
+
+.return-gifts-rating span {
+    color: #777;
+
+    font-size: 14px;
+
+    margin-left: 7px;
+
+    letter-spacing: 0;
+}
+
+
+
+/* Product heading */
+
+.return-gifts-info h3 {
+    min-height: 58px;
+
+    margin: 0 0 8px;
+
+    color: #8424dc;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 20px;
+
+    font-weight: 800;
+
+    line-height: 1.25;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Heading hover */
+
+.return-gifts-card:hover
+.return-gifts-info h3 {
+    color: #ff5733;
+
+    transform: scale(1.03);
+}
+
+
+
+/* Product description */
+
+.return-gifts-info p {
+    min-height: 55px;
+
+    margin: 0 0 10px;
+
+    color: #293a70;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+
+/* =========================================================
+   PRICE
+   ========================================================= */
+
+.return-gifts-price {
+    margin-top: auto;
+
+    margin-bottom: 18px;
+
+    color: #ff4b2b;
+
+    font-size: 22px;
+
+    font-weight: 800;
+}
+
+
+.return-gifts-price del {
+    margin-left: 7px;
+
+    color: #777;
+
+    font-size: 13px;
+
+    font-weight: 500;
+}
+
+
+
+/* =========================================================
+   ADD BUTTON
+   ========================================================= */
+
+.return-gifts-add {
+    width: 90%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background: linear-gradient(
+        135deg,
+        #8e2de2,
+        #a62cff
+    );
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 7px 15px rgba(120,40,200,0.3);
+
+    transition: all 0.3s ease;
+}
+
+
+.return-gifts-add:hover {
+    transform: translateY(-4px);
+
+    background: linear-gradient(
+        135deg,
+        #20a9ff,
+        #8e2de2
+    );
+
+    box-shadow:
+        0 10px 22px rgba(60,60,180,0.4);
+}
+
+
+
+/* =========================================================
+   ARROWS
+   ========================================================= */
+
+.return-gifts-arrow {
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
+
+    border: 3px solid #ffbd00;
+
+    background: linear-gradient(
+        135deg,
+        #9b2cff,
+        #8e2de2
+    );
+
+    color: white;
+
+    font-size: 27px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    z-index: 10;
+
+    box-shadow:
+        0 8px 18px rgba(70,40,120,0.35);
+
+    transition: all 0.3s ease;
+}
+
+
+.return-gifts-arrow:hover {
+    transform: scale(1.12);
+
+    background: linear-gradient(
+        135deg,
+        #20a9ff,
+        #9b2cff
+    );
+
+    box-shadow:
+        0 12px 25px rgba(50,60,170,0.4);
+}
+
+
+
+/* =========================================================
+   DOTS
+   ========================================================= */
+
+.return-gifts-dots {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+
+.return-dot {
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+
+    background: #b8b8d8;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+.return-dot.active {
+    width: 30px;
+
+    border-radius: 10px;
+
+    background: linear-gradient(
+        90deg,
+        #9b2cff,
+        #20a9ff
+    );
+}
+
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .return-gifts-page {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .return-gifts-card {
+        height: 650px;
+    }
+
+    .return-gifts-image-box {
+        height: 330px;
+    }
+
+}
+
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .return-gifts-section {
+        width: 94%;
+
+        padding: 25px 12px 30px;
+
+        border-radius: 22px;
+    }
+
+
+    .return-gifts-title-box {
+        padding: 9px 20px;
+    }
+
+
+    .return-gifts-title-box h2 {
+        font-size: 25px;
+    }
+
+
+    .return-gifts-heading p {
+        font-size: 14px;
+
+        padding: 0 15px;
+    }
+
+
+    .return-gifts-view-btn {
+        position: static;
+
+        display: inline-block;
+
+        margin-top: 15px;
+    }
+
+
+    .return-gifts-slider {
+        grid-template-columns:
+            40px
+            minmax(0, 1fr)
+            40px;
+
+        gap: 5px;
+    }
+
+
+    .return-gifts-page {
+        grid-template-columns:
+            repeat(1, minmax(0, 1fr));
+    }
+
+
+    .return-gifts-card {
+        height: 600px;
+    }
+
+
+    .return-gifts-image-box {
+        height: 320px;
+    }
+
+
+    .return-gifts-arrow {
+        width: 40px;
+        height: 40px;
+
+        font-size: 20px;
+    }
+
+}
+
+
+
+
+
+
+
+
+/* =========================================================
+   WHY KIDOYZ SECTION
+   ========================================================= */
+
+.why-kidoyz-section {
+    width: 96%;
+    margin: 45px auto;
+
+    padding: 35px 30px 40px;
+
+    background: linear-gradient(
+        135deg,
+        #fff1d6,
+        #f7dff3,
+        #dddfff,
+        #ccecff
+    );
+
+    border: 3px solid #28a9ff;
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 12px 30px rgba(70, 50, 120, 0.25),
+        inset 0 0 25px rgba(255, 255, 255, 0.6);
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.why-kidoyz-heading {
+    text-align: center;
+
+    margin-bottom: 38px;
+}
+
+
+/* Heading box */
+
+.why-kidoyz-title-box {
+    width: fit-content;
+
+    margin: 0 auto 12px;
+
+    padding: 10px 38px;
+
+    background: linear-gradient(
+        135deg,
+        #9b2cff,
+        #7b35ff,
+        #20a9ff
+    );
+
+    border: 3px solid #ffbd00;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 20px rgba(60, 40, 100, 0.35),
+        0 0 18px rgba(155, 44, 255, 0.25);
+
+    transition: all 0.35s ease;
+}
+
+
+/* Heading hover */
+
+.why-kidoyz-title-box:hover {
+    transform: translateY(-5px) scale(1.02);
+
+    background: linear-gradient(
+        135deg,
+        #20a9ff,
+        #7b35ff,
+        #9b2cff
+    );
+
+    box-shadow:
+        0 15px 28px rgba(60, 40, 100, 0.4),
+        0 0 25px rgba(32, 169, 255, 0.4);
+}
+
+
+.why-kidoyz-title-box h2 {
+    margin: 0;
+
+    color: white;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 36px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    text-shadow:
+        2px 3px 5px rgba(0, 0, 0, 0.45);
+}
+
+
+/* Subtitle */
+
+.why-kidoyz-heading p {
+    margin: 10px auto 0;
+
+    color: #24376b;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 17px;
+
+    font-weight: 600;
+}
+
+
+
+/* =========================================================
+   FEATURE GRID
+   ========================================================= */
+
+.why-kidoyz-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 22px;
+}
+
+
+
+/* =========================================================
+   FEATURE CARD
+   ========================================================= */
+
+.why-kidoyz-card {
+
+    min-height: 220px;
+
+    padding: 25px 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #ffffff,
+        #f8edff
+    );
+
+    border: 2px solid #f1c44f;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 8px 18px rgba(50, 50, 100, 0.18);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease,
+        background 0.35s ease;
+}
+
+
+/* Card hover */
+
+.why-kidoyz-card:hover {
+
+    transform: translateY(-9px);
+
+    border-color: #8e2de2;
+
+    background: linear-gradient(
+        135deg,
+        #ffffff,
+        #eee4ff,
+        #e3f5ff
+    );
+
+    box-shadow:
+        0 18px 35px rgba(70, 40, 130, 0.3),
+        0 0 18px rgba(155, 44, 255, 0.2);
+}
+
+
+
+/* =========================================================
+   ICON
+   ========================================================= */
+
+.why-kidoyz-icon {
+
+    width: 70px;
+
+    height: 70px;
+
+    margin-bottom: 17px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        #9b2cff,
+        #20a9ff
+    );
+
+    border: 3px solid #ffbd00;
+
+    color: white;
+
+    font-size: 30px;
+
+    font-weight: 800;
+
+    box-shadow:
+        0 7px 15px rgba(80, 40, 150, 0.3);
+
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+/* Icon hover */
+
+.why-kidoyz-card:hover .why-kidoyz-icon {
+
+    transform:
+        scale(1.12)
+        rotate(5deg);
+
+    background: linear-gradient(
+        135deg,
+        #ff5733,
+        #9b2cff
+    );
+
+    box-shadow:
+        0 10px 22px rgba(120, 40, 150, 0.4);
+}
+
+
+
+/* =========================================================
+   CARD CONTENT
+   ========================================================= */
+
+.why-kidoyz-content h3 {
+
+    margin: 0 0 10px;
+
+    color: #8424dc;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 21px;
+
+    font-weight: 800;
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* Heading hover */
+
+.why-kidoyz-card:hover
+.why-kidoyz-content h3 {
+
+    color: #ff5733;
+
+    transform: scale(1.03);
+}
+
+
+.why-kidoyz-content p {
+
+    margin: 0;
+
+    color: #293a70;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .why-kidoyz-grid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+    }
+
+}
+
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .why-kidoyz-section {
+
+        width: 94%;
+
+        padding: 25px 12px 30px;
+
+        border-radius: 22px;
+    }
+
+
+    .why-kidoyz-title-box {
+
+        padding: 9px 20px;
+    }
+
+
+    .why-kidoyz-title-box h2 {
+
+        font-size: 25px;
+    }
+
+
+    .why-kidoyz-heading p {
+
+        padding: 0 15px;
+
+        font-size: 14px;
+    }
+
+
+    .why-kidoyz-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+
+    .why-kidoyz-card {
+
+        min-height: 200px;
+
+        padding: 22px 18px;
+    }
+
+
+    .why-kidoyz-icon {
+
+        width: 62px;
+
+        height: 62px;
+
+        font-size: 27px;
+    }
+
+}
+
+
+
+
+
+/* ================= WHAT PARENTS ARE SAYING ================= */
+
+.parent-reviews-section {
+    width: 96%;
+    margin: 45px auto;
+    padding: 35px 30px 40px;
+
+    background: linear-gradient(
+        135deg,
+        #d8d8ff,
+        #cfe8ff,
+        #e9d5ff
+    );
+
+    border: 3px solid #28a9ff;
+    border-radius: 30px;
+
+    box-shadow:
+        0 12px 30px rgba(70,50,120,.25),
+        inset 0 0 25px rgba(255,255,255,.6);
+
+    overflow: hidden;
+}
+
+
+/* Heading */
+
+.parent-reviews-heading {
+    width: fit-content;
+    margin: 0 auto 30px;
+    padding: 12px 38px;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #9b2cff,
+        #7b35ff,
+        #20a9ff
+    );
+
+    border: 3px solid #ffbd00;
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 20px rgba(60,40,100,.35),
+        0 0 18px rgba(155,44,255,.25);
+
+    transition: .35s ease;
+}
+
+.parent-reviews-heading:hover {
+    transform: translateY(-5px) scale(1.02);
+
+    background: linear-gradient(
+        135deg,
+        #20a9ff,
+        #7b35ff,
+        #9b2cff
+    );
+}
+
+.parent-reviews-heading h2 {
+    margin: 0;
+
+    color: white;
+
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 34px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+}
+
+.parent-reviews-heading p {
+    margin: 5px 0 0;
+
+    color: #ffdd45;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+/* Main Review Area */
+
+.reviews-top {
+    display: grid;
+    grid-template-columns: 280px minmax(0,1fr);
+    gap: 25px;
+    align-items: stretch;
+}
+
+
+/* Rating Summary */
+
+.rating-summary {
+    padding: 25px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #ffffff,
+        #f4edff
+    );
+
+    border: 2px solid #f1c44f;
+    border-radius: 22px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 18px rgba(50,50,100,.18);
+
+    transition: .3s ease;
+}
+
+.rating-summary:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 14px 25px rgba(50,50,100,.25),
+        0 0 15px rgba(155,44,255,.2);
+}
+
+.rating-number {
+    color: #8424dc;
+
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 55px;
+    font-weight: 800;
+
+    line-height: 1;
+}
+
+.rating-stars {
+    margin: 8px 0;
+
+    color: #ffb800;
+
+    font-size: 27px;
+    letter-spacing: 3px;
+}
+
+.rating-count {
+    margin-bottom: 22px;
+
+    color: #293a70;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/* Rating Bars */
+
+.rating-row {
+    display: grid;
+    grid-template-columns: 35px 1fr 38px;
+    gap: 8px;
+
+    align-items: center;
+
+    margin-bottom: 10px;
+
+    color: #293a70;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.rating-bar {
+    height: 9px;
+
+    background: #e4e4ee;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.rating-fill {
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        #ffbd00,
+        #ff8a00
+    );
+
+    border-radius: 20px;
+}
+
+
+/* Reviews */
+
+.reviews-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0,1fr));
+    gap: 18px;
+}
+
+
+/* Review Card */
+
+.review-card {
+    padding: 22px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #ffffff,
+        #f8edff
+    );
+
+    border: 2px solid #f1c44f;
+    border-radius: 22px;
+
+    box-shadow: 0 8px 18px rgba(50,50,100,.18);
+
+    transition: .35s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-9px);
+
+    border-color: #8e2de2;
+
+    background: linear-gradient(
+        135deg,
+        #ffffff,
+        #eee4ff,
+        #e3f5ff
+    );
+
+    box-shadow:
+        0 15px 28px rgba(50,50,100,.25),
+        0 0 15px rgba(142,45,226,.2);
+}
+
+
+/* User */
+
+.review-user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.review-avatar {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        #9b2cff,
+        #20a9ff
+    );
+
+    border: 2px solid #ffbd00;
+
+    color: white;
+
+    font-size: 20px;
+    font-weight: 800;
+
+    box-shadow: 0 5px 12px rgba(80,50,130,.25);
+}
+
+.review-user h3 {
+    margin: 0;
+
+    color: #8424dc;
+
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.review-user p {
+    margin: 3px 0 0;
+
+    color: #68728f;
+
+    font-size: 12px;
+}
+
+
+/* Stars */
+
+.review-stars {
+    margin: 14px 0 10px;
+
+    color: #ffb800;
+
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.review-stars span {
+    margin-left: 7px;
+
+    padding: 4px 8px;
+
+    background: #e7f8e9;
+
+    border-radius: 10px;
+
+    color: #24943a;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 0;
+}
+
+
+/* Review Text */
+
+.review-text {
+    margin: 0 0 15px;
+
+    color: #293a70;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+
+/* Purchased */
+
+.purchased {
+    margin: 0;
+    padding-top: 12px;
+
+    border-top: 1px solid #ddd;
+
+    color: #6a6a80;
+
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.purchased strong {
+    color: #8424dc;
+}
+
+
+/* All Reviews Button */
+
+.reviews-button {
+    display: block;
+
+    width: fit-content;
+
+    margin: 30px auto 0;
+    padding: 12px 28px;
+
+    background: linear-gradient(
+        135deg,
+        #9b2cff,
+        #20a9ff
+    );
+
+    border: 2px solid #ffbd00;
+    border-radius: 14px;
+
+    color: white;
+
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+
+    text-decoration: none;
+
+    box-shadow: 0 7px 16px rgba(60,40,100,.25);
+
+    transition: .3s ease;
+}
+
+.reviews-button:hover {
+    color: white;
+
+    transform: translateY(-4px);
+
+    background: linear-gradient(
+        135deg,
+        #20a9ff,
+        #9b2cff
+    );
+
+    box-shadow: 0 10px 20px rgba(60,40,100,.35);
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1100px) {
+
+    .reviews-top {
+        grid-template-columns: 1fr;
+    }
+
+    .rating-summary {
+        max-width: 500px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .reviews-list {
+        grid-template-columns: repeat(2, minmax(0,1fr));
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .parent-reviews-section {
+        padding: 25px 15px 30px;
+    }
+
+    .parent-reviews-heading {
+        padding: 10px 20px;
+    }
+
+    .parent-reviews-heading h2 {
+        font-size: 27px;
+    }
+
+    .reviews-list {
+        grid-template-columns: 1fr;
+    }
+
+    .rating-number {
+        font-size: 48px;
+    }
+}
+
+
+
+
+/* =========================================================
+   DIRECT FROM TOY TREASURE
+   ========================================================= */
+
+.direct-toy-section {
+    width: 96%;
+    margin: 50px auto;
+
+    padding: 40px 35px 45px;
+
+    background:
+        radial-gradient(circle at 10% 20%, rgba(155,44,255,.30), transparent 25%),
+        radial-gradient(circle at 90% 20%, rgba(32,169,255,.25), transparent 25%),
+        linear-gradient(135deg, #090b3d, #11105c, #160b4f);
+
+    border: 3px solid #20a9ff;
+    border-radius: 30px;
+
+    box-shadow:
+        0 15px 35px rgba(30,20,90,.45),
+        inset 0 0 35px rgba(120,80,255,.12);
+
+    text-align: center;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+
+/* Decorative Glow */
+
+.direct-toy-section::before {
+    content: "";
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    left: -100px;
+    bottom: -120px;
+
+    background: #7b35ff;
+
+    border-radius: 50%;
+
+    opacity: .25;
+
+    filter: blur(25px);
+}
+
+
+.direct-toy-section::after {
+    content: "";
+    position: absolute;
+
+    width: 200px;
+    height: 200px;
+
+    right: -90px;
+    top: -100px;
+
+    background: #20a9ff;
+
+    border-radius: 50%;
+
+    opacity: .22;
+
+    filter: blur(25px);
+}
+
+
+/* =========================================================
+   TOP LABEL
+   ========================================================= */
+
+.direct-label {
+    position: relative;
+    z-index: 2;
+
+    width: fit-content;
+
+    margin: 0 auto 18px;
+
+    padding: 10px 30px;
+
+    background: linear-gradient(
+        135deg,
+        #9b2cff,
+        #20a9ff
+    );
+
+    border: 3px solid #ffbd00;
+    border-radius: 16px;
+
+    color: white;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 18px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    box-shadow:
+        0 8px 18px rgba(0,0,0,.35),
+        0 0 18px rgba(32,169,255,.25);
+
+    transition: .3s ease;
+}
+
+
+.direct-label:hover {
+    transform: translateY(-4px) scale(1.03);
+
+    box-shadow:
+        0 12px 25px rgba(0,0,0,.4),
+        0 0 25px rgba(155,44,255,.45);
+}
+
+
+/* =========================================================
+   MAIN HEADING
+   ========================================================= */
+
+.direct-toy-section h2 {
+    position: relative;
+    z-index: 2;
+
+    margin: 0;
+
+    color: white;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 42px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    text-shadow:
+        2px 3px 5px rgba(0,0,0,.6),
+        0 0 15px rgba(155,44,255,.5);
+}
+
+
+.direct-toy-section h2 span {
+    color: #ffdf2b;
+
+    text-shadow:
+        2px 3px 5px rgba(0,0,0,.5),
+        0 0 12px rgba(255,189,0,.35);
+}
+
+
+/* =========================================================
+   INTRO TEXT
+   ========================================================= */
+
+.direct-intro {
+    position: relative;
+    z-index: 2;
+
+    max-width: 850px;
+
+    margin: 15px auto 35px;
+
+    color: #eef2ff;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   FEATURES GRID
+   ========================================================= */
+
+.direct-features {
+    position: relative;
+    z-index: 2;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 22px;
+
+    margin-top: 15px;
+}
+
+
+/* =========================================================
+   FEATURE CARD
+   ========================================================= */
+
+.direct-card {
+    min-height: 245px;
+
+    padding: 25px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(105,35,170,.75),
+            rgba(18,50,145,.82)
+        );
+
+    border: 2px solid #a733ff;
+
+    border-radius: 23px;
+
+    box-shadow:
+        0 10px 22px rgba(0,0,0,.35),
+        inset 0 0 18px rgba(80,180,255,.08);
+
+    transition: all .35s ease;
+}
+
+
+.direct-card:hover {
+    transform: translateY(-10px);
+
+    border-color: #20cfff;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(130,40,210,.9),
+            rgba(15,75,175,.95)
+        );
+
+    box-shadow:
+        0 18px 30px rgba(0,0,0,.4),
+        0 0 20px rgba(32,169,255,.25);
+}
+
+
+/* =========================================================
+   ICON
+   ========================================================= */
+
+.direct-icon {
+    width: 72px;
+    height: 72px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 17px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #9b2cff,
+            #20a9ff
+        );
+
+    border: 3px solid #ffbd00;
+
+    border-radius: 50%;
+
+    color: white;
+
+    font-size: 30px;
+
+    box-shadow:
+        0 7px 15px rgba(0,0,0,.35),
+        0 0 15px rgba(32,169,255,.25);
+
+    transition: .35s ease;
+}
+
+
+.direct-card:hover .direct-icon {
+    transform: scale(1.12) rotate(5deg);
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff5733,
+            #9b2cff
+        );
+
+    box-shadow:
+        0 8px 18px rgba(0,0,0,.4),
+        0 0 20px rgba(155,44,255,.4);
+}
+
+
+/* =========================================================
+   CARD HEADING
+   ========================================================= */
+
+.direct-card h3 {
+    margin: 0 0 12px;
+
+    color: white;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 21px;
+    font-weight: 800;
+
+    text-shadow: 1px 2px 4px rgba(0,0,0,.5);
+
+    transition: .3s ease;
+}
+
+
+.direct-card h3 span {
+    color: #ffdf2b;
+}
+
+
+.direct-card:hover h3 {
+    transform: scale(1.03);
+}
+
+
+/* =========================================================
+   CARD DESCRIPTION
+   ========================================================= */
+
+.direct-card p {
+    margin: 0;
+
+    color: #eef3ff;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .direct-features {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .direct-toy-section {
+        width: 94%;
+
+        padding: 30px 15px 35px;
+    }
+
+
+    .direct-label {
+        font-size: 15px;
+
+        padding: 9px 20px;
+    }
+
+
+    .direct-toy-section h2 {
+        font-size: 30px;
+    }
+
+
+    .direct-intro {
+        font-size: 14px;
+    }
+
+
+    .direct-features {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+
+    .direct-card {
+        min-height: auto;
+
+        padding: 25px 20px;
+    }
+
+}
+
+
+
+
+
+
+/* =========================================================
+   SUBSCRIBE / GET DEALS
+   ========================================================= */
+
+.subscribe-section {
+    width: 96%;
+    margin: 50px auto;
+
+    padding: 45px 30px 40px;
+
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(255,255,255,.85),
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(255,255,255,.7),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #d9fff2,
+            #c8f7ff,
+            #e8f0ff
+        );
+
+    border: 3px solid #20a9a0;
+    border-radius: 30px;
+
+    box-shadow:
+        0 12px 30px rgba(30,100,100,.22),
+        inset 0 0 30px rgba(255,255,255,.7);
+
+    text-align: center;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+
+/* =========================================================
+   DECORATIVE BACKGROUND CIRCLES
+   ========================================================= */
+
+.subscribe-section::before {
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+
+    left: -120px;
+    bottom: -130px;
+
+    border-radius: 50%;
+
+    background: #20c9b0;
+
+    opacity: .13;
+
+    filter: blur(10px);
+}
+
+
+.subscribe-section::after {
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    right: -100px;
+    top: -110px;
+
+    border-radius: 50%;
+
+    background: #8e2de2;
+
+    opacity: .10;
+
+    filter: blur(12px);
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.subscribe-content {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 1000px;
+
+    margin: auto;
+}
+
+
+/* =========================================================
+   TOP LABEL
+   ========================================================= */
+
+.subscribe-label {
+    width: fit-content;
+
+    margin: 0 auto 18px;
+
+    padding: 9px 25px;
+
+    background: linear-gradient(
+        135deg,
+        #9b2cff,
+        #20a9ff
+    );
+
+    border: 3px solid #ffbd00;
+
+    border-radius: 30px;
+
+    color: white;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 17px;
+
+    font-weight: 800;
+
+    letter-spacing: .5px;
+
+    box-shadow:
+        0 7px 18px rgba(60,40,100,.25);
+
+    transition: .3s ease;
+}
+
+
+.subscribe-label:hover {
+    transform: translateY(-4px) scale(1.03);
+
+    box-shadow:
+        0 10px 22px rgba(60,40,100,.3);
+}
+
+
+/* =========================================================
+   MAIN HEADING
+   ========================================================= */
+
+.subscribe-section h2 {
+    margin: 0;
+
+    color: #26356f;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 43px;
+
+    font-weight: 800;
+
+    letter-spacing: .5px;
+
+    text-shadow:
+        2px 3px 5px rgba(0,0,0,.15);
+}
+
+
+.subscribe-section h2 span {
+    color: #8e2de2;
+
+    text-shadow: none;
+}
+
+
+/* =========================================================
+   INTRO TEXT
+   ========================================================= */
+
+.subscribe-intro {
+    max-width: 800px;
+
+    margin: 15px auto 30px;
+
+    color: #34466f;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   BENEFITS
+   ========================================================= */
+
+.subscribe-benefits {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+
+    margin: 25px 0 30px;
+}
+
+
+/* =========================================================
+   BENEFIT CARD
+   ========================================================= */
+
+.subscribe-benefit {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    padding: 18px;
+
+    background: rgba(255,255,255,.88);
+
+    border: 2px solid #f1c44f;
+
+    border-radius: 18px;
+
+    text-align: left;
+
+    box-shadow:
+        0 8px 18px rgba(40,80,100,.16);
+
+    transition: all .3s ease;
+}
+
+
+.subscribe-benefit:hover {
+    transform: translateY(-7px);
+
+    background: #ffffff;
+
+    border-color: #8e2de2;
+
+    box-shadow:
+        0 14px 25px rgba(40,80,100,.22),
+        0 0 15px rgba(142,45,226,.12);
+}
+
+
+/* =========================================================
+   BENEFIT ICON
+   ========================================================= */
+
+.benefit-icon {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background: linear-gradient(
+        135deg,
+        #20c9b0,
+        #20a9ff
+    );
+
+    border: 3px solid #ffbd00;
+
+    border-radius: 50%;
+
+    font-size: 24px;
+
+    box-shadow:
+        0 5px 12px rgba(20,100,120,.2);
+
+    transition: .3s ease;
+}
+
+
+.subscribe-benefit:hover .benefit-icon {
+    transform: scale(1.1) rotate(5deg);
+
+    background: linear-gradient(
+        135deg,
+        #9b2cff,
+        #20a9ff
+    );
+}
+
+
+/* =========================================================
+   BENEFIT TEXT
+   ========================================================= */
+
+.subscribe-benefit strong {
+    color: #8424dc;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 17px;
+
+    font-weight: 800;
+}
+
+
+.subscribe-benefit p {
+    margin: 3px 0 0;
+
+    color: #405174;
+
+    font-size: 13px;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   EMAIL FORM
+   ========================================================= */
+
+.subscribe-form {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    gap: 10px;
+}
+
+
+/* Email Input */
+
+.subscribe-form input {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 16px 20px;
+
+    background: white;
+
+    border: 3px solid #20a9a0;
+
+    border-radius: 14px;
+
+    outline: none;
+
+    color: #333;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 15px;
+
+    box-shadow:
+        0 7px 18px rgba(40,80,100,.16);
+
+    transition: .3s ease;
+}
+
+
+.subscribe-form input::placeholder {
+    color: #7b8499;
+}
+
+
+.subscribe-form input:focus {
+    border-color: #8e2de2;
+
+    box-shadow:
+        0 0 0 4px rgba(142,45,226,.12);
+}
+
+
+/* Subscribe Button */
+
+.subscribe-form button {
+    padding: 15px 28px;
+
+    background: linear-gradient(
+        135deg,
+        #8e2de2,
+        #20a9ff
+    );
+
+    border: 3px solid #ffbd00;
+
+    border-radius: 14px;
+
+    color: white;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 16px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 7px 16px rgba(60,40,100,.25);
+
+    transition: all .3s ease;
+}
+
+
+.subscribe-form button:hover {
+    transform: translateY(-4px);
+
+    background: linear-gradient(
+        135deg,
+        #20a9ff,
+        #8e2de2
+    );
+
+    box-shadow:
+        0 10px 20px rgba(60,40,100,.35);
+}
+
+
+/* =========================================================
+   WHATSAPP BUTTON
+   ========================================================= */
+
+.whatsapp-deal {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 10px 20px;
+
+    background: #20b957;
+
+    border: 2px solid white;
+
+    border-radius: 25px;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 6px 15px rgba(0,80,30,.2);
+
+    transition: all .3s ease;
+}
+
+
+.whatsapp-deal:hover {
+    color: white;
+
+    background: #159447;
+
+    transform: translateY(-3px) scale(1.02);
+
+    box-shadow:
+        0 9px 18px rgba(0,80,30,.28);
+}
+
+
+/* =========================================================
+   PRIVACY / NOTE
+   ========================================================= */
+
+.subscribe-note {
+    margin: 18px 0 0;
+
+    color: #52617e;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+.subscribe-note a {
+    color: #8424dc;
+
+    font-weight: 700;
+
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .subscribe-benefits {
+        grid-template-columns: 1fr;
+    }
+
+    .subscribe-benefit {
+        max-width: 600px;
+
+        width: 100%;
+
+        margin: auto;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    .subscribe-section {
+        width: 94%;
+
+        padding: 30px 15px 35px;
+    }
+
+
+    .subscribe-label {
+        font-size: 14px;
+
+        padding: 8px 18px;
+    }
+
+
+    .subscribe-section h2 {
+        font-size: 30px;
+
+        line-height: 1.25;
+    }
+
+
+    .subscribe-intro {
+        font-size: 14px;
+
+        line-height: 1.6;
+    }
+
+
+    .subscribe-benefits {
+        gap: 15px;
+    }
+
+
+    .subscribe-benefit {
+        padding: 16px;
+    }
+
+
+    .subscribe-form {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+
+    .subscribe-form input {
+        width: 100%;
+
+        box-sizing: border-box;
+    }
+
+
+    .subscribe-form button {
+        width: 100%;
+    }
+
+
+    .whatsapp-deal {
+        font-size: 13px;
+    }
+
+}
+
+
+
+/* ================================
+   AVAILABLE ON APPS SECTION
+================================ */
+
+.apps-section {
+    width: 96%;
+    margin: 50px auto;
+    padding: 45px 30px;
+
+    background: linear-gradient(
+        135deg,
+        #d8d8ff,
+        #cfe8ff,
+        #e9d5ff
+    );
+
+    border: 3px solid #28a9ff;
+    border-radius: 30px;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.20),
+        0 0 20px rgba(40, 169, 255, 0.15);
+
+    text-align: center;
+}
+
+
+/* HEADING */
+
+.apps-heading {
+    margin-bottom: 35px;
+}
+
+.apps-heading h2 {
+    width: fit-content;
+    margin: 0 auto 10px;
+    padding: 12px 30px;
+
+    background: linear-gradient(
+        135deg,
+        #8e2de2,
+        #4facfe
+    );
+
+    color: white;
+
+    border: 3px solid #ffbd33;
+    border-radius: 15px;
+
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+
+    box-shadow:
+        0 7px 18px rgba(0,0,0,0.20);
+
+    transition: 0.3s ease;
+}
+
+.apps-heading h2:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 12px 25px rgba(0,0,0,0.25);
+}
+
+.apps-heading p {
+    margin: 12px 0 0;
+
+    color: #26356f;
+
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+
+/* APP LIST */
+
+.apps-list {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 22px;
+}
+
+
+/* APP CARD */
+
+.app-card {
+    min-height: 150px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 22px 15px;
+
+    background: rgba(255,255,255,0.88);
+
+    border: 3px solid #ffffff;
+    border-radius: 22px;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.15);
+
+    transition: all 0.3s ease;
+}
+
+
+/* LOGO */
+
+.app-card img {
+    width: 75px;
+    height: 55px;
+
+    object-fit: contain;
+
+    margin-bottom: 15px;
+
+    transition: 0.3s ease;
+}
+
+
+/* NAME */
+
+.app-card span {
+    color: #26356f;
+
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+
+    transition: 0.3s ease;
+}
+
+
+/* HOVER */
+
+.app-card:hover {
+    transform: translateY(-8px) scale(1.03);
+
+    border-color: #ffbd33;
+
+    background: white;
+
+    box-shadow:
+        0 15px 30px rgba(0,0,0,0.22),
+        0 0 15px rgba(40,169,255,0.25);
+}
+
+.app-card:hover img {
+    transform: scale(1.12);
+}
+
+.app-card:hover span {
+    color: #8e2de2;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+
+    .apps-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .apps-heading h2 {
+        font-size: 27px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .apps-section {
+        width: 94%;
+        padding: 35px 18px;
+    }
+
+    .apps-heading h2 {
+        font-size: 23px;
+        padding: 10px 18px;
+    }
+
+    .apps-heading p {
+        font-size: 15px;
+    }
+
+    .apps-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .app-card {
+        min-height: 130px;
+        padding: 18px 10px;
+    }
+
+    .app-card img {
+        width: 65px;
+        height: 45px;
+    }
+
+    .app-card span {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 380px) {
+
+    .apps-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+/* =================================
+   FINAL CTA SECTION
+================================= */
+
+.final-cta-section {
+    width: 96%;
+    margin: 55px auto;
+    padding: 65px 30px;
+
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(255,255,255,0.25),
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(255,255,255,0.2),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #5b2bbf,
+            #3d8edb,
+            #7b3fc6
+        );
+
+    border: 3px solid #ffbd33;
+    border-radius: 30px;
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.25),
+        0 0 25px rgba(91,43,191,0.25);
+
+    text-align: center;
+}
+
+
+/* DECORATIVE CIRCLES */
+
+.final-cta-section::before {
+    content: "";
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    top: -80px;
+    left: -60px;
+
+    background: rgba(255,255,255,0.12);
+
+    border-radius: 50%;
+}
+
+.final-cta-section::after {
+    content: "";
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    bottom: -120px;
+    right: -70px;
+
+    background: rgba(255,189,51,0.15);
+
+    border-radius: 50%;
+}
+
+
+/* CONTENT */
+
+.final-cta-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 900px;
+    margin: auto;
+}
+
+
+/* ICON */
+
+.final-cta-icon {
+    width: 75px;
+    height: 75px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: white;
+
+    border: 4px solid #ffbd33;
+    border-radius: 50%;
+
+    font-size: 38px;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.25);
+
+    transition: 0.3s ease;
+}
+
+.final-cta-icon:hover {
+    transform: rotate(-8deg) scale(1.08);
+}
+
+
+/* HEADING */
+
+.final-cta-content h2 {
+    margin: 0 0 18px;
+
+    color: white;
+
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 42px;
+    font-weight: 800;
+
+    line-height: 1.2;
+
+    letter-spacing: 1px;
+
+    text-shadow:
+        2px 3px 5px rgba(0,0,0,0.35);
+}
+
+
+/* DESCRIPTION */
+
+.final-cta-text {
+    max-width: 720px;
+
+    margin: 0 auto 30px;
+
+    color: #f8faff;
+
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+
+    line-height: 1.7;
+}
+
+
+/* BUTTONS */
+
+.final-cta-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 18px;
+
+    margin-bottom: 38px;
+}
+
+
+.final-cta-buttons a {
+    min-width: 190px;
+
+    padding: 15px 25px;
+
+    border-radius: 12px;
+
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 17px;
+    font-weight: 800;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+
+/* SHOP BUTTON */
+
+.cta-shop-btn {
+    background: #ffbd33;
+    color: #33205f;
+
+    border: 3px solid #ffbd33;
+
+    box-shadow:
+        0 7px 15px rgba(0,0,0,0.2);
+}
+
+.cta-shop-btn:hover {
+    background: white;
+    color: #6a28c9;
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 22px rgba(0,0,0,0.25);
+}
+
+
+/* AGE BUTTON */
+
+.cta-age-btn {
+    background: rgba(255,255,255,0.15);
+    color: white;
+
+    border: 3px solid white;
+
+    backdrop-filter: blur(5px);
+}
+
+.cta-age-btn:hover {
+    background: white;
+    color: #5b2bbf;
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 22px rgba(0,0,0,0.2);
+}
+
+
+/* TRUST FEATURES */
+
+.cta-trust {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+}
+
+
+.trust-item {
+    min-width: 160px;
+
+    padding: 12px 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    background: rgba(255,255,255,0.14);
+
+    border: 1px solid rgba(255,255,255,0.35);
+    border-radius: 12px;
+
+    color: white;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    backdrop-filter: blur(5px);
+
+    transition: 0.3s ease;
+}
+
+
+.trust-item span {
+    color: #ffbd33;
+    font-size: 19px;
+}
+
+
+.trust-item strong {
+    font-size: 14px;
+}
+
+
+.trust-item:hover {
+    background: rgba(255,255,255,0.25);
+
+    transform: translateY(-3px);
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 768px) {
+
+    .final-cta-section {
+        padding: 50px 20px;
+    }
+
+    .final-cta-content h2 {
+        font-size: 32px;
+    }
+
+    .final-cta-text {
+        font-size: 16px;
+    }
+
+    .final-cta-buttons {
+        flex-direction: column;
+    }
+
+    .final-cta-buttons a {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .cta-trust {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .trust-item {
+        min-width: 0;
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    .final-cta-section {
+        width: 94%;
+        padding: 40px 15px;
+    }
+
+    .final-cta-content h2 {
+        font-size: 27px;
+    }
+
+    .final-cta-icon {
+        width: 65px;
+        height: 65px;
+        font-size: 32px;
+    }
+
+    .cta-trust {
+        grid-template-columns: 1fr;
+    }
+
+    .trust-item {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+/* =========================================
+   TOY TREASURE FOOTER
+========================================= */
+
+.toy-footer {
+    margin-top: 60px;
+
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(92, 45, 180, 0.25),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(32, 169, 255, 0.18),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #090b3d,
+            #11105c,
+            #160b4f
+        );
+
+    color: white;
+
+    border-top: 4px solid #ffbd33;
+
+    box-shadow:
+        0 -10px 30px rgba(0,0,0,0.2);
+}
+
+
+/* =========================================
+   TOP FOOTER
+========================================= */
+
+.footer-top {
+    max-width: 1500px;
+    margin: auto;
+
+    padding: 65px 45px 50px;
+
+    display: grid;
+
+    grid-template-columns:
+        1.6fr
+        1fr
+        1fr
+        1fr
+        1fr;
+
+    gap: 45px;
+}
+
+
+/* =========================================
+   BRAND
+========================================= */
+
+.footer-logo {
+    display: inline-block;
+
+    margin-bottom: 18px;
+
+    color: #ffbd33;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 34px;
+    font-weight: 900;
+
+    text-decoration: none;
+
+    text-shadow:
+        2px 3px 5px rgba(0,0,0,0.4);
+
+    transition: 0.3s ease;
+}
+
+.footer-logo:hover {
+    color: white;
+
+    transform: translateY(-2px);
+}
+
+
+.footer-brand > p {
+    max-width: 360px;
+
+    margin: 0 0 25px;
+
+    color: #dfe5ff;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   SOCIAL ICONS
+========================================= */
+
+.footer-socials {
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 30px;
+}
+
+.footer-socials a {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        #8e2de2,
+        #4facfe
+    );
+
+    color: white;
+
+    border: 2px solid #ffbd33;
+
+    border-radius: 50%;
+
+    font-size: 17px;
+    font-weight: 800;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.footer-socials a:hover {
+    background: #ffbd33;
+
+    color: #33205f;
+
+    transform:
+        translateY(-5px)
+        rotate(5deg);
+
+    box-shadow:
+        0 8px 18px rgba(0,0,0,0.3);
+}
+
+
+/* =========================================
+   PAYMENT
+========================================= */
+
+.payment-box {
+    padding: 20px;
+
+    background: rgba(255,255,255,0.06);
+
+    border: 1px solid rgba(255,255,255,0.18);
+
+    border-radius: 16px;
+}
+
+
+.payment-box h4 {
+    margin: 0 0 15px;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+.payment-box h4 span {
+    color: #ffbd33;
+
+    font-size: 13px;
+}
+
+
+.payment-methods {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+}
+
+
+.payment-methods span {
+    padding: 7px 10px;
+
+    background: white;
+
+    color: #202b63;
+
+    border-radius: 6px;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    box-shadow:
+        0 3px 8px rgba(0,0,0,0.15);
+}
+
+
+.cod-note {
+    margin: 14px 0 0;
+
+    color: #cbd4f5;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   FOOTER COLUMNS
+========================================= */
+
+.footer-column h3 {
+    margin: 0 0 20px;
+
+    color: #ffbd33;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 19px;
+
+    font-weight: 800;
+
+    position: relative;
+}
+
+.footer-column h3::after {
+    content: "";
+
+    display: block;
+
+    width: 40px;
+    height: 3px;
+
+    margin-top: 8px;
+
+    background: #28a9ff;
+
+    border-radius: 5px;
+}
+
+
+.footer-column a {
+    display: block;
+
+    width: fit-content;
+
+    margin-bottom: 11px;
+
+    color: #d9e1ff;
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    font-size: 14px;
+
+    text-decoration: none;
+
+    transition: all 0.25s ease;
+}
+
+
+.footer-column a:hover {
+    color: #ffbd33;
+
+    transform: translateX(5px);
+}
+
+
+/* VIEW ALL */
+
+.footer-column .view-all {
+    margin-top: 15px;
+
+    color: #28a9ff;
+
+    font-weight: 800;
+}
+
+.footer-column .view-all:hover {
+    color: #ffbd33;
+}
+
+
+/* =========================================
+   SUB HEADING
+========================================= */
+
+.footer-sub-heading {
+    margin-top: 30px !important;
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.footer-contact p {
+    margin: 0 0 12px;
+
+    color: #d9e1ff;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   BOTTOM
+========================================= */
+
+.footer-bottom {
+    max-width: 1500px;
+
+    margin: auto;
+
+    padding: 25px 45px;
+
+    border-top:
+        1px solid rgba(255,255,255,0.15);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+}
+
+
+.footer-bottom p {
+    margin: 0;
+
+    color: #bfc8ed;
+
+    font-size: 13px;
+}
+
+
+.footer-bottom-links {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 18px;
+}
+
+
+.footer-bottom-links a {
+    color: #cdd5f5;
+
+    font-size: 13px;
+
+    text-decoration: none;
+
+    transition: 0.25s ease;
+}
+
+
+.footer-bottom-links a:hover {
+    color: #ffbd33;
+}
+
+
+.footer-tagline {
+    width: 100%;
+
+    padding-top: 18px;
+
+    text-align: center;
+
+    color: #ffbd33;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    border-top:
+        1px solid rgba(255,255,255,0.08);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1200px) {
+
+    .footer-top {
+        grid-template-columns:
+            1.5fr
+            1fr
+            1fr
+            1fr;
+
+        gap: 35px;
+    }
+
+    .footer-brand {
+        grid-column: span 2;
+    }
+}
+
+
+@media (max-width: 850px) {
+
+    .footer-top {
+        grid-template-columns: repeat(2, 1fr);
+
+        padding: 50px 30px 40px;
+    }
+
+    .footer-brand {
+        grid-column: span 2;
+    }
+
+    .footer-bottom {
+        padding: 22px 30px;
+
+        justify-content: center;
+
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .footer-top {
+        grid-template-columns: 1fr;
+
+        padding: 45px 22px 35px;
+
+        gap: 35px;
+    }
+
+    .footer-brand {
+        grid-column: span 1;
+    }
+
+    .footer-logo {
+        font-size: 30px;
+    }
+
+    .footer-bottom {
+        padding: 22px 18px;
+    }
+
+    .footer-bottom-links {
+        justify-content: center;
+
+        gap: 12px;
+    }
+
+    .footer-tagline {
+        line-height: 1.6;
+    }
+}
